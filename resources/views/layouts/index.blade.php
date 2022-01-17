@@ -37,9 +37,9 @@
         @endif
 
         <!-- Page Content -->
-       @yield('user-table');
-       @yield('artikel-table');
-       @yield('iklan-table');
+       @yield('user-table')
+       @yield('artikel-table')
+       @yield('iklan-table')
     </div>
 
     @stack('modals')

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Table;
+namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Iklan extends Component
+class icon-add extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class Iklan extends Component
      */
     public function render()
     {
-        return view('components.table.iklan');
+        return view('components.icon-add');
     }
 }
