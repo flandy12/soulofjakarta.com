@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Artikel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 
-class UserController extends Controller
+class ArtikelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $dbuser = User::all();
-        return view('admin.user-page',compact('dbuser'));
+        $dbartikel = Artikel::all();
+        return view('admin.artikel-page',compact('dbartikel'));
     }
 
     /**
@@ -26,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('admin.add-user-page');
+        //
     }
 
     /**
@@ -37,20 +36,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $data = ([
-            'name'=> $request->FullName,
-            'username'=> $request->Username,
-            'email'=>$request->Email,
-            'born'=>$request->Born,
-            'level'=> $request->Level,
-            'gender'=> $request->Gender,
-            'password'=> Hash::make($request->Password),
-            'profile_photo_path'=> $request->Profile,
-        ]);
-        // return dd($data);
-        $Add_User = new User($data);
-        $Add_User->save();
-        return dd($Add_User);
+        //
     }
 
     /**
@@ -61,8 +47,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user= User::all()->find($id);
-        return view('admin.user-view',compact('user'));
+        //
     }
 
     /**

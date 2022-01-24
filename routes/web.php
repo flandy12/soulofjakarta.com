@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,16 +24,20 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get('/admin', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/user',function(){
-        return view('admin.user-page');
-    })->name('user');
-    Route::get('/artikel',function(){
-        return view('admin.artikel-page');
-    })->name('artikel');
+
+    Route::get('/user',[UserController::class,'index'])->name('user');
+    
+    Route::get('/artikel',[ArtikelController::class,'index'])->name('artikel');
     Route::get('/iklan',function(){
         return view('admin.iklan-page');
     })->name('iklan');
 
+    //add view 
+    Route::get('/add-user',[UserController::class,'create']);
+    //edit user 
+    Route::get('/edit-user/{id}',[UserController::class,'show'])->name('edit-user');
+    //add user 
+    Route::post('/add-user',[UserController::class,'store']);
     //role action
     Route::get('/role',[RoleController::class,'index']);
 });

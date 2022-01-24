@@ -26,9 +26,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @php($i = 1)
+                                    @foreach($dbartikel as $artikel)
                                     <tr class="bg-white border-b">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-large text-gray-900">
-                                            3</td>
+                                            {{$i++}}</td>
                                         <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                             Cell
                                         </td>
@@ -55,6 +57,7 @@
 
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

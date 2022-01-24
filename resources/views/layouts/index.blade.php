@@ -40,6 +40,7 @@
        @yield('user-table')
        @yield('artikel-table')
        @yield('iklan-table')
+       @yield('add-user')
     </div>
 
     @stack('modals')
