@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -36,7 +37,8 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+       
         $data = ([
             'name'=> $request->FullName,
             'username'=> $request->Username,
@@ -45,12 +47,17 @@ class UserController extends Controller
             'level'=> $request->Level,
             'gender'=> $request->Gender,
             'password'=> Hash::make($request->Password),
-            'profile_photo_path'=> $request->Profile,
+
+            //  Storage LARAVEL
+            $imagepath = $request->file('Profile'),
+            $namafile = $imagepath->getClientOriginalName(),
+            $path = $imagepath->storeAs('public/profile-photos',$namafile),
+            'profile_photo_path'=> 'profile-photos/'.$namafile,
         ]);
-        // return dd($data);
         $Add_User = new User($data);
+        //data model yang telah di input akan di simpan
         $Add_User->save();
-        return dd($Add_User);
+        return dd($data);
     }
 
     /**
@@ -83,9 +90,18 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function updateProfile(Request $request, $id)
     {
-        //
+        $User_Update = User::find($id);
+
+        //  Storage LARAVEL
+        $imagepath = $request->file('Profile');
+        $namafile = $imagepath->getClientOriginalName();
+        $path = $imagepath->storeAs('public/profile-photos',$namafile);
+        $User_Update->profile_photo_path = 'profile-photos/'.$namafile;
+
+        $User_Update->save();
+        return redirect('user');
     }
 
     /**
@@ -96,6 +112,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+        return redirect()->back();
     }
 }
