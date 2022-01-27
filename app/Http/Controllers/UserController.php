@@ -38,18 +38,26 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {   
-       
+        $request->validate([
+            'name' =>'required',
+            'username' =>'required',
+            'email' =>'required',
+            'born' =>'required',
+            'gender' =>'required',
+            'password' =>'required',
+            'profile_photo_path' =>'required|image|max:2048',
+        ]);
+
         $data = ([
-            'name'=> $request->FullName,
-            'username'=> $request->Username,
-            'email'=>$request->Email,
-            'born'=>$request->Born,
-            'level'=> $request->Level,
-            'gender'=> $request->Gender,
-            'password'=> Hash::make($request->Password),
+            'name'=> $request->name,
+            'username'=> $request->username,
+            'email'=>$request->email,
+            'born'=>$request->born,
+            'gender'=> $request->gender,
+            'password'=> Hash::make($request->password),
 
             //  Storage LARAVEL
-            $imagepath = $request->file('Profile'),
+            $imagepath = $request->file('profile_photo_path'),
             $namafile = $imagepath->getClientOriginalName(),
             $path = $imagepath->storeAs('public/profile-photos',$namafile),
             'profile_photo_path'=> 'profile-photos/'.$namafile,
@@ -57,7 +65,8 @@ class UserController extends Controller
         $Add_User = new User($data);
         //data model yang telah di input akan di simpan
         $Add_User->save();
-        return dd($data);
+        // return dd($Add_User);
+        return redirect('user')->with('status','Berhasil Add User ' .$Add_User->username);
     }
 
     /**
@@ -94,14 +103,32 @@ class UserController extends Controller
     {
         $User_Update = User::find($id);
 
-        //  Storage LARAVEL
-        $imagepath = $request->file('Profile');
-        $namafile = $imagepath->getClientOriginalName();
-        $path = $imagepath->storeAs('public/profile-photos',$namafile);
-        $User_Update->profile_photo_path = 'profile-photos/'.$namafile;
-
-        $User_Update->save();
+        $User_Update->update([
+            //  Storage LARAVEL
+            $imagepath = $request->file('Profile'),
+            $namafile = $imagepath->getClientOriginalName(),
+            $path = $imagepath->storeAs('public/profile-photos',$namafile),
+                
+            'profile_photo_path' => 'profile-photos/'.$namafile,
+        ]);
+       
         return redirect('user');
+    }
+
+    public function personalInformation (Request $request,$id)
+    {
+        $User_Update = User::find($id);
+
+        $User_Update->update([
+            'name'=> $request->FullName,
+            'username'=> $request->Username,
+            'email'=>$request->Email,
+            'born'=>$request->Born,
+            'level'=> $request->Level,
+            'gender'=> $request->Gender,
+        ]);
+        
+        return redirect('user')->with('status','Mengupdate User ' .$User_Update->username);
     }
 
     /**
@@ -111,8 +138,9 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        User::destroy($id);
-        return redirect()->back();
+    {    
+        $value =User::find($id);
+        $value ->delete();
+        return redirect('user')->with('hapus','Menghapus Data '.$value->username);
     }
 }

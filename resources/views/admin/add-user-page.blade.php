@@ -5,10 +5,9 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="title p-2 bg-amber-300 my-3 w-32 rounded-md text-white text-center border-2 border-amber-300">
                 ADD USER</div>
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-4 lg:p-0 md:p-0">
                 <div class="flex flex-col sm:m-8">
-
-                    <form method="POST" action="{{url('add-user')}}">
+                    <form method="POST" action="{{url('add-user')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group mb-6">
                             <label for="Username" class="form-label inline-block mb-2 text-gray-700">Username</label>
@@ -27,9 +26,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="Username" aria-describedby="emailHelp" placeholder="Username" name="Username">
-                            @error('Username')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="Username" aria-describedby="emailHelp" placeholder="Username" name="username">
+                            @error('username')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
 
                         </div>
@@ -51,9 +52,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="FullName" aria-describedby="emailHelp" placeholder="Nama Lengkap" name="FullName">
-                            @error('Fullname')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="FullName" aria-describedby="emailHelp" placeholder="Nama Lengkap" name="name">
+                            @error('name')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
 
                         </div>
@@ -75,9 +78,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="Date" aria-describedby="emailHelp" placeholder="Enter Name" name="Born">
-                            @error('Born')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="Date" aria-describedby="emailHelp" placeholder="Enter Name" name="born">
+                            @error('born')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
 
                         </div>
@@ -100,12 +105,14 @@
                                 m-0
                                 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                 id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
-                                name="Email">
+                                name="email">
                             <small id="emailHelp" class="block mt-1 text-xs text-gray-600">We'll never share your email
                                 with anyone
                                 else.</small>
-                            @error('Email')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                            @error('email')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
                         </div>
                         <div class="form-group mb-6">
@@ -125,9 +132,11 @@
                                 ease-in-out
                                 m-0
                                 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="exampleInputPassword1" placeholder="Password" name="Password">
-                            @error('Pssword')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="exampleInputPassword1" placeholder="Password" name="password">
+                            @error('password')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
                         </div>
                         <div class="form-group mb-6">
@@ -137,28 +146,30 @@
                                 <div class="form-check form-check-inline mr-3">
                                     <input
                                         class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                        type="checkbox" id="inlineCheckbox1" value="Pria" name="Gender">
+                                        type="checkbox" id="inlineCheckbox1" value="Pria" name="gender">
                                     <label class="form-check-label inline-block text-gray-800"
                                         for="inlineCheckbox1">Pria</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input
                                         class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                        type="checkbox" id="inlineCheckbox2" value="Wanita" name="Gender">
+                                        type="checkbox" id="inlineCheckbox2" value="Wanita" name="gender">
                                     <label class="form-check-label inline-block text-gray-800"
                                         for="inlineCheckbox2">Wanita</label>
                                 </div>
 
                             </div>
-                            @error('Gender')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                            @error('gender')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
                         </div>
                         <div class="form-group mb-6">
                             <label for="exampleInputPassword1"
                                 class="form-label inline-block mb-2 text-gray-700">Profile </label>
-                            <div class="flex">
-                                <div class="mb-3 w-96">
+                            <div class="block">
+                                <div class="mb-3 w-96 flex">
                                     <input class="form-control
                                     block
                                     w-full
@@ -173,10 +184,12 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                        type="file" id="formFile" name="Profile">
+                                        type="file" id="formFile" name="profile_photo_path">
                                 </div>
-                                @error('Profile')
-                                <div class="alert alert-danger">{{ $message }}</div>
+                                @error('profile_photo_path')
+                                <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                {{ $message }}
+                                </div>
                                 @enderror
                             </div>
                         </div>
@@ -201,5 +214,6 @@
                 </div>
             </div>
         </div>
+    </div>
 </main>
 @endsection
