@@ -19,6 +19,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="{{ asset('js/tinymce.js') }}" defer></script>
 </head>
 
 <body class="font-sans antialiased">
@@ -41,6 +43,7 @@
        @yield('artikel-table')
        @yield('iklan-table')
        @yield('add-user')
+       @yield('add-artikel')
     </div>
 
     @stack('modals')

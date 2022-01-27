@@ -13,7 +13,7 @@ class CreateArtikelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('artikels', function (Blueprint $table) {
+        Schema::create('tb_artikel', function (Blueprint $table) {
             $table->id();
             $table->integer('idartikelpart');
             $table->integer('idmenu');

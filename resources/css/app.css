@@ -1,3 +1,41 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@media (max-width:576px) {
+    .username {
+        display: flex;
+    }
+    .image{
+        display: none;
+    }
+    .gender{
+        display: none;
+    }
+    .email{
+        display: none;
+    }
+    .level{
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+
+  
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1200px) {
+
+    .username {
+        display: inline-flex;
+    }
+    .image{
+        display: inline-flex;
+    }
+    
+}

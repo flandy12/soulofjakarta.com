@@ -13,7 +13,7 @@ class CreateIklansTable extends Migration
      */
     public function up()
     {
-        Schema::create('iklans', function (Blueprint $table) {
+        Schema::create('tb_iklan', function (Blueprint $table) {
             $table->id('idiklan');
             $table->string('jenisiklan');
             $table->string('iklan');
