@@ -49,10 +49,14 @@
                                         </td>
                                         <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                             <div class="flex space-x-2 justify-center items-center mr-3">
-                                                <button type="button"
+                                               <a href="{{url('edit-artikel/'.$artikel->id)}}">
+                                                    <button type="button"
                                                     class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out">Edit</button>
-                                                <button type="button"
+                                               </a>
+                                               <a href="{{url('delete-artikel/'.$artikel->id)}}">
+                                               <button type="button"
                                                     class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">Delete</button>
+                                               </a>
                                             </div>
 
                                         </td>

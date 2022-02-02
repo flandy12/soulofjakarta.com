@@ -14,28 +14,25 @@ class Artikel extends Model
      * $fillable = variable yang mengidentifikasi colum pada table artikels.
      */
     protected $fillable = [
-      'idartikelpart',
       'idmenu',
       'idsubmenu',
       'judul',
       'judul_seo',
+      'idartikelpart',
       'penulis',
       'hari',
       'tanggal',
       'tanggalbuat',
-      'jam',
       'bulan',
-      'last_posting',
-      'schedule_date',
-      'schedule_time',
-      'isi_utama',
+      'jam',
+      'lastposting',
+      'isiutama',
       'isi',
       'tagline',
       'tag',
       'tempat',
-      'part',
-      'image',
-      'dibaca',
+      'gambar_besar',
+      'gambar_kecil'
     ];
     protected $casts = [
     'timestamp' => 'date:Y-m-d',

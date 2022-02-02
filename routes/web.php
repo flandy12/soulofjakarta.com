@@ -52,8 +52,17 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     //Delete user 
     Route::get('/delete-user/{id}',[UserController::class,'destroy']);
     
+    
+    /**
+     * management artikel
+     */
+
     //Add Artikel 
     Route::get('/add-artikel',[ArtikelController::class,'create']);
+    //Add user 
+    Route::post('/add-artikel',[ArtikelController::class,'store']);
+    //edit view artikel
+    Route::get('/edit-artikel/{id}',[ArtikelController::class,'show']);
     //Add user 
     Route::post('/add-artikel',[ArtikelController::class,'store']);
     //role action

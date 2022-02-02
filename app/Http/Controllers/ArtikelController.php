@@ -60,43 +60,54 @@ class ArtikelController extends Controller
         $lastposting=$thnbln.$tanggal_ambil.$jam_ambil; 
 
         $data = ([
-            'idmenu'=> $request->Menu,
-            'idartikelpart' => $request->SubKAtegori,
-            'judul'=> $request->Judul,
-            'judul_seo' => $request->Seo,
+            'idmenu'=> $request->kategori,
+            'idsubmenu'=> $request->submenu,
+            'judul'=> $request->judul,
+            'idartikelpart'=> $request->kategori,
+            'judul_seo' => $request->judul,
             'penulis'=>Auth::user()->name,
             'hari' => $hari,
             'tanggal' => $tanggal ,
-            'tanggalbuat' => $tanggalbuat ,
+            'tanggalbuat' => $tanggalbuat,
             'bulan' => $nama_bln ,
             'jam' => $jam_sekarang,
-            'last_posting' => $lastposting,
-            // 'name'=> $request->FullName,
-            // 'username'=> $request->Username,
-            // 'email'=>$request->Email,
-            // 'born'=>$request->Born,
-            // 'level'=> $request->Level,
-            // 'gender'=> $request->Gender,
-            // 'password'=> Hash::make($request->Password),
+            'lastposting' => $lastposting,
+            'isiutama'=>$request->artikel_main,
+            'isi'=>$request->artikel_isi,
+            'tagline' => $request->tagline,
+            'tag' => $request->tag,
+            'tempat' => $request->tempat,    
 
-            // //  Storage LARAVEL
-            // $imagepath = $request->file('Profile'),
-            // $namafile = $imagepath->getClientOriginalName(),
-            // $path = $imagepath->storeAs('public/profile-photos',$namafile),
-            // 'profile_photo_path'=> 'profile-photos/'.$namafile,
+            //  Storage LARAVEL
+            $imagepath = $request->file('image_artikel'),
+            $namafile = $imagepath->getClientOriginalName(),
+            $path = $imagepath->storeAs('public/artikel-photos',$namafile),
+            'gambar_besar'=> 'artikel-photos/'.$namafile,
+            'gambar_kecil'=> 'artikel-photos/'.$namafile,
+
         ]);
-        return dd($data);
+        
+        if ($request->hasFile('image')) {
+            $filenameWithExt = $request->file('image')->getClientOriginalExtension();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            $request->file('image')->move('storage/images', $fileNameToStore);
+
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+        $data_input = new Artikel($data);
+        $data_input->save();
+        return redirect('artikel');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
-    {
-        //
+    {   
+        $dbartikel = Artikel::find($id);
+        // $kategori = ModelsKategori::all();
+        // $subkategori = SubKategori::all();
+        return view('admin.artikel-view',compact('dbartikel'));
     }
 
     /**

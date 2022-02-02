@@ -11,11 +11,11 @@
                         @csrf
                         <div class="form-group mb-6">
                             <div class="col-span-6 my-3 sm:col-span-3">
-                                <label for="level" class="block text-sm font-medium text-gray-700">Kategori</label>
-                                <select id="level" name="Kategori" autocomplete="kategori-name"
+                                <label for="kategori" class="block text-sm font-medium text-gray-700">Kategori</label>
+                                <select id="kategori" name="kategori" autocomplete="kategori-name"
                                     class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                     @foreach($kategori as $data)
-                                        <option value="{{$data->namamenu}}">{{$dat}}</option>
+                                        <option value="{{$data->id_kategori}}">{{$data->nama_kategori }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -27,10 +27,10 @@
                         <div class="form-group mb-6">
                             <div class="col-span-6 my-3 sm:col-span-3">
                                 <label for="level" class="block text-sm font-medium text-gray-700">Sub Kategori</label>
-                                <select id="level" name="SubKategori" autocomplete="sub-kategori"
+                                <select id="level" name="submenu" autocomplete="sub-kategori"
                                     class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                     @foreach($subkategori as $data_sub)
-                                       <option value="{{$data_sub->sub_name_kategori}}">{{$data_sub->sub_name_kategori}}</option>
+                                       <option value="{{$data_sub->id_sub_kategori}}">{{$data_sub->sub_name_kategori}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -56,8 +56,8 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="judul" aria-describedby="judul" placeholder="Judul Artikel" name="Judul">
-                            @error('Born')
+                                id="judul" aria-describedby="judul" placeholder="Judul Artikel" name="judul">
+                            @error('judul')
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
 
@@ -81,9 +81,9 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                        type="file" id="formFile" name="Profile">
+                                        type="file" id="formFile" name="image_artikel">
                                 </div>
-                                @error('Profile')
+                                @error('image_artikel')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -92,7 +92,7 @@
                             <div class="mb-3 xl:w-full md:96">
                                 <label for="exampleFormControlTextarea1"
                                     class="form-label inline-block mb-2 text-gray-700">Isi Utama</label>
-                                <textarea class="
+                        <textarea class="
                             form-control
                             block
                             w-full
@@ -108,7 +108,7 @@
                             ease-in-out
                             m-0
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        " id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                        " id="exampleFormControlTextarea1" rows="3" placeholder="Your message" name="artikel_main"></textarea>
                             </div>
                         </div>
                         <div class="form-group mb-6">
@@ -131,7 +131,7 @@
                             ease-in-out
                             m-0
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        " id="exampleFormControlTextarea2" rows="3" placeholder="Your message"></textarea>
+                        " id="exampleFormControlTextarea2" rows="3" placeholder="Your message" name="artikel_isi"></textarea>
                             </div>
                         </div>
                         <div class="form-group mb-6">
@@ -151,8 +151,31 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="tagline" aria-describedby="tagline" placeholder="Judul Artikel" name="Tagline">
-                            @error('Born')
+                                id="tagline" aria-describedby="tagline" placeholder="Tagline" name="tagline">
+                            @error('tagline')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+
+                        </div>
+                        <div class="form-group mb-6">
+                            <label for="tag" class="form-label inline-block mb-2 text-gray-700">Tag</label>
+                            <input type="text" class="form-control
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                id="tag" aria-describedby="tagline" placeholder="Tag" name="tag">
+                            @error('tag')
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
 
@@ -174,8 +197,8 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="tempat" aria-describedby="tempat" placeholder="Judul Artikel" name="Tempat">
-                            @error('Born')
+                                id="tempat" aria-describedby="tempat" placeholder="Judul Artikel" name="tempat">
+                            @error('tempat')
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
 
