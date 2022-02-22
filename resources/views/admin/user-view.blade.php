@@ -36,7 +36,7 @@
 
                                         <!-- Current Profile Photo -->
                                         <div class="mt-2" x-show="! photoPreview">
-                                            <img src="{{ $user  ->profile_photo_url }}" alt="{{ $user->name }}"
+                                            <img src="{{asset('storage/'.$user->profile_photo_path)}}" alt="{{ $user->name }}"
                                                 class="rounded-full h-20 w-20 object-cover">
                                         </div>
 

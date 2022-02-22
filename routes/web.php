@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\MenuAdd;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
@@ -17,12 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontEndController::class,'index']);
+Route::get('/artikel',[FrontEndController::class,'all']);
+Route::get('/artikel/{id}',[FrontEndController::class,'HeadArtikel']);
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
    
-    Route::get('/admin', function () {
+    Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 
@@ -64,7 +65,16 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     //edit view artikel
     Route::get('/edit-artikel/{id}',[ArtikelController::class,'show']);
     //Add user 
-    Route::post('/add-artikel',[ArtikelController::class,'store']);
+    Route::post('/update-artikel/{id}',[ArtikelController::class,'update']);
     //role action
+    Route::get('/delete-artikel/{id}',[ArtikelController::class,'delete']);
+
+    Route::get('/delete-artikel-trash/{id}',[ArtikelController::class,'destroy']);
+
+    Route::get('/restote-artikel/{id}',[ArtikelController::class,'restore']);
+    Route::get('/trash-artikel',[ArtikelController::class,'trash'])->name('trash');
+
+
     Route::get('/role',[RoleController::class,'index']);
 });
+require_once __DIR__ . '/jetstream.php';

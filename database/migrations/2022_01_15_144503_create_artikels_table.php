@@ -39,6 +39,7 @@ class CreateArtikelsTable extends Migration
             $table->enum('headline',['Y','N'])->default('N');
             $table->integer('dibaca')->default(1);
             $table->enum('status',['Y','N'])->default('N');
+            $table->softDeletes(); 
             $table->timestamps();
         });
     }

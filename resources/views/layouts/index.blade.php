@@ -19,7 +19,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-   
+
 </head>
 
 <body class="font-sans antialiased">
@@ -48,8 +48,10 @@
     @stack('modals')
 
     @livewireScripts
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script src="{{ asset('js/tinymce.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="https://cdn.tiny.cloud/1/gl0q3ajetph6n89g2yh4aaiy9mmsrbkcj7ewjrfgnea7dqsi/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="{{ asset('js/tinymce.min.js') }}" ></script> -->
+    <!-- <script src="{{ asset('js/tinymce.js') }}" ></script> -->
 </body>
 
 </html>

@@ -56,9 +56,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="judul" aria-describedby="judul" placeholder="Judul Artikel" name="judul">
-                            @error('judul')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="judul" aria-describedby="judul" placeholder="Judul Artikel" name="Judul">
+                            @error('Judul')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                            {{ $message }}
+                            </div>
                             @enderror
 
                         </div>
@@ -81,12 +83,14 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                        type="file" id="formFile" name="image_artikel">
+                                        type="file" id="formFile" name="Image_Artikel">
                                 </div>
-                                @error('image_artikel')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
                             </div>
+                            @error('Image_Artikel')
+                                <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
+                            @enderror
                         </div>
                         <div class="form-group mb-6">
                             <div class="mb-3 xl:w-full md:96">
@@ -108,7 +112,12 @@
                             ease-in-out
                             m-0
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        " id="exampleFormControlTextarea1" rows="3" placeholder="Your message" name="artikel_main"></textarea>
+                        " id="exampleFormControlTextarea1" rows="3" placeholder="Your message" name="Artikel_Utama"></textarea>
+                            @error('Artikel_Utama')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
+                            @enderror
                             </div>
                         </div>
                         <div class="form-group mb-6">
@@ -131,7 +140,12 @@
                             ease-in-out
                             m-0
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        " id="exampleFormControlTextarea2" rows="3" placeholder="Your message" name="artikel_isi"></textarea>
+                        " id="exampleFormControlTextarea2" rows="3" placeholder="Your message" name="Artikel_Body"></textarea>
+                             @error('Artikel_Body')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                </div>
+                            @enderror
                             </div>
                         </div>
                         <div class="form-group mb-6">
@@ -151,9 +165,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="tagline" aria-describedby="tagline" placeholder="Tagline" name="tagline">
-                            @error('tagline')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="tagline" aria-describedby="tagline" placeholder="Tagline" name="Tagline">
+                            @error('Tagline')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
                             @enderror
 
                         </div>
@@ -174,9 +190,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="tag" aria-describedby="tagline" placeholder="Tag" name="tag">
-                            @error('tag')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="tag" aria-describedby="tagline" placeholder="Tag" name="Tag">
+                            @error('Tag')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
                             @enderror
 
                         </div>
@@ -197,9 +215,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="tempat" aria-describedby="tempat" placeholder="Judul Artikel" name="tempat">
-                            @error('tempat')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="tempat" aria-describedby="tempat" placeholder="Tempat" name="Tempat">
+                            @error('Tempat')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
                             @enderror
 
                         </div>
@@ -220,9 +240,11 @@
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                id="sumber-gambar" aria-describedby="sumber-gambar" placeholder="Sumber gambar" name="Sumber">
-                            @error('Born')
-                            <div class="alert alert-danger">{{ $message }}</div>
+                                id="sumber-gambar" aria-describedby="sumber-gambar" placeholder="Sumber Gambar  " name="Sumber_Gambar">
+                            @error('Sumber_Gambar')
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                  {{ $message }}
+                                 </div>
                             @enderror
 
                         </div>

@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/tinymce.js": "/js/tinymce.js",
+    "/js/active.js": "/js/active.js",
+    "/js/plugins.js": "/js/plugins.js",
+    "/css/main.css": "/css/main.css",
     "/css/style.css": "/css/style.css",
     "/css/app.css": "/css/app.css",
     "/images/image1.jpg": "/images/image1.jpg",
