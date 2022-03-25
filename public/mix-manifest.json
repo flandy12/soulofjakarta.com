@@ -6,9 +6,7 @@
     "/js/plugins.js": "/js/plugins.js",
     "/css/main.css": "/css/main.css",
     "/css/style.css": "/css/style.css",
+    "/css/backend.css": "/css/backend.css",
     "/css/app.css": "/css/app.css",
-    "/images/image1.jpg": "/images/image1.jpg",
-    "/images/image2.jpg": "/images/image2.jpg",
-    "/images/image3.jpg": "/images/image3.jpg",
     "/images/logo.svg": "/images/logo.svg"
 }

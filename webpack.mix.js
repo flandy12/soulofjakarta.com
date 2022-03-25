@@ -25,7 +25,8 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/style.css', 'public/css/main.css')
     .postCss('resources/css/magnific-popup.css', 'public/css/main.css')
     .postCss('resources/css/classy-nav.css', 'public/css/main.css')
-    .postCss('resources/css/font-awesome.min.css', 'public/css/main.css');
+    .postCss('resources/css/font-awesome.min.css', 'public/css/main.css')
+    .postCss('resources/css/backend.css', 'public/css/');
 if (mix.inProduction()) {
     mix.version();
 }

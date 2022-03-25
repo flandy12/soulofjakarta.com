@@ -31,16 +31,16 @@ Route::get('/artikel/{id}/detail',[FrontEndController::class,'ShowArtikel']);
 Route::get('x', [FrontEndController::class,'dataS']);
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
    
-    Route::get('/admin', function () {
+    Route::get('/dashboard', function () {
         $user = User::paginate(5);
         $article = Article::paginate(5);
         return view('dashboard', ['dbuser' => $user,'dbartikel'=>$article]);
 
-    })->name('admin');
+    })->name('dashboard');
 
     Route::get('/user',[UserController::class,'index'])->name('user');
     
-    Route::get('/artikel',[ArticleController::class,'index'])->name('artikel');
+    Route::get('/article',[ArticleController::class,'index'])->name('article');
 
 
     Route::get('/iklan',function(){
