@@ -10,7 +10,7 @@ class Menu extends Model
     use HasFactory;
     protected $table = "tb_menu";
     protected $fillable = [
-        'namamenu',
-        'idmenu'
+        'id_menu',
+        'nama',
     ];
 }

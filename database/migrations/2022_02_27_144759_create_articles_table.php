@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArtikelsTable extends Migration
+class CreateArticlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateArtikelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_artikel', function (Blueprint $table) {
+        Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->integer('idartikelpart');
-            $table->integer('idmenu');
-            $table->integer('idsubmenu');
+            $table->integer('id_artikelpart');
+            $table->integer('id_category');
+            $table->integer('id_sub_category');
+            $table->integer('id_penulis');
             $table->string('part',5)->default(1);
-            $table->string('judul');
+            $table->string('judul')->unique();
             $table->string('judul_seo');
             $table->string('penulis');
             $table->string('hari');
@@ -51,6 +52,6 @@ class CreateArtikelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artikels');
+        Schema::dropIfExists('articles');
     }
 }

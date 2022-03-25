@@ -50,8 +50,9 @@
     @livewireScripts
     <script src="{{ asset('js/app.js') }}" ></script>
     <script src="https://cdn.tiny.cloud/1/gl0q3ajetph6n89g2yh4aaiy9mmsrbkcj7ewjrfgnea7dqsi/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="{{ asset('js/style.js') }}" ></script>
     <!-- <script src="{{ asset('js/tinymce.min.js') }}" ></script> -->
-    <!-- <script src="{{ asset('js/tinymce.js') }}" ></script> -->
+    <script src="{{ asset('js/tinymce.js') }}" ></script>
 </body>
 
 </html>

@@ -2,28 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
-use App\Models\Kategori as ModelsKategori;
-use App\Models\Menu;
-use App\Models\SubKategori;
-use App\Models\User;
-use Carbon\Carbon;
+use App\Models\Article;
+use App\Models\Category;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use Kategori;
 
-class ArtikelController extends Controller
+class ArticleController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $dbartikel = Artikel::all();
+        $dbartikel = Article::all();
         return view('admin.artikel-page',compact('dbartikel'));
     }
 
@@ -37,8 +32,8 @@ class ArtikelController extends Controller
         // $data = Artikel::join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
         // ->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
         // ->get(['tb_artikel.*', 'tb_kategori.nama_kategori','sub_kategoris.sub_name_kategori']);
-        $kategori = ModelsKategori::all();
-        $subkategori = SubKategori::all();
+        $kategori = Category::all();
+        $subkategori = SubCategory::all();
         // return dd($data);
         return view('admin.add-artikel-page',compact('kategori','subkategori'));
     }
@@ -57,7 +52,7 @@ class ArtikelController extends Controller
             'Image_Artikel.mimes'=>'Foto Harus Berupa (jpg,png,jpeg)',
         ];
         $this->validate($request,[
-            'Judul' =>'required',
+            'Judul' =>'required|unique:articles|max:100',
             'Artikel_Utama' =>'required',
             'Artikel_Body' =>'required',
             'Tagline' =>'required',
@@ -66,6 +61,7 @@ class ArtikelController extends Controller
             'Sumber_Gambar' =>'required',
             'Image_Artikel' =>'required|image|mimes:jpg,png,jpeg|max:2048',
         ],$message);
+        
          /** TIME Management */
 
         $hari = now()->dayName;
@@ -81,10 +77,11 @@ class ArtikelController extends Controller
         $lastposting=$thnbln.$tanggal_ambil.$jam_ambil; 
 
         $data = ([
-            'idmenu'=> $request->kategori,
-            'idsubmenu'=> $request->submenu,
+            'id_artikelpart'=> $request->kategori,
+            'id_category'=> $request->kategori,
+            'id_sub_category'=> $request->submenu,
+            'id_penulis' => Auth::user()->id,
             'judul'=> $request->Judul,
-            'idartikelpart'=> $request->kategori,
             'judul_seo' => $request->Judul,
             'penulis'=>Auth::user()->name,
             'hari' => $hari,
@@ -108,7 +105,7 @@ class ArtikelController extends Controller
             'gambar_kecil'=> 'artikel-photos/'.$namafile,
 
         ]);
-        
+            
         // if ($request->hasFile('image')) {
         //     $filenameWithExt = $request->file('image')->getClientOriginalExtension();
         //     $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -119,7 +116,8 @@ class ArtikelController extends Controller
         // } else {
         //     $fileNameToStore = 'noimage.jpg';
         // }
-        $data_input = new Artikel($data);
+        // return dd($data);
+        $data_input = new Article($data);
         $data_input->save();
         return redirect('artikel');
     }
@@ -129,10 +127,10 @@ class ArtikelController extends Controller
         // $dbartikel = Artikel::find($id)->join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
         //                                ->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
         //                                ->get(['tb_artikel.*', 'tb_kategori.*','sub_kategoris.sub_name_kategori']);
-        $dbartikel = Artikel::find($id);
-        $kategori = ModelsKategori::all();
-        $subkategori = SubKategori::all();
-        return view('admin.artikel-view',compact(['dbartikel','kategori','subkategori']));
+        $dbartikel = Article::find($id);
+        $categorys = Category::all();
+        $subkategoris = SubCategory::all();
+        return view('admin.artikel-view',compact(['dbartikel','categorys','subkategoris']));
     }
 
     /**
@@ -145,7 +143,7 @@ class ArtikelController extends Controller
     public function update(Request $request, $id)
     {
          /** TIME Management */
-         $artikel = Artikel::find($id);
+         $artikel = Article::find($id);
         //  $data = Artikel::join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
         //  ->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
         //  ->get(['tb_artikel.*', 'tb_kategori.nama_kategori','sub_kategoris.sub_name_kategori']);
@@ -162,9 +160,10 @@ class ArtikelController extends Controller
          $lastposting=$thnbln.$tanggal_ambil.$jam_ambil; 
  
          $data = ([
-             'idmenu'=> $request->kategori,
-             'idsubmenu'=> $request->submenu,
-             'idartikelpart'=> $request->kategori,
+            //  'idmenu'=> $request->kategori,
+            'id_artikelpart'=> $request->kategori,
+            'id_category'=> $request->kategori,
+            'id_sub_category'=> $request->subkategori,
              'judul'=> $request->judul,
              'judul_seo' => $request->judul,
              'penulis'=>Auth::user()->name,
@@ -214,29 +213,30 @@ class ArtikelController extends Controller
      */
     public function delete($id)
     {   
-        Artikel::find($id)->delete();
+        $artikel  = Article::find($id);
+        $artikel->delete();
         return redirect()->back();
+        // return redirect('artikel')->with('status','Update Data ' .$artikel->judul);;
     }
      /**
-     * restore specific post
+        * restore specific post
      *
      * @return void
      */
     public function restore($id)
     {
-        Artikel::withTrashed()->find($id)->restore();
+        Article::withTrashed()->find($id)->restore();
         return redirect()->back();
     }  
-    
     public function destroy($id){
-        $image = Artikel::onlyTrashed()->find($id);
+        $image = Article::onlyTrashed()->find($id);
         $old_image = Storage::disk('local')->delete('public/'.$image->gambar_besar);
         $image->forceDelete();
         return redirect()->back();
     }
     public function trash()
     {
-        $artikel = Artikel::onlyTrashed()->get();
+        $artikel = Article::onlyTrashed()->get();
         return view('admin.trash.artikel-trash', ['artikel' => $artikel]);
     }  
 }

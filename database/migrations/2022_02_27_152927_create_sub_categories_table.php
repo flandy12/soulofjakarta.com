@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubKategorisTable extends Migration
+class CreateSubCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSubKategorisTable extends Migration
      */
     public function up()
     {
-        Schema::create('sub_kategoris', function (Blueprint $table) {
-            $table->id('id_sub_kategori');
-            $table->string('sub_name_kategori');
+        Schema::create('sub_categories', function (Blueprint $table) {
+            $table->id('id_sub_category');
+            $table->string('nama');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateSubKategorisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sub_kategoris');
+        Schema::dropIfExists('sub_categories');
     }
 }

@@ -2,21 +2,21 @@
 
 namespace App\Models;
 
-use DateTimeInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Artikel extends Model
+class Article extends Model
 {
     use HasFactory,SoftDeletes;
-    protected $table = "tb_artikel";
     /**
      * $fillable = variable yang mengidentifikasi colum pada table artikels.
      */
     protected $fillable = [
-      'idmenu',
-      'idsubmenu',
+      'id_artikelpart',
+      'id_category',
+      'id_sub_category',
+      'id_penulis',
       'judul',
       'judul_seo',
       'idartikelpart',
@@ -40,8 +40,4 @@ class Artikel extends Model
     'timestamp' => 'date:Y-m-d',
     'created_at' => 'datetime:Y-m-d',
     ];
-    // protected function serializeDate(DateTimeInterface $date)
-    // {
-    // return $date->format('jS \of F Y h:i:s A');
-    // }
 }

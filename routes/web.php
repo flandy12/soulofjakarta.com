@@ -1,10 +1,15 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\MenuAdd;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\UserController;
+use App\Models\Article;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,23 +24,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontEndController::class,'index']);
+Route::get('/data', [FrontEndController::class,'Data']);
 Route::get('/artikel',[FrontEndController::class,'all']);
 Route::get('/artikel/{id}',[FrontEndController::class,'HeadArtikel']);
+Route::get('/artikel/{id}/detail',[FrontEndController::class,'ShowArtikel']);
+Route::get('x', [FrontEndController::class,'dataS']);
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
    
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/admin', function () {
+        $user = User::paginate(5);
+        $article = Article::paginate(5);
+        return view('dashboard', ['dbuser' => $user,'dbartikel'=>$article]);
+
+    })->name('admin');
 
     Route::get('/user',[UserController::class,'index'])->name('user');
     
-    Route::get('/artikel',[ArtikelController::class,'index'])->name('artikel');
+    Route::get('/artikel',[ArticleController::class,'index'])->name('artikel');
 
 
     Route::get('/iklan',function(){
         return view('admin.iklan-page');
     })->name('iklan');
-
+    
 
     /**
      * management user
@@ -57,24 +68,26 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     /**
      * management artikel
      */
-
     //Add Artikel 
-    Route::get('/add-artikel',[ArtikelController::class,'create']);
+    Route::get('/add-artikel',[ArticleController::class,'create']);
     //Add user 
-    Route::post('/add-artikel',[ArtikelController::class,'store']);
+    Route::post('/add-artikel',[ArticleController::class,'store']);
     //edit view artikel
-    Route::get('/edit-artikel/{id}',[ArtikelController::class,'show']);
+    Route::get('/edit-artikel/{id}',[ArticleController::class,'show']);
     //Add user 
-    Route::post('/update-artikel/{id}',[ArtikelController::class,'update']);
+    Route::post('/update-artikel/{id}',[ArticleController::class,'update']);
     //role action
-    Route::get('/delete-artikel/{id}',[ArtikelController::class,'delete']);
+    Route::get('/delete-artikel/{id}',[ArticleController::class,'delete']);
 
-    Route::get('/delete-artikel-trash/{id}',[ArtikelController::class,'destroy']);
+    Route::get('/delete-artikel-trash/{id}',[ArticleController::class,'destroy'])->name('hapus/{id}');
 
-    Route::get('/restote-artikel/{id}',[ArtikelController::class,'restore']);
-    Route::get('/trash-artikel',[ArtikelController::class,'trash'])->name('trash');
+    Route::get('/restote-artikel/{id}',[ArticleController::class,'restore']);
+    Route::get('/trash-artikel',[ArticleController      ::class,'trash'])->name('trash');
 
 
-    Route::get('/role',[RoleController::class,'index']);
+    Route::post('/add/category',[CategoryController::class,'store']);
+    Route::post('/add/subcategory',[SubCategoryController::class,'store']);
+
+    Route::get('/role',[RoleebController::class,'index']);
 });
-require_once __DIR__ . '/jetstream.php';
+require_once __DIR__ . '/jetstream.php';            

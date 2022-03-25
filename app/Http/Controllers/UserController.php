@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\Unique;
 
 class UserController extends Controller
 {
@@ -38,15 +39,19 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {   
+        $messages = [
+            'required'  => 'Harap Di Isi !',
+            'unique'    => 'Sudah Digunakan',
+        ];
         $request->validate([
-            'name' =>'required',
+            'name' =>'required|unique:users',
             'username' =>'required',
-            'email' =>'required',
+            'email' =>'required|unique:users',
             'born' =>'required',
             'gender' =>'required',
             'password' =>'required',
             'profile_photo_path' =>'required|image|max:2048',
-        ]);
+        ],$messages); 
 
         $data = ([
             'name'=> $request->name,

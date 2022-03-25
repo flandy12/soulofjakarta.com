@@ -35,6 +35,17 @@
 
                         </div>
                         <div class="form-group mb-6">
+                            <div class="col-span-6 my-3 sm:col-span-3">
+                                <label for="kategori" class="block text-sm font-medium text-gray-700">Role</label>
+                                <select id="kategori" name="kategori" autocomplete="kategori-name"
+                                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    @foreach($kategori as $data)
+                                        <option value="{{$data->id_article}}">{{$data->nama}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-6">
                             <label for="FullName" class="form-label inline-block mb-2 text-gray-700">Nama
                                 Lengkap</label>
                             <input type="text" class="form-control

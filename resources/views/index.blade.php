@@ -221,15 +221,17 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
                         <div class="single-feature-post video-post bg-img" >
-                                <img src="{{asset('storage/'.$mainContent[0]->gambar_besar)}}" alt="  " id="ImageHead" class="video-post bg-img">
+                                <img src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}" alt="" id="ImageHead" class="single-feature-post video-post bg-img">
                               
                                 <!-- <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a> -->
                                 
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
+                                    <a href="single-post.html" class="post-title">{{$FeatureArticle->judul}}</a>
+                                    <div class="">@php
+                                           echo substr($FeatureArticle->isi,0,150)
+                                          @endphp</div>
                                     <div class="post-meta d-flex">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
@@ -395,16 +397,17 @@
 
                 <div class="col-12 col-md-5 col-lg-4">
                     <ul class="nav vizew-nav-tab" role="tablist">
-                        @foreach($artikel as $datas)
+                        @foreach($HeadArticle as $datas)
                         <li class="nav-item">
-                                <a class="nav-link active" href="#" data-name="lan">
+                                <a class="nav-link active" href="/artikel/{{$datas->id}}/detail" data-name="lan">
                                 <!-- Single Blog Post -->
                                 <div class="single-blog-post style-2 d-flex align-items-center">
                                     <div class="post-thumbnail" data-id="{{$datas->id}}">
-                                        <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt="">
+                                        <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt="" class="h-24 rounded-md">
                                     </div>
                                     <div class="post-content">
                                         <h6 class="post-title-head">{{$datas->judul}}</h6>
+                                        <div class="text" id="text">@php echo substr($datas->isi,0,20) @endphp</div>                                        
                                         <div class="post-meta d-flex justify-content-between">
                                             <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
@@ -425,11 +428,11 @@
     <!-- ##### Trending Posts Area Start ##### -->
     <section class="trending-posts-area">
         <div class="container">
-            <div class="row">
+            <div class="row grid">
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading">
-                        <h4 id="judul">Trending Videos</h4>
+                        <h4 id="judul">Trending Article</h4>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -441,8 +444,8 @@
                 <div class="col-12 col-md-4">
                     <div class="single-post-area mb-80">
                         <!-- Post Thumbnail -->
-                        <div class="post-thumbnail">
-                            <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt="">
+                        <div class="post-thumbnail-top">
+                            <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt="" class="single-feature-post-trending">
 
                             <!-- Video Duration -->
                             <span class="video-duration">05.03</span>
@@ -452,6 +455,9 @@
                         <div class="post-content">
                             <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                             <a href="single-post.html" class="post-title">{{$trendings->judul}}</a>
+                            <div class="">@php
+                                           echo substr($trendings->isi,0,120)
+                                          @endphp</div>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
@@ -483,7 +489,7 @@
                         <div class="featured-post-slides owl-carousel mb-30">
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img"
-                                style="background-image: url(img/bg-img/14.jpg);">
+                            style="background-image: url('{{ asset('img/big-loader.gif')}}');">
                                 <!-- Play Button -->
                                 <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
                                         aria-hidden="true"></i></a>
@@ -972,14 +978,14 @@
                     <div class="sidebar-area">
 
                         <!-- ***** Single Widget ***** -->
-                        <div class="single-widget followers-widget mb-50">
+                        <!-- <div class="single-widget followers-widget mb-50">
                             <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span
                                     class="counter">198</span><span>Fan</span></a>
                             <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span
                                     class="counter">220</span><span>Followers</span></a>
                             <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i><span
                                     class="counter">140</span><span>Subscribe</span></a>
-                        </div>
+                        </div> -->
 
                         <!-- ***** Single Widget ***** -->
                         <div class="single-widget latest-video-widget mb-50">
@@ -1400,6 +1406,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/style.js') }}"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>

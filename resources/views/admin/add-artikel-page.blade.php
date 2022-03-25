@@ -15,14 +15,10 @@
                                 <select id="kategori" name="kategori" autocomplete="kategori-name"
                                     class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                     @foreach($kategori as $data)
-                                        <option value="{{$data->id_kategori}}">{{$data->nama_kategori }}</option>
+                                        <option value="{{$data->id_article}}">{{$data->nama}}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            @error('Username')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-
                         </div>
                         <div class="form-group mb-6">
                             <div class="col-span-6 my-3 sm:col-span-3">
@@ -30,7 +26,7 @@
                                 <select id="level" name="submenu" autocomplete="sub-kategori"
                                     class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                     @foreach($subkategori as $data_sub)
-                                       <option value="{{$data_sub->id_sub_kategori}}">{{$data_sub->sub_name_kategori}}</option>
+                                       <option value="{{$data_sub->id_sub_category}}">{{$data_sub->nama}}</option>
                                     @endforeach
                                 </select>
                             </div>

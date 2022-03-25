@@ -7,3 +7,21 @@
 .body {
     background-color: white;
 }
+
+@media (min-width:1200px) {
+    h1, h2, h3, h4, h5, h6{
+        font-size: initial;
+    }
+    .username {
+        display: inline-flex;
+    }
+    .image{
+        display: inline-flex;
+    }
+    .single-post-area .post-thumbnail-top img {
+        height:250px;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+}   

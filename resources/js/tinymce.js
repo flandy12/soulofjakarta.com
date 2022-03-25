@@ -1,4 +1,4 @@
-import tinymce from "tinymce"
+import tinymce from 'tinymce'
 tinymce.init({
     selector: '#exampleFormControlTextarea1',
     height: 500,

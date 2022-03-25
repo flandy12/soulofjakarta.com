@@ -13,17 +13,17 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_menu', function (Blueprint $table) {
-            $table->id('idmenu');
-            $table->string('namamenu');
-            $table->string('link');
-            $table->string('nourut');
-            $table->string('level');
-            $table->enum('footer',['Y','N'])->default('N');
-            $table->enum('spesial',['Y','N'])->default('N');
-            $table->enum('status',['Y','N'])->default('N');
-            $table->timestamps();
-        });
+        // Schema::create('tb_menu', function (Blueprint $table) {
+        //     $table->id('id_menu');
+        //     $table->string('nama');
+        //     $table->string('link');
+        //     $table->string('nourut');
+        //     $table->string('level');
+        //     $table->enum('footer',['Y','N'])->default('N');
+        //     $table->enum('spesial',['Y','N'])->default('N');
+        //     $table->enum('status',['Y','N'])->default('N');
+        //     $table->timestamps();
+        // });
     }
 
     /**
