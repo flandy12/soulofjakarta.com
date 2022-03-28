@@ -1,11 +1,11 @@
-@extends('layouts.index')
+@extends('layouts.navbar')
 @section('artikel-table')
 <div class="icon">
     <a href="/add-artikel">
         <x-icon-add /></a>
 </div>
-<main>
-    <div class="container mx-auto">
+<div class="flex-1 p-10 mt-16 ">
+    <div class="mx-auto container  rounded-sm">
         <div class="grid grid-cols-3 gap-4">
             <div class="col-span-2">
                 <!-- <a href="{{route('trash')}}"><div class="bg-red-500 p-2 my-2 w-28 rounded">Trash Artikel</div></a> -->
@@ -31,8 +31,8 @@
                             <div class="py-2 inline-block w-full sm:px-6 lg:px-8">
                                 <div class="overflow-x-auto h-3/6">
 
-                                    <table class="w-full h-3/6">
-                                        <thead class="border-b">
+                                    <table class="w-full text-sm text-center text-gray-500 bg-white h-3/6">
+                                        <thead class="border-b ">
                                             <tr>
                                                 <x-table.user>No</x-table.user>
                                                 <x-table.user>Title</x-table.user>
@@ -41,7 +41,7 @@
 
                                                 <!-- <x-table.user>Status</x-table.user> -->
                                                 <th scope="col"
-                                                    class="text-sm font-large text-gray-900 px-6 py-4 text-center">
+                                                    class="text-sm font-large px-6 py-4 text-center">
                                                     Action
                                                 </th>
                                             </tr>
@@ -49,7 +49,7 @@
                                         <tbody>
                                             @php($i = 1)
                                             @foreach($dbartikel as $artikel)
-                                            <tr class="bg-white border-b">
+                                            <tr class="border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-large text-gray-900">
                                                     {{$i++}}</td>
@@ -93,8 +93,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="grid grid-rows-2">
+           
+            <div class="w-full">
                 <!-- category -->
                 <div class="category">
                     <div class="success-delete" id="success-delete"></div>
@@ -103,14 +103,14 @@
                         <div class="flex flex-col sm:m-8">
                             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="py-2 inline-block w-full sm:px-6 lg:px-8">
-                                    <div class="overflow-x-auto text-lg lg:text-lg sm:text-xs py-3">
+                                    <div class="overflow-x-auto text-lg lg:text-lg sm:text-xs p-3">
                                         <form class="" method="POST" action="{{url('/add/category')}}"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="grid mb-6">
-                                                <div class="">
+                                                <div>
                                                     <label
-                                                        class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                                        class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
                                                         for="inline-full-name">
                                                         Category
                                                     </label>
@@ -124,7 +124,7 @@
                                                         @enderror
                                                 </div>
                                             </div>
-
+                                            @role('Administrator')
                                             <div class="md:flex md:items-center">
                                                 <div class="md:w-full">
                                                     <button
@@ -134,7 +134,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-
+                                            @endrole
                                         </form>
                                     </div>
                                 </div>
@@ -151,19 +151,19 @@
                         <div class="flex flex-col sm:m-8">
                             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="py-2 inline-block w-full sm:px-6 lg:px-8">
-                                    <div class="overflow-x-auto text-lg lg:text-lg block sm:text-xs py-3">
+                                    <div class="overflow-x-auto text-lg lg:text-lg block sm:text-xs p-3">
                                         <form class="" method="POST" action="{{url('/add/subcategory')}}"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="grid mb-6">
                                                 <div class="">
                                                     <label
-                                                        class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                                        class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
                                                         for="inline-full-name">
                                                         Sub Category
                                                     </label>
                                                 </div>
-                                                <div class="w-50">
+                                                <div>
                                                     <input
                                                         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                                         id="inline-full-name" type="text" name="nama">
@@ -173,7 +173,7 @@
                                                 </div>
 
                                             </div>
-
+                                            @role('Administrator')
                                             <div class="md:flex md:items-center">
                                                 <div class="md:w-full">
                                                     <button
@@ -183,7 +183,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-
+                                            @endrole
                                         </form>
                                     </div>
                                 </div>
@@ -192,7 +192,8 @@
                     </div>
                 </div>
             </div>
+         
         </div>
     </div>
-</main>
+</div>
 @endsection

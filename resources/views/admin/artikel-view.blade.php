@@ -1,4 +1,4 @@
-@extends('layouts.index')
+@extends('layouts.navbar')
 @section('add-artikel')
 <main>
     <div class="lg:py-6 bg-gray-100 mx-8 my-3">

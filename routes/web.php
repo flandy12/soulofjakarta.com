@@ -32,10 +32,10 @@ Route::get('x', [FrontEndController::class,'dataS']);
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
    
     Route::get('/dashboard', function () {
-        $user = User::paginate(5);
+        $users = User::paginate(5);
         $article = Article::paginate(5);
-        return view('dashboard', ['dbuser' => $user,'dbartikel'=>$article]);
-
+        $ads = Article::paginate(5);
+        return view('dashboard', ['dbuser' => $users,'dbartikel'=>$article,'dbAds'=>$ads]);
     })->name('dashboard');
 
     Route::get('/user',[UserController::class,'index'])->name('user');

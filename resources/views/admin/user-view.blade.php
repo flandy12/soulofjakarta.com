@@ -1,6 +1,6 @@
 @extends('layouts.navbar')
 @section('user-page')
-<div class="container mx-auto p-7">
+    <div class="flex-1 p-10 md:mt-16">
         <div>
             <div class="md:grid md:grid-cols-3 md:gap-6">
                 <div class="md:col-span-1">

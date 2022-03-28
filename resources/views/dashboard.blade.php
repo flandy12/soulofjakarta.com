@@ -4,7 +4,7 @@
     <!-- end sidbar -->
     @section('body-dashboard')
     <!-- strat content -->
-    <div class="bg-gray-100 flex-1 p-6 md:mt-16">
+    <div class=" flex-1 p-6 md:mt-16">
 
 
         <!-- General Report -->
@@ -28,8 +28,8 @@
 
                         <!-- bottom -->
                         <div class="mt-8">
-                            <h1 class="h5 num-4"></h1>
-                            <p>items sales</p>
+                            <h1 class="h5 num-4 text-gray-500">{{$dbAds->count()}}</h1>
+                            <p>total ads</p>
                         </div>
                         <!-- end bottom -->
 
@@ -57,8 +57,8 @@
 
                         <!-- bottom -->
                         <div class="mt-8">
-                            <h1 class="h5 num-4"></h1>
-                            <p>new orders</p>
+                            <h1 class="h5 num-4 text-gray-500">{{$dbartikel->count()}}</h1>
+                            <p>total article</p>
                         </div>
                         <!-- end bottom -->
 
@@ -86,8 +86,8 @@
 
                         <!-- bottom -->
                         <div class="mt-8">
-                            <h1 class="h5 num-4"></h1>
-                            <p>total Products</p>
+                            <h1 class="h5 num-4 text-gray-500">{{$dbuser->count()}}</h1>
+                            <p>total user</p>
                         </div>
                         <!-- end bottom -->
 
@@ -131,31 +131,24 @@
         <!-- End General Report -->
 
         <!-- strat Analytics -->
-        <div class="mt-6 grid grid-cols-2 gap-6 xl:grid-cols-1">
+        <div class="mt-6 grid grid-cols-2 gap-6 xl:grid-cols-1 ">
 
             <!-- update section -->
-            <div class="card bg-teal-400 border-teal-400 shadow-md text-white">
+            <div class="card border-teal-400 shadow-md text-gray-700">
                 <div class="card-body flex flex-row">
 
                     <!-- image -->
                     <div class="img-wrapper w-40 h-40 flex justify-center items-center">
-                        <img src="{{asset('imgbackend/happy.svg')}}" alt="img title">
+                        <img src="{{asset('storage/'.Auth::user()->profile_photo_path)}}" alt="img title">
                     </div>
                     <!-- end image -->
 
                     <!-- info -->
-                    <div class="py-2 ml-10">
-                        <h1 class="h6">Good Job, Mohamed!</h1>
-                        <p class="text-white text-xs">You've finished all of your tasks for this week.</p>
+                    <div class="py-2 ml-10 ">
+                        <h1 class="h6 text-gray-600">Welcome ,  {{ Auth::user()->name }}!</h1>
+                        <p class="text-gray-600 text-xs">You've finished all of your tasks for this week.</p>
 
-                        <ul class="mt-4">
-                            <li class="text-sm font-light"><i class="fad fa-check-double mr-2 mb-2"></i> Finish
-                                Dashboard Design</li>
-                            <li class="text-sm font-light"><i class="fad fa-check-double mr-2 mb-2"></i> Fix Issue
-                                #74</li>
-                            <li class="text-sm font-light"><i class="fad fa-check-double mr-2"></i> Publish version
-                                1.0.6</li>
-                        </ul>
+                        
                     </div>
                     <!-- end info -->
 
@@ -209,64 +202,6 @@
         </div>
         <!-- end Analytics -->
 
-        <!-- Sales Overview -->
-        <div class="card mt-6">
-
-            <!-- header -->
-            <div class="card-header flex flex-row justify-between">
-                <h1 class="h6">Sales Overview</h1>
-
-                <div class="flex flex-row justify-center items-center">
-
-                    <a href="">
-                        <i class="fad fa-chevron-double-down mr-6"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fad fa-ellipsis-v"></i>
-                    </a>
-
-                </div>
-
-            </div>
-            <!-- end header -->
-
-            <!-- body -->
-            <div class="card-body grid grid-cols-2 gap-6 lg:grid-cols-1">
-
-                <div class="p-8">
-                    <h1 class="h2">5,337</h1>
-                    <p class="text-black font-medium">Sales this month</p>
-
-                    <div class="mt-20 mb-2 flex items-center">
-                        <div class="py-1 px-3 rounded bg-green-200 text-green-900 mr-3">
-                            <i class="fa fa-caret-up"></i>
-                        </div>
-                        <p class="text-black"><span class="num-2 text-green-400"></span><span class="text-green-400">%
-                                more sales</span> in comparison to last month.</p>
-                    </div>
-
-                    <div class="flex items-center">
-                        <div class="py-1 px-3 rounded bg-red-200 text-red-900 mr-3">
-                            <i class="fa fa-caret-down"></i>
-                        </div>
-                        <p class="text-black"><span class="num-2 text-red-400"></span><span class="text-red-400">%
-                                revenue per sale</span> in comparison to last month.</p>
-                    </div>
-
-                    <a href="#" class="btn-shadow mt-6">view details</a>
-
-                </div>
-
-                <div class="">
-                    <div id="sealsOverview"></div>
-                </div>
-
-            </div>
-            <!-- end body -->
-
-        </div>
-        <!-- end Sales Overview -->
 
         <!-- start numbers -->
         <div class="grid grid-cols-5 gap-6 xl:grid-cols-2">
@@ -365,70 +300,36 @@
 
             <!-- Browser Stats -->
             <div class="card">
-                <div class="card-header">Browser Stats</div>
+                <div class="card-header">User All</div>
 
+                @foreach($dbuser as $user)
                 <!-- brawser -->
                 <div class="p-6 flex flex-row justify-between items-center text-gray-600 border-b">
                     <div class="flex items-center">
                         <i class="fab fa-chrome mr-4"></i>
-                        <h1>google chrome</h1>
+                        <h1 class="text-gray-600">{{$user->name}}</h1>
                     </div>
                     <div>
-                        <span class="num-2"></span>%
+                        <span class="num-2"></span>{{$user->email}}
                     </div>
                 </div>
                 <!-- end brawser -->
-
-                <!-- brawser -->
-                <div class="p-6 flex flex-row justify-between items-center text-gray-600 border-b">
-                    <div class="flex items-center">
-                        <i class="fab fa-firefox mr-4"></i>
-                        <h1>firefox</h1>
-                    </div>
-                    <div>
-                        <span class="num-2"></span>%
-                    </div>
-                </div>
-                <!-- end brawser -->
-
-                <!-- brawser -->
-                <div class="p-6 flex flex-row justify-between items-center text-gray-600 border-b">
-                    <div class="flex items-center">
-                        <i class="fab fa-internet-explorer mr-4"></i>
-                        <h1>internet explorer</h1>
-                    </div>
-                    <div>
-                        <span class="num-2"></span>%
-                    </div>
-                </div>
-                <!-- end brawser -->
-
-                <!-- brawser -->
-                <div class="p-6 flex flex-row justify-between items-center text-gray-600 border-b-0">
-                    <div class="flex items-center">
-                        <i class="fab fa-safari mr-4"></i>
-                        <h1>safari</h1>
-                    </div>
-                    <div>
-                        <span class="num-2"></span>%
-                    </div>
-                </div>
-                <!-- end brawser -->
+                @endforeach
 
             </div>
             <!-- end Browser Stats -->
 
             <!-- Start Recent Sales -->
             <div class="card col-span-2 xl:col-span-1">
-                <div class="card-header">Recent Sales</div>
+                <div class="card-header">Article All</div>
 
                 <table class="table-auto w-full text-left">
                     <thead>
                         <tr>
                             <th class="px-4 py-2 border-r"></th>
-                            <th class="px-4 py-2 border-r">product</th>
-                            <th class="px-4 py-2 border-r">price</th>
-                            <th class="px-4 py-2">date</th>
+                            <th class="px-4 py-2 border-r">Title</th>
+                            <th class="px-4 py-2 border-r">Created</th>
+                            <th class="px-4 py-2">Upload</th>
                         </tr>
                     </thead>
                     <tbody class="text-gray-600">

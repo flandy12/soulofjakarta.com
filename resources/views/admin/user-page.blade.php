@@ -1,9 +1,9 @@
 @extends('layouts.navbar')
 @section('user-table')
-<div class=" flex-1 p-10 md:mt-16 ">
+<div class="flex-1 p-10 md:mt-16 ">
     <div class="mx-auto container  rounded-sm">
         @if(session('status'))
-        <div class="bg-emerald-400 border border-teal-400 text-white px-4 py-3 rounded relative my-3" role="alert"
+        <div class="bg-emerald-600 border border-teal-400 text-white px-4 py-3 rounded relative my-3" role="alert"
             id="body-alert">
             <strong class="font-bold">{{ session('status')}}</strong>
             <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
@@ -35,52 +35,58 @@
                 <thead class="text-xs text-gray-700 uppercase bg-slate-600">
                     <tr>
                         <th scope="col" class="px-6 py-3">
-                           Image
+                            Image
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Username
                         </th>
                         <th scope="col" class="px-6 py-3">
-                           Email
+                            Email
                         </th>
                         <th scope="col" class="px-6 py-3">
-                        Gender
+                            Gender
                         </th>
                         <th scope="col" class="px-6 py-3">
-                        Level
+                            Level
                         </th>
+                        @can('edit user')
                         <th scope="col" class="px-6 py-3">
-                        Edit
+                            Edit
                         </th>
-                        <th scope="col" class="px-6 py-3">
-                            <span class="sr-only">Edit</span>
-                        </th>
+                        @endcan
+                       
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($dbuser as $user)
-                <tr
-                        class=" border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    @foreach($dbuser as $user)
+                    <tr class="border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                             <img src="{{asset('storage/'. $user->profile_photo_path)}}" alt="" srcset="" class="w-10">
                         </th>
                         <td class="px-6 py-4">
-                        {{$user->name}}
+                            {{$user->name}}
                         </td>
                         <td class="px-6 py-4">
-                        {{$user->email}}
+                            {{$user->email}}
                         <td class="px-6 py-4">
-                        {{$user->gender}}
+                            {{$user->gender}}
                         </td>
                         <td class="px-6 py-4">
-                        {{$user->level}}
+                            {{$user->level}}
                         </td>
                         </td>
                         <td class="px-6 py-4">
-                        {{$user->email}}
+                            <div class="flex space-x-2 justify-center items-center mr-3">
+                                @can('edit user')
+                                <a href="edit-user/{{$user->id}}" class="hover:text-green-600">Edit</a>
+                                @endcan
+                                @can('delete user')
+                                <a href="delete-user/{{$user->id}}" class="hover:text-red-600">Delete</a>
+                                @endcan
+                            </div>
                         </td>
                     </tr>
-                @endforeach
+                    @endforeach
                 </tbody>
             </table>
         </div>
