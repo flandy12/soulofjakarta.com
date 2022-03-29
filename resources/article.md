@@ -652,3 +652,74 @@
    @php($i = 1)
                 @foreach($dbuser as $user)
     
+
+
+    //detail page
+
+                <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-12 col-lg-8 col-xl-7">
+                    <div class="post-details-content">
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+
+                            <!-- Post Content -->
+                            <div class="post-content mt-0">
+                            <a href="#" class="post-cata cata-sm cata-danger">{{$data[0]->nama}}</a>
+                                <a href="single-post.html" class="post-title mb-2">{{$data[0]->judul}}</a>
+
+                                <div class="d-flex justify-content-between mb-30">
+                               
+                                    <div class="post-meta d-flex align-items-center">
+                                        <a href="#" class="post-author">{{$data[0]->penulis}}</a>
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        <a href="#" class="post-date">{{date('d/M/y',strtotime($data[0]->created_at))}}</a>
+                                    </div>
+                                    <div class="post-meta d-flex">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
+                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                           <?php echo $data[0]->isi?>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Widget -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="sidebar-area">
+
+                        <!-- ***** Single Widget ***** -->
+                        <div class="single-widget share-post-widget mb-50">
+                            <p>Share This Post</p>
+                            <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                            <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i> Google+</a>
+                        </div>
+
+                        <!-- ***** Single Widget ***** -->
+                        <div class="single-widget p-0 author-widget">
+                            <div class="p-4">
+                                <img class="author-avatar content-center" src="{{asset('storage/'.$profile)}}" alt="">
+                                <a href="#" class="author-name">{{$data[0]->penulis}}</a>
+                                <div class="author-social-info">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            </div>
+
+                            <div class="authors--meta-data d-flex">
+                                <p>Posted<span class="counter">80</span></p>
+                                <p>Comments<span class="counter">230</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            

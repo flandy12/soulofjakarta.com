@@ -8,23 +8,7 @@
 @import 'owl.carousel.min.css';
 @import 'animate.css';
 @import 'magnific-popup.css'; */
-#icon {
-  height: 60px;
-  border-radius: 100%;
-  width: 60px;
-  position: absolute;
-  right: 50px;
-  bottom: 20px;
-  display: flex;
-  color: rgba(65, 63, 63, 0.603);
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 181, 43);
-  box-shadow: rgba(146, 144, 144, 0.288) 0 0 10px 0;
-}
-#icon:hover{
-  color: white;
-}
+
 * {
   margin: 0;
   padding: 0; }

@@ -22739,9 +22739,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/backend.css":
+/***/ "./resources/css/classy-nav.css":
+/*!**************************************!*\
+  !*** ./resources/css/classy-nav.css ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/bootstrap.css":
+/*!*************************************!*\
+  !*** ./resources/css/bootstrap.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/animate.css":
 /*!***********************************!*\
-  !*** ./resources/css/backend.css ***!
+  !*** ./resources/css/animate.css ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -22765,10 +22791,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/bootstrap.css":
-/*!*************************************!*\
-  !*** ./resources/css/bootstrap.css ***!
-  \*************************************/
+/***/ "./resources/css/backend.css":
+/*!***********************************!*\
+  !*** ./resources/css/backend.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22804,10 +22830,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/classy-nav.css":
-/*!**************************************!*\
-  !*** ./resources/css/classy-nav.css ***!
-  \**************************************/
+/***/ "./resources/css/frontend.css":
+/*!************************************!*\
+  !*** ./resources/css/frontend.css ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23146,9 +23172,9 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/main": 0,
-/******/ 			"css/style": 0,
 /******/ 			"css/backend": 0,
-/******/ 			"css/dashboard": 0,
+/******/ 			"css/bootstrap": 0,
+/******/ 			"css/front": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -23199,14 +23225,16 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/bootstrap.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/style.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/magnific-popup.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/classy-nav.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/backend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/backend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/magnific-popup.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/frontend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/classy-nav.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/bootstrap.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/main","css/backend","css/bootstrap","css/front","css/app"], () => (__webpack_require__("./resources/css/animate.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

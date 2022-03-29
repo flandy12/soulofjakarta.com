@@ -5,8 +5,8 @@
     "/js/style.js": "/js/style.js",
     "/js/plugins.js": "/js/plugins.js",
     "/css/main.css": "/css/main.css",
-    "/css/style.css": "/css/style.css",
     "/css/backend.css": "/css/backend.css",
-    "/css/dashboard.css": "/css/dashboard.css",
+    "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/front.css": "/css/front.css",
     "/css/app.css": "/css/app.css"
 }

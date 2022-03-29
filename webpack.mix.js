@@ -21,12 +21,20 @@ mix.js('resources/js/app.js', 'public/js')
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    // .postCss('resources/css/bootstrap.css', 'public/css/style.css')
-    .postCss('resources/css/style.css', 'public/css/dashboard.css')
+ 
+    //backend style
+    .postCss('resources/css/backend.css', 'public/css/')
+
+    //fronteEND
+    // .postCss('resources/css/owl.carousel.min.css', 'public/css/main.css')
+    .postCss('resources/css/style.css', 'public/css/main.css')
     .postCss('resources/css/magnific-popup.css', 'public/css/main.css')
-    .postCss('resources/css/classy-nav.css', 'public/css/main.css')
+    .postCss('resources/css/frontend.css', 'public/css/front.css')
     .postCss('resources/css/font-awesome.min.css', 'public/css/main.css')
-    .postCss('resources/css/backend.css', 'public/css/');
+    .postCss('resources/css/classy-nav.css', 'public/css/main.css')
+    .postCss('resources/css/bootstrap.css', 'public/css/bootstrap.css')
+    .postCss('resources/css/animate.css', 'public/css/main.css')
+  
 if (mix.inProduction()) {
     mix.version();
 }

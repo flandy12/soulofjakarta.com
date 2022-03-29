@@ -1,15 +1,13 @@
 /* Master Stylesheet */
 /* :: 1.0 Import Fonts */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"); */
 /* :: 2.0 Import All CSS Plugins */
-@import url(css/bootstrap.min.css);
-@import url(css/classy-nav.css);
-@import url(css/font-awesome.min.css);
-@import url(css/themify-icons.css);
-@import url(css/owl.carousel.min.css);
-@import url(css/animate.css);
-@import url(css/magnific-popup.css);
-
+/* @import 'classy-nav.css';
+@import 'font-awesome.min.css';
+@import 'themify-icons.css';
+@import 'owl.carousel.min.css';
+@import 'animate.css';
+@import 'magnific-popup.css'; */
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +16,12 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    background-color: #222627;
+    background-color: #0b0c0c;
     color: #a6a6a6;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -45,8 +47,6 @@ p {
 a,
 a:hover,
 a:focus {
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     text-decoration: none;
     outline: 0 solid transparent;
@@ -260,27 +260,42 @@ input:focus {
     height: 11px;
     border-radius: 50%;
     background: #ffffff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
 .lds-ellipsis div:nth-child(1) {
     left: 6px;
-    animation: lds-ellipsis1 0.6s infinite;
+    -webkit-animation: lds-ellipsis1 0.6s infinite;
+            animation: lds-ellipsis1 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(2) {
     left: 6px;
-    animation: lds-ellipsis2 0.6s infinite;
+    -webkit-animation: lds-ellipsis2 0.6s infinite;
+            animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(3) {
     left: 26px;
-    animation: lds-ellipsis2 0.6s infinite;
+    -webkit-animation: lds-ellipsis2 0.6s infinite;
+            animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(4) {
     left: 45px;
-    animation: lds-ellipsis3 0.6s infinite;
+    -webkit-animation: lds-ellipsis3 0.6s infinite;
+            animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes lds-ellipsis1 {
@@ -293,6 +308,16 @@ input:focus {
     }
 }
 
+@-webkit-keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
 @keyframes lds-ellipsis3 {
     0% {
         transform: scale(1);
@@ -300,6 +325,16 @@ input:focus {
 
     100% {
         transform: scale(0);
+    }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(19px, 0);
     }
 }
 
@@ -376,8 +411,6 @@ input:focus {
     text-align: center;
     width: 40px;
     border-radius: 0%;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -400,8 +433,6 @@ input:focus {
 
 .vizew-btn {
     background-color: #db4437;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     position: relative;
     z-index: 1;
@@ -602,8 +633,6 @@ input:focus {
 }
 
 .top-header-area .top-search-area form input {
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     width: 250px;
     height: 50px;
@@ -665,8 +694,6 @@ input:focus {
     cursor: pointer;
     color: #ffffff;
     padding: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -705,7 +732,7 @@ input:focus {
 }
 
 .header-area .vizew-main-menu .classy-nav-container {
-    background-color: #db4437;
+    background-color: #fa8b0b;
 }
 
 .header-area .vizew-main-menu .classy-navbar {
@@ -891,13 +918,23 @@ input:focus {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+
 .vizew-nav-tab {
     position: relative;
     z-index: 1;
-    background-color: #393c3d;
+    background-color: #7476771c;
     width: 100%;
     height: 500px;
     overflow-x: hidden;
+
     overflow-y: scroll;
 }
 
@@ -925,9 +962,9 @@ input:focus {
     border-left: 4px solid transparent;
 }
 
-.vizew-nav-tab .nav-link.active {
-    background-color: #4d5051;
-    border-left-color: #db4437;
+.vizew-nav-tab .nav-link:hover {
+    /* opacity: 0.5; */
+    border-left-color: #ff9100;
 }
 
 .vizew-breadcrumb {
@@ -1017,8 +1054,6 @@ input:focus {
 .single-blog-post .post-thumbnail {
     position: relative;
     z-index: 1;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100px;
     flex: 0 0 100px;
     max-width: 100px;
     width: 100px;
@@ -1026,8 +1061,6 @@ input:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-blog-post .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -1036,8 +1069,6 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-blog-post .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -1046,8 +1077,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .single-blog-post .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -1070,6 +1099,7 @@ input:focus {
     display: block;
     font-size: 16px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1113,8 +1143,6 @@ input:focus {
 .single-blog-post.style-2 .post-thumbnail {
     position: relative;
     z-index: 1;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 110px;
     flex: 0 0 110px;
     max-width: 110px;
     width: 110px;
@@ -1122,8 +1150,6 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-blog-post.style-2 .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -1132,8 +1158,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .single-blog-post.style-2 .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -1190,8 +1214,6 @@ input:focus {
 .single-blog-post.style-3 .post-thumbnail {
     position: relative;
     z-index: 1;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 140px;
     flex: 0 0 140px;
     max-width: 140px;
     width: 140px;
@@ -1199,8 +1221,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .single-blog-post.style-3 .post-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100px;
         flex: 0 0 100px;
         max-width: 100px;
         width: 100px;
@@ -1267,7 +1287,6 @@ input:focus {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 90%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 90%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -1323,6 +1342,7 @@ input:focus {
     display: block;
     color: #ffffff;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1461,6 +1481,7 @@ input:focus {
     color: #ffffff;
     margin-bottom: 15px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1483,7 +1504,7 @@ input:focus {
 
 .single-post-area .post-content .post-title:hover,
 .single-post-area .post-content .post-title:focus {
-    color: #db4437;
+    color: #db9937;
 }
 
 .single-post-area .post-content .post-meta a {
@@ -1541,8 +1562,6 @@ input:focus {
     color: #ffffff;
     text-align: center;
     line-height: 30px;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     position: absolute;
     top: -88px;
@@ -1770,8 +1789,6 @@ input:focus {
 }
 
 .post-details-content .post-share-info {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 90px;
     flex: 0 0 90px;
     max-width: 90px;
     width: 90px;
@@ -1779,8 +1796,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .post-details-content .post-share-info {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 40px;
         flex: 0 0 40px;
         max-width: 40px;
         width: 40px;
@@ -1927,10 +1942,7 @@ input:focus {
 }
 
 .post-tags ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1960,8 +1972,6 @@ input:focus {
 }
 
 .vizew-post-author .post-author-thumb {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 120px;
     flex: 0 0 120px;
     max-width: 120px;
     width: 120px;
@@ -1969,8 +1979,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .vizew-post-author .post-author-thumb {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -2026,8 +2034,6 @@ input:focus {
 }
 
 .comment_area .comment-content .comment-author {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 70px;
     flex: 0 0 70px;
     min-width: 70px;
     margin-right: 20px;
@@ -2041,8 +2047,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .comment_area .comment-content .comment-author {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 40px;
         flex: 0 0 40px;
         min-width: 40px;
         margin-right: 10px;
@@ -2128,8 +2132,6 @@ input:focus {
 
 .pager-article {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     position: relative;
     z-index: 1;
@@ -2164,16 +2166,12 @@ input:focus {
     top: 50%;
     left: 0;
     width: 60px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .vizew-pager-prev p,
 .vizew-pager-next p {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     cursor: pointer;
     position: absolute;
@@ -2190,8 +2188,6 @@ input:focus {
     color: #ffffff;
     top: 41%;
     margin-bottom: 0;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     left: -105px;
     z-index: 1;
@@ -2283,11 +2279,7 @@ input:focus {
 }
 
 .followers-widget {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -2399,8 +2391,6 @@ input:focus {
 }
 
 .single-youtube-channel .youtube-channel-thumbnail {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 110px;
     flex: 0 0 110px;
     max-width: 110px;
     width: 110px;
@@ -2408,8 +2398,6 @@ input:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-youtube-channel .youtube-channel-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -2418,8 +2406,6 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-youtube-channel .youtube-channel-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 70px;
         flex: 0 0 70px;
         max-width: 70px;
         width: 70px;
@@ -2428,8 +2414,6 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .single-youtube-channel .youtube-channel-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
         flex: 0 0 80px;
         max-width: 80px;
         width: 80px;
@@ -2569,8 +2553,6 @@ input:focus {
 }
 
 .author-widget .authors--meta-data p {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
     width: 50%;
@@ -2721,8 +2703,6 @@ input:focus {
     right: 0;
     border: none;
     cursor: pointer;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
 
@@ -2787,21 +2767,14 @@ input:focus {
 }
 
 .footer-area .copywrite-area .footer-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 767px) {
     .footer-area .copywrite-area .footer-nav ul {
         margin-top: 10px;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 }
@@ -2877,8 +2850,6 @@ input:focus {
     margin-bottom: 15px;
     padding: 10px 30px;
     color: #ffffff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
     transition-duration: 500ms;
     border: none;
     border-radius: 0;
@@ -2898,5 +2869,3 @@ select.form-control {
 textarea.form-control {
     height: 140px;
 }
-
-/*# sourceMappingURL=style.css.map */

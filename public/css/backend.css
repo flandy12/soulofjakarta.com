@@ -8,7 +8,23 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+ #icon {
+  height: 60px;
+  border-radius: 100%;
+  width: 60px;
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  display: flex;
+  color: rgba(65, 63, 63, 0.603);
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 181, 43);
+  box-shadow: rgba(146, 144, 144, 0.288) 0 0 10px 0;
+}
+#icon:hover{
+  color: white;
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -482,7 +498,7 @@ textarea {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #222324;
+  color: #a0aec0;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
@@ -491,7 +507,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 input::placeholder,
 textarea::placeholder {
-  color: #000000;
+  color: #a0aec0;
 }
 
 button,

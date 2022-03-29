@@ -119,7 +119,7 @@ class ArticleController extends Controller
         // return dd($data);
         $data_input = new Article($data);
         $data_input->save();
-        return redirect('artikel');
+        return redirect('article');
     }
 
     public function show($id)

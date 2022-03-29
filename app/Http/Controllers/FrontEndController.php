@@ -16,8 +16,11 @@ class FrontEndController extends Controller
         $FeatureArticle = Article::first();
         $HeadArticle = Article::latest()->limit(3)->get();
         $trending = Article::latest()->limit(3)->get();
-        
-        return view('index',compact('FeatureArticle','HeadArticle','trending'));
+        $Chenel = Article::all();
+        $Sport = Article::limit(2)->get();
+        $Business = Article::latest()->limit(2)->get();
+        $LatesNews = Article::limit(4)->get();
+        return view('index',compact('FeatureArticle','HeadArticle','trending','Chenel','Sport','Business','LatesNews'));
     }   
     public function Data(){
         $HeadArticle = Article::latest()->limit(3)->get();   
