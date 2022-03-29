@@ -1,6 +1,9 @@
 @extends('layouts.navbar')
 @section('user-table')
-<div class="flex-1 p-10 md:mt-16 ">
+<a href="/add-user">
+    <span id="icon">add</span>
+</a>
+<div class="flex-1 p-8 md:mt-16 ">
     <div class="mx-auto container  rounded-sm">
         @if(session('status'))
         <div class="bg-emerald-600 border border-teal-400 text-white px-4 py-3 rounded relative my-3" role="alert"

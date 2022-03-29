@@ -16,13 +16,13 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/active.js', 'public/js')
     .js('resources/js/style.js', 'public/js')
     .js('resources/js/plugins/plugins.js', 'public/js')
-    .copy('resources/image','public/images/')
+    // .copy('resources/image','public/images/')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .postCss('resources/css/bootstrap.css', 'public/css/style.css')
-    .postCss('resources/css/style.css', 'public/css/main.css')
+    // .postCss('resources/css/bootstrap.css', 'public/css/style.css')
+    .postCss('resources/css/style.css', 'public/css/dashboard.css')
     .postCss('resources/css/magnific-popup.css', 'public/css/main.css')
     .postCss('resources/css/classy-nav.css', 'public/css/main.css')
     .postCss('resources/css/font-awesome.min.css', 'public/css/main.css')

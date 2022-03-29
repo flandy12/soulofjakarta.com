@@ -23148,6 +23148,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/main": 0,
 /******/ 			"css/style": 0,
 /******/ 			"css/backend": 0,
+/******/ 			"css/dashboard": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -23198,14 +23199,14 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/bootstrap.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/style.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/magnific-popup.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/classy-nav.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/app"], () => (__webpack_require__("./resources/css/backend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/bootstrap.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/magnific-popup.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/classy-nav.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/main","css/style","css/backend","css/dashboard","css/app"], () => (__webpack_require__("./resources/css/backend.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

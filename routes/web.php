@@ -84,7 +84,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get('/restote-artikel/{id}',[ArticleController::class,'restore']);
     Route::get('/trash-artikel',[ArticleController      ::class,'trash'])->name('trash');
 
-
     Route::post('/add/category',[CategoryController::class,'store']);
     Route::post('/add/subcategory',[SubCategoryController::class,'store']);
 

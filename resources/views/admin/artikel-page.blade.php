@@ -1,11 +1,12 @@
 @extends('layouts.navbar')
 @section('artikel-table')
-<div class="icon">
-    <a href="/add-artikel">
-        <x-icon-add /></a>
-</div>
-<div class="flex-1 p-10 mt-16 ">
-    <div class="mx-auto container  rounded-sm">
+
+<a href="/add-artikel">
+    <span id="icon">add</span>
+</a>
+<div class="flex-1 p-8 mt-10 ">
+
+    <div class="mx-auto container rounded-sm">
         <div class="grid grid-cols-3 gap-4">
             <div class="col-span-2">
                 <!-- <a href="{{route('trash')}}"><div class="bg-red-500 p-2 my-2 w-28 rounded">Trash Artikel</div></a> -->
@@ -40,8 +41,7 @@
                                                 <x-table.user>Post</x-table.user>
 
                                                 <!-- <x-table.user>Status</x-table.user> -->
-                                                <th scope="col"
-                                                    class="text-sm font-large px-6 py-4 text-center">
+                                                <th scope="col" class="text-sm font-large px-6 py-4 text-center">
                                                     Action
                                                 </th>
                                             </tr>
@@ -49,7 +49,8 @@
                                         <tbody>
                                             @php($i = 1)
                                             @foreach($dbartikel as $artikel)
-                                            <tr class="border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                            <tr
+                                                class="border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm font-large text-gray-900">
                                                     {{$i++}}</td>
@@ -73,10 +74,9 @@
                                                         </a>
 
                                                         <a href="{{url('/delete-artikel/'.$artikel->id)}}">
-                                                               <button type="button"
-                                                                    class="inline-block btn-hps px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
-                                                                    >Delete
-                                                                </button>
+                                                            <button type="button"
+                                                                class="inline-block btn-hps px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">Delete
+                                                            </button>
                                                         </a>
 
                                                     </div>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="w-full">
                 <!-- category -->
                 <div class="category">
@@ -109,8 +109,7 @@
                                             @csrf
                                             <div class="grid mb-6">
                                                 <div>
-                                                    <label
-                                                        class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
+                                                    <label class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
                                                         for="inline-full-name">
                                                         Category
                                                     </label>
@@ -119,9 +118,9 @@
                                                     <input
                                                         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                                         id="inline-full-name" type="text" name="nama_category">
-                                                        @error('nama_category')
-                                                        <p class="text-red-500 font-bold">{{ $message }}</p>    
-                                                        @enderror
+                                                    @error('nama_category')
+                                                    <p class="text-red-500 font-bold">{{ $message }}</p>
+                                                    @enderror
                                                 </div>
                                             </div>
                                             @role('Administrator')
@@ -157,8 +156,7 @@
                                             @csrf
                                             <div class="grid mb-6">
                                                 <div class="">
-                                                    <label
-                                                        class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
+                                                    <label class="block text-gray-500 md:text-right mb-1 md:mb-0 pr-4"
                                                         for="inline-full-name">
                                                         Sub Category
                                                     </label>
@@ -192,8 +190,10 @@
                     </div>
                 </div>
             </div>
-         
+
         </div>
     </div>
+
 </div>
+
 @endsection

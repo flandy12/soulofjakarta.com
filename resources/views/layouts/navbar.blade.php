@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="
     {{asset('css/backend.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
     <title>Welcome To Cleopatra</title>
 </head>
 
@@ -21,7 +22,7 @@
 
         <!-- logo -->
         <div class="flex-none w-72 flex flex-row items-center">
-            <img src="{{asset('images/logo.svg')}}" class="w-60 flex-none">
+            <img src="{{asset('images/logo.svg')}}" class="w-40 flex-none">
 
 
             <button id="sliderBtn" class="flex-none text-right text-gray-900 hidden md:block">
@@ -359,9 +360,11 @@
     <!-- end navbar -->
 
     <!-- strat wrapper -->
-    <div class="h-screen flex flex-row flex-wrap">
+    <div class="h-screen flex flex-row flex-wrap text-black">
         <div id="sideBar"
             class="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 md:-ml-64 md:fixed md:top-0 md:z-30 md:h-screen md:shadow-xl animated faster">
+
+        
 
             <!-- sidebar content -->
             <div class="flex flex-col">
@@ -450,6 +453,7 @@
         @yield('user-table')
         @yield('user-page')
         @yield('artikel-table')
+        @yield('add-artikel')
     </div>
 
     <!-- end wrapper -->

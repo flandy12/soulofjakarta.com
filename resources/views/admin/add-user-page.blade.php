@@ -1,5 +1,8 @@
 @extends('layouts.navbar')
 @section('body-dashboard')
+<a href="/add-user">
+    <span id="icon">add</span>
+</a>
 <main>
     <div class="lg:py-6 bg-gray-100 mx-8 my-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

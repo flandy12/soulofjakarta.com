@@ -482,7 +482,7 @@ textarea {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #a0aec0;
+  color: #222324;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
@@ -491,7 +491,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 input::placeholder,
 textarea::placeholder {
-  color: #a0aec0;
+  color: #000000;
 }
 
 button,
