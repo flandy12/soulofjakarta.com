@@ -59,7 +59,7 @@ class ArticleController extends Controller
             'Tag' =>'required',
             'Tempat' =>'required',
             'Sumber_Gambar' =>'required',
-            'Image_Artikel' =>'required|image|mimes:jpg,png,jpeg|max:2048',
+            'Image_Artikel' =>'required|image|mimes:jpg,png,jpeg',
         ],$message);
         
          /** TIME Management */

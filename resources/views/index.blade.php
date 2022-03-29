@@ -12,14 +12,11 @@
     <title>SoulOfJakarta</title>
 
     <!-- Favicon -->
+    <link rel="stylesheet" href="{{asset('css/main.css')}}"> 
+     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}"> 
      <link rel="stylesheet" href="{{asset('css/front.css')}}">
-     <link rel="stylesheet" href="{{asset('css/main.css')}}"> 
+
      <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-    
-    <!-- <link rel="stylesheet" href="{{asset('css/dashboard.css')}}"> -->
-    <!-- Stylesheet -->
-    <!-- <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
-    <link rel="stylesheet" href="{{asset('css/main.css')}}"> -->
 </head>
 
 <body>
@@ -34,7 +31,7 @@
     </div> -->
 
     <!-- ##### Header Area Start ##### -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <img src="{{asset('images/logo.svg')}}" alt="" class="navbar-brand" width="200px">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -241,8 +238,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
+                                
                             </div>
                         </div>
                         <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
@@ -425,8 +421,7 @@
                         <div class="post-thumbnail-top">
                             <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt="" class="single-feature-post-trending">
 
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
+                          
                         </div>
 
                         <!-- Post Content -->
@@ -484,8 +479,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
+                              
                             </div>  
                         </div>
 
@@ -497,8 +491,7 @@
                                     <div class="post-thumbnail">
                                         <img src="{{asset('storage/'.$trending[0]->gambar_besar)}}" alt="">
 
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
+                                    
                                     </div>
 
                                     <!-- Post Content -->
@@ -522,8 +515,7 @@
                                     <div class="post-thumbnail">
                                         <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
 
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
+                                       
                                     </div>
 
                                     <!-- Post Content -->
@@ -557,8 +549,7 @@
                                         <div class="post-thumbnail">
                                             <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
 
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
+                                          
                                         </div>
 
                                         <!-- Post Content -->
@@ -590,11 +581,8 @@
                                     <!-- Single Blog Post -->
                                     <div class="single-post-area">
                                         <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
+                                        <div class="post-thumbnail ">
                                             <img src="{{asset('storage/'.$Chenel[2]->gambar_besar)}}" alt="">
-
-                                            <!-- Video Duration -->
-                                            <span class="video-duration">05.03</span>
                                         </div>
 
                                         <!-- Post Content -->

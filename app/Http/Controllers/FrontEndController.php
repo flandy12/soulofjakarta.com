@@ -14,7 +14,7 @@ class FrontEndController extends Controller
 {
     public function index(){
         $FeatureArticle = Article::first();
-        $HeadArticle = Article::latest()->limit(3)->get();
+        $HeadArticle = Article::latest()->limit(5)->get();
         $trending = Article::latest()->limit(3)->get();
         $Chenel = Article::all();
         $Sport = Article::limit(2)->get();

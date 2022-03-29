@@ -17,6 +17,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
      <link rel="stylesheet" href="{{asset('css/main.css')}}"> 
+     <link rel="stylesheet" href="{{asset('css/app.css')}}"> 
      <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 </head>
 
