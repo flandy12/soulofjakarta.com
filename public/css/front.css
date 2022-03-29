@@ -38,7 +38,7 @@ h6 {
 
 p {
     font-family: "Roboto", sans-serif;
-    color: #a6a6a6;
+    color: #a4a4a4;
     font-size: 14px;
     line-height: 2;
     font-weight: 400;
@@ -389,6 +389,7 @@ input:focus {
 
 .section-heading.style-2 {
     text-align: left;
+    margin-top: 50px;
 }
 
 .section-heading.style-2 .line {
@@ -1209,6 +1210,7 @@ input:focus {
 }
 
 .single-blog-post.style-3 {
+    background-color: white;
     margin-bottom: 0;
 }
 
@@ -1219,7 +1221,12 @@ input:focus {
     max-width: 140px;
     width: 140px;
 }
-
+.single-blog-post.style-3 .post-thumbnail img{
+    height: 163px;
+    max-height: 163px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
 @media only screen and (max-width: 767px) {
     .single-blog-post.style-3 .post-thumbnail {
         flex: 0 0 100px;
@@ -1229,7 +1236,8 @@ input:focus {
 }
 
 .single-blog-post.style-3 .post-content .post-title {
-    color: #ffffff;
+    color: #444343;
+    padding: 5px 10px ;
     margin-bottom: 15px;
     display: block;
     font-weight: 700;
@@ -1436,15 +1444,27 @@ input:focus {
 }
 
 .single-post-area {
+  
     position: relative;
     z-index: 1;
+}
+.trending-posts-area .single-post-area {
+    box-shadow: 0 0 10px 0 rgba(143, 142, 142, 0.39);
+    position: relative;
+    color: rgba(0, 0, 0, 0.664);
+    z-index: 1;
+}
+.trending-posts-area .single-post-area .post-thumbnail-top img{
+    width: 100%;
 }
 
 .single-post-area .post-thumbnail {
     position: relative;
     z-index: 1;
 }
-
+.single-post-area .post-thumbnail img{
+    width: 100%;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-post-area .post-thumbnail {
         margin-bottom: 30px;
@@ -1474,12 +1494,13 @@ input:focus {
 .single-post-area .post-content {
     position: relative;
     z-index: 1;
+    padding: 20px;
     margin-top: 20px;
 }
 
 .single-post-area .post-content .post-title {
     display: block;
-    color: #ffffff;
+    color: #d4b56b;
     margin-bottom: 15px;
     font-size: 20px;
     text-decoration: none;
@@ -1505,7 +1526,7 @@ input:focus {
 
 .single-post-area .post-content .post-title:hover,
 .single-post-area .post-content .post-title:focus {
-    color: #db9937;
+    color: #ffffff;
 }
 
 .single-post-area .post-content .post-meta a {
@@ -2258,9 +2279,12 @@ input:focus {
         margin-bottom: 80px;
     }
 }
-
+.trending-posts-area {
+    background: #f6f4fa;
+}
 .single-widget {
     position: relative;
+    background-color: #1e2020;
     z-index: 1;
     border: 1px solid #393c3d;
     border-radius: 3px;
@@ -2278,7 +2302,10 @@ input:focus {
         padding: 30px 20px;
     }
 }
-
+#judul {
+    margin-top: 50px;
+    color: rgb(31, 31, 31);
+}
 .followers-widget {
     display: flex;
     justify-content: space-between;
