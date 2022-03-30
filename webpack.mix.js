@@ -13,9 +13,9 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/tinymce.js', 'public/js')
-    .js('resources/js/active.js', 'public/js')
+    // .js('resources/js/active.js', 'public/js')
     .js('resources/js/style.js', 'public/js')
-    .js('resources/js/plugins/plugins.js', 'public/js')
+    // .js('resources/js/plugins/plugins.js', 'public/js')
     // .copy('resources/image','public/images/')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),

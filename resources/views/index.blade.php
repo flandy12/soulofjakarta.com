@@ -12,11 +12,11 @@
     <title>SoulOfJakarta</title>
 
     <!-- Favicon -->
-    <link rel="stylesheet" href="{{asset('css/main.css')}}"> 
-     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}"> 
-     <link rel="stylesheet" href="{{asset('css/front.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/front.css')}}">
 
-     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 </head>
 
 <body>
@@ -46,191 +46,61 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Category</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Give Away</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link">Schedule Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Media Partner</a>
                     </li>
                 </ul>
-                <span class="navbar-text">
-                    Navbar text with an inline element
-                </span>
+
             </div>
         </div>
     </nav>
-    <!-- <header class="header-area"> -->
-    <!-- Top Header Area -->
-    <!-- <div class="top-header-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                       
-                        <div class="breaking-news-area d-flex align-items-center">
-                            <div class="news-title">
-                                <p>Breaking News:</p>
-                            </div>
-                            <div id="breakingNewsTicker" class="ticker">
-                                <ul>
-                                    <li><a href="single-post.html">10 Things Amazon Echo Can Do</a></li>
-                                    <li><a href="single-post.html">Welcome to Colorlib Family.</a></li>
-                                    <li><a href="single-post.html">Boys 'doing well' after Thai</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="top-meta-data d-flex align-items-center justify-content-end">
-                          
-                            <div class="top-social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                          
-                            <div class="top-search-area">
-                                <form action="index.html" method="post">
-                                    <input type="search" name="top-search" id="topSearch" placeholder="Search...">
-                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                        
-                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!-- Navbar Area -->
-    <!-- <div class="vizew-main-menu" id="sticker">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-
-                   
-                    <nav class="classy-navbar justify-content-between" id="vizewNav">
-
-                    
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
-                      
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <div class="classy-menu">
-
-                          
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="archive-list.html">Archives</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">- Home</a></li>
-                                            <li><a href="archive-list.html">- Archive List</a></li>
-                                            <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                            <li><a href="single-post.html">- Single Post</a></li>
-                                            <li><a href="video-post.html">- Single Video Post</a></li>
-                                            <li><a href="contact.html">- Contact</a></li>
-                                            <li><a href="typography.html">- Typography</a></li>
-                                            <li><a href="login.html">- Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Features</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">- Home</a></li>
-                                                <li><a href="archive-list.html">- Archive List</a></li>
-                                                <li><a href="archive-grid.html">- Archive Grid</a></li>
-                                                <li><a href="single-post.html">- Single Post</a></li>
-                                                <li><a href="video-post.html">- Single Video Post</a></li>
-                                                <li><a href="contact.html">- Contact</a></li>
-                                                <li><a href="typography.html">- Typography</a></li>
-                                                <li><a href="login.html">- Login</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                  
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div> -->
-    <!-- </header> -->
-    <!-- ##### Header Area End ##### -->
 
     <!-- ##### Hero Area Start ##### -->
-    <section class="hero--area section-padding-80">
+    <section class="hero-area section-padding-80">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-12 col-md-7 col-lg-8">
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
-                        <div class="single-feature-post video-post bg-img" >
-                                <img src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}" alt="" id="ImageHead" class="single-feature-post video-post bg-img">
-                              
-                                <!-- <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a> -->
-                                
+                            <div class="single-feature-post video-post bg-img">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 single-feature-post video-post bg-img"
+                                                src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100"
+                                                src="{{asset('storage/'.$trending[0]->gambar_besar)}}"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100"
+                                                src="{{asset('storage/'.$trending[1]->gambar_besar)}}"
+                                                alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <img src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}" alt="" id="ImageHead"
+                                    class="single-feature-post video-post bg-img"> -->
+
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
+                                    <a href="#" class="post-cata">LifeStyle</a>
                                     <a href="single-post.html" class="post-title">{{$FeatureArticle->judul}}</a>
-                                    <div class="">@php
-                                           echo substr($FeatureArticle->isi,0,150)
-                                          @endphp</div>
+                                    <div class="text">@php
+                                        echo substr($FeatureArticle->isi,0,150)
+                                        @endphp</div>
                                     <div class="post-meta d-flex">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
@@ -238,7 +108,7 @@
                                     </div>
                                 </div>
 
-                                
+
                             </div>
                         </div>
                         <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
@@ -373,15 +243,17 @@
                     <ul class="nav vizew-nav-tab" role="tablist">
                         @foreach($HeadArticle as $datas)
                         <li class="nav-item">
-                                <a class="nav-link" href="/artikel/{{$datas->id}}/detail" data-name="lan">
+                            <a class="nav-link" href="/artikel/{{$datas->id}}/detail" data-name="lan">
                                 <!-- Single Blog Post -->
                                 <div class="single-blog-post style-2 d-flex align-items-center">
                                     <div class="post-thumbnail" data-id="{{$datas->id}}">
-                                        <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt="" class="h-24 rounded-md">
+                                        <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt=""
+                                            class="h-24 rounded-md">
                                     </div>
                                     <div class="post-content">
                                         <h6 class="post-title-head">{{$datas->judul}}</h6>
-                                        <div class="text" id="text">@php echo substr($datas->isi,0,20) @endphp</div>                                        
+                                        <div class="text" id="text">@php echo substr($datas->isi,0,20).'...'@endphp
+                                        </div>
                                         <div class="post-meta d-flex justify-content-between">
                                             <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
@@ -389,7 +261,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                </a>
+                            </a>
                         </li>
                         @endforeach
                     </ul>
@@ -419,9 +291,10 @@
                     <div class="single-post-area mb-80">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail-top">
-                            <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt="" class="single-feature-post-trending">
+                            <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt=""
+                                class="single-feature-post-trending">
 
-                          
+
                         </div>
 
                         <!-- Post Content -->
@@ -429,8 +302,8 @@
                             <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                             <span class="post-title">{{$trendings->judul}}</span>
                             <div class="">@php
-                                           echo substr($trendings->isi,0,120)
-                                          @endphp</div>
+                                echo substr($trendings->isi,0,120)
+                                @endphp</div>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
@@ -462,7 +335,7 @@
                         <div class="featured-post-slides owl-carousel mb-30">
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img"
-                            style="background-image: url('{{asset('storage/'.$datas->gambar_besar)}}');">
+                                style="background-image: url('{{asset('storage/'.$datas->gambar_besar)}}');">
                                 <!-- Play Button -->
                                 <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
                                         aria-hidden="true"></i></a>
@@ -478,9 +351,7 @@
                                         <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
                                     </div>
                                 </div>
-
-                              
-                            </div>  
+                            </div>
                         </div>
 
                         <div class="row">
@@ -491,7 +362,7 @@
                                     <div class="post-thumbnail">
                                         <img src="{{asset('storage/'.$trending[0]->gambar_besar)}}" alt="">
 
-                                    
+
                                     </div>
 
                                     <!-- Post Content -->
@@ -515,7 +386,7 @@
                                     <div class="post-thumbnail">
                                         <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
 
-                                       
+
                                     </div>
 
                                     <!-- Post Content -->
@@ -549,7 +420,7 @@
                                         <div class="post-thumbnail">
                                             <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
 
-                                          
+
                                         </div>
 
                                         <!-- Post Content -->
@@ -565,7 +436,7 @@
                                         </div>
                                     </div>
 
-                                    
+
                                 </div>
                             </div>
 
@@ -676,7 +547,7 @@
                             </div>
 
                         </div>
-                        
+
                         @foreach($LatesNews as $data)
                         <!-- Single Post Area -->
                         <div class="single-post-area mb-30">
@@ -999,25 +870,12 @@
     <script src="{{ asset('js/active.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/style.js') }}"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script> -->
-    <!-- ##### Footer Area End ##### -->
-
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <!-- <script src="js/jquery/jquery-2.2.4.min.js"></script> -->
-    <!-- Popper js -->
-    <!-- <script src="js/bootstrap/popper.min.js"></script> -->
-    <!-- Bootstrap js -->
-    <!-- <script src="js/bootstrap/bootstrap.min.js"></script> -->
-    <!-- All Plugins js -->
-    <!-- <script src="js/plugins/plugins.js"></script> -->
-    <!-- Active js -->
-    <!-- <script src="js/active.js"></script> -->
+    </script>
 </body>
 
 </html>

@@ -1,7 +1,5 @@
 import $ from "jquery";
-import {
-    each, forEach
-} from "lodash";
+
 // {{url('delete-artikel/'.$artikel->id)}}
 $('.btn-hps').on("click", function () {
     let hps = $(this).data('id');

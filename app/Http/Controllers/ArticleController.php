@@ -197,11 +197,11 @@ class ArticleController extends Controller
             $data['gambar_besar'] = 'artikel-photos/'.$namafile;
             $data['gambar_kecil'] = 'artikel-photos/'.$namafile;
             $artikel->update($data);
-             return redirect('artikel')->with('status','Update Data ' .$artikel->judul);
+             return redirect('article')->with('status','Update Data ' .$artikel->judul);
          }
         
             $artikel->update($data);
-            return redirect('artikel')->with('status','Update Data ' .$artikel->judul);
+            return redirect('article')->with('status','Update Data ' .$artikel->judul);
  
     }
 

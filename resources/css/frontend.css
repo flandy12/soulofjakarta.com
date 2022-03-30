@@ -893,11 +893,12 @@ input:focus {
     position: relative;
     z-index: 1;
     width: 100%;
+    background: rgb(0,0,0);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1113,12 +1114,13 @@ input:focus {
 .single-blog-post .post-content .post-meta a {
     display: inline-block;
     color: #595959;
+    padding: 0 10px 0 0 ;
     font-size: 12px;
 }
 
 .single-blog-post .post-content .post-meta a:hover,
 .single-blog-post .post-content .post-meta a:hover {
-    color: #ffffff;
+    color: #111010;
 }
 
 .single-blog-post.style-2 {
@@ -1214,23 +1216,24 @@ input:focus {
 }
 .single-blog-post.style-3 .post-thumbnail img{
     height: 163px;
+    width: 250px;
     max-height: 163px;
     object-fit: cover;
 }
 @media only screen and (max-width: 767px) {
     .single-blog-post.style-3 .post-thumbnail {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 100px;
-        flex: 0 0 100px;
-        max-width: 100px;
-        width: 100px;
+        -ms-flex: 0 0 200px;
+        flex: 0 0 50%;
+        max-width: 300px;
+        width: 300px;
     }
 }
 
 .single-blog-post.style-3 .post-content .post-title {
     color: #444343;
-    padding: 5px 10px ;
-    margin-bottom: 15px;
+    
+    margin: 15px 0;
     display: block;
     font-weight: 700;
     font-size: 16px;
@@ -1343,6 +1346,13 @@ input:focus {
     font-size: 24px;
     display: block;
     color: #ffffff;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.single-feature-post.video-post .post-content .text{
+    font-size: 14px;
+    display: block;
+    color: #f5ebeb;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -1487,18 +1497,25 @@ input:focus {
 .single-post-area .post-content {
     position: relative;
     z-index: 1;
+    height: 300px;
     padding: 20px;
-    margin-top: 20px;
+   
 }
 
 .single-post-area .post-content .post-title {
     display: block;
-    color: #d4b56b;
+    color: #e4e4e1;
     margin-bottom: 15px;
     font-size: 20px;
     text-decoration: none;
 }
-
+.trending-posts-area .single-post-area .post-content .post-title {
+    display: block;
+    color: #111110;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-post-area .post-content .post-title {
         font-size: 18px;
@@ -1519,7 +1536,7 @@ input:focus {
 
 .single-post-area .post-content .post-title:hover,
 .single-post-area .post-content .post-title:focus {
-    color: #ffffff;
+    color: #383837;
 }
 
 .single-post-area .post-content .post-meta a {

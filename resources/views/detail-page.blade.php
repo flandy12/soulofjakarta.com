@@ -14,11 +14,10 @@
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
-    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
-     <link rel="stylesheet" href="{{asset('css/main.css')}}"> 
-     <link rel="stylesheet" href="{{asset('css/app.css')}}"> 
-     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 </head>
 
 <body>
@@ -33,8 +32,7 @@
     </div> -->
 
     <!-- ##### Header Area Start ##### -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <img src="{{asset('images/logo.svg')}}" alt="" class="navbar-brand" width="200px">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -46,32 +44,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Category</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Give Away</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link">Schedule Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Media Partner</a>
                     </li>
                 </ul>
-                <span class="navbar-text">
-                    Navbar text with an inline element
-                </span>
+
             </div>
         </div>
     </nav>
@@ -84,9 +73,11 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                                    Home</a></li>
                             <li class="breadcrumb-item"><a href="#">{{$data[0]->nama}}</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Reunification of migrant toddlers</li>
+                            <li class="breadcrumb-item active" aria-current="page">Reunification of migrant toddlers
+                            </li>
                         </ol>
                     </nav>
                 </div>
@@ -101,11 +92,13 @@
             <p>PREVIOUS ARTICLE</p>
 
             <!-- Single Feature Post -->
-            <div class="single-feature-post video-post bg-img pager-article" style="background-image: url(img/bg-img/15.jpg);">
+            <div class="single-feature-post video-post bg-img pager-article"
+                style="background-image: url(img/bg-img/15.jpg);">
                 <!-- Post Content -->
                 <div class="post-content">
                     <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                    <a href="video-post.html" class="post-title">Searching for the 'angel' who held me on Westminster Bridge</a>
+                    <a href="video-post.html" class="post-title">Searching for the 'angel' who held me on Westminster
+                        Bridge</a>
                     <div class="post-meta d-flex">
                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 18</a>
                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 32</a>
@@ -121,7 +114,8 @@
             <p>NEXT ARTICLE</p>
 
             <!-- Single Feature Post -->
-            <div class="single-feature-post video-post bg-img pager-article" style="background-image: url(img/bg-img/14.jpg);">
+            <div class="single-feature-post video-post bg-img pager-article"
+                style="background-image: url(img/bg-img/14.jpg);">
                 <!-- Post Content -->
                 <div class="post-content">
                     <a href="#" class="post-cata cata-sm cata-business">Business</a>
@@ -137,7 +131,6 @@
             </div>
         </div>
     </div>
-    <!-- ##### Pager Area End ##### -->
 
     <!-- ##### Post Details Area Start ##### -->
     <section class="post-details-area mb-80">
@@ -160,7 +153,8 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.html" class="post-title mb-2">Reunification of migrant toddlers, parents should be completed Thursday</a>
+                                <a href="single-post.html" class="post-title mb-2">Reunification of migrant toddlers,
+                                    parents should be completed Thursday</a>
 
                                 <div class="d-flex justify-content-between mb-30">
                                     <div class="post-meta d-flex align-items-center">
@@ -176,26 +170,46 @@
                                 </div>
                             </div>
 
-                            <p>I love dals. All kinds of them but yellow moong dal is my go-to lentil when I am in need of some easy comfort food. In this recipe I added suva or dill leaves to the classic moong dal recipe for a twist. I like the simplicity of this recipe, just the dal, tomatoes and fresh dill with simple seasoning. This recipe is without any onions and garlic. I love the aroma of fresh dill and I think, in Indian food, we don’t really use dill as much as we can. Nine out of ten times, the only green leaves sprinkled on a curry or a dal is fresh coriander and while I love coriander too, dill adds a unique freshness and aroma to the dal. The delicate feathery leaves of dill are also rich in Vitamin A, C and minerals like iron and manganese.</p>
+                            <p>I love dals. All kinds of them but yellow moong dal is my go-to lentil when I am in need
+                                of some easy comfort food. In this recipe I added suva or dill leaves to the classic
+                                moong dal recipe for a twist. I like the simplicity of this recipe, just the dal,
+                                tomatoes and fresh dill with simple seasoning. This recipe is without any onions and
+                                garlic. I love the aroma of fresh dill and I think, in Indian food, we don’t really use
+                                dill as much as we can. Nine out of ten times, the only green leaves sprinkled on a
+                                curry or a dal is fresh coriander and while I love coriander too, dill adds a unique
+                                freshness and aroma to the dal. The delicate feathery leaves of dill are also rich in
+                                Vitamin A, C and minerals like iron and manganese.</p>
 
-                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the main source of protein. It is amazing how this humble yellow moong dal can be made into so many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts like moong dal halwa.</p>
+                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are
+                                the main source of protein. It is amazing how this humble yellow moong dal can be made
+                                into so many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional
+                                Indian desserts like moong dal halwa.</p>
 
                             <blockquote class="vizew-blockquote mb-15">
-                                <h5 class="blockquote-text">“If you’re going to try, go all the way. There is no other feeling like that. You will be alone with the gods.”</h5>
+                                <h5 class="blockquote-text">“If you’re going to try, go all the way. There is no other
+                                    feeling like that. You will be alone with the gods.”</h5>
                                 <h6>Ollie Schneider - CEO Deercreative</h6>
                             </blockquote>
 
-                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the main source of protein. It is amazing how this humble yellow moong dal can be made into so many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts like moong dal halwa. Fresh dill should be added only at the end of cooking, much like fresh coriander leaves.</p>
+                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are
+                                the main source of protein. It is amazing how this humble yellow moong dal can be made
+                                into so many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional
+                                Indian desserts like moong dal halwa. Fresh dill should be added only at the end of
+                                cooking, much like fresh coriander leaves.</p>
 
                             <h4>Immediate Dividends</h4>
 
                             <ul class="unordered-list mb-0">
-                                <li>Wash the dal in 3-4 changes of water and soak in room temperature water for 10 mins while you finish the rest of preparation.</li>
+                                <li>Wash the dal in 3-4 changes of water and soak in room temperature water for 10 mins
+                                    while you finish the rest of preparation.</li>
                                 <li>Drain and pressure cook with salt, turmeric and water for 2 whistles.</li>
-                                <li>Remove the cooker from heat and open only after all the steam has escaped on its own.</li>
+                                <li>Remove the cooker from heat and open only after all the steam has escaped on its
+                                    own.</li>
                                 <li>While the dal is cooking, heat ghee in a pan. Add hing and cumin seeds.</li>
-                                <li>When the seeds start to crackle, add ginger, and green chillies. Sauté for a minute.</li>
-                                <li>Add tomatoes and a little salt. Mix well. Cook for about 5 mins with occasional stirring.</li>
+                                <li>When the seeds start to crackle, add ginger, and green chillies. Sauté for a minute.
+                                </li>
+                                <li>Add tomatoes and a little salt. Mix well. Cook for about 5 mins with occasional
+                                    stirring.</li>
                             </ul>
 
                             <!-- Post Tags -->
@@ -214,7 +228,8 @@
                                 </div>
                                 <div class="post-author-desc pl-4">
                                     <a href="#" class="author-name">Calantha Flower</a>
-                                    <p>Hello! My name is Nicolas Sarkozy. I’m a web designer and front-end web developer with over fifteen years of professional.</p>
+                                    <p>Hello! My name is Nicolas Sarkozy. I’m a web designer and front-end web developer
+                                        with over fifteen years of professional.</p>
                                     <div class="post-author-social-info">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -249,11 +264,14 @@
                                             <!-- Post Content -->
                                             <div class="post-content">
                                                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                                <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’ Sequel</a>
+                                                <a href="single-post.html" class="post-title">Warner Bros. Developing
+                                                    ‘The accountant’ Sequel</a>
                                                 <div class="post-meta d-flex">
-                                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
+                                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>
+                                                        22</a>
                                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
+                                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                        15</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -273,11 +291,14 @@
                                             <!-- Post Content -->
                                             <div class="post-content">
                                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                                <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminste</a>
+                                                <a href="single-post.html" class="post-title">Searching for the 'angel'
+                                                    who held me on Westminste</a>
                                                 <div class="post-meta d-flex">
-                                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
+                                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>
+                                                        28</a>
                                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                        22</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,7 +328,8 @@
                                             <div class="comment-meta">
                                                 <a href="#" class="comment-date">27 Aug 2019</a>
                                                 <h6>Tomas Mandy</h6>
-                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consectetur, adipisci velit, sed quia non numquam eius</p>
                                                 <div class="d-flex align-items-center">
                                                     <a href="#" class="like">like</a>
                                                     <a href="#" class="reply">Reply</a>
@@ -327,7 +349,9 @@
                                                     <div class="comment-meta">
                                                         <a href="#" class="comment-date">27 Aug 2019</a>
                                                         <h6>Britney Millner</h6>
-                                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+                                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                                            amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                        </p>
                                                         <div class="d-flex align-items-center">
                                                             <a href="#" class="like">like</a>
                                                             <a href="#" class="reply">Reply</a>
@@ -350,7 +374,8 @@
                                             <div class="comment-meta">
                                                 <a href="#" class="comment-date">27 Aug 2019</a>
                                                 <h6>Simon Downey</h6>
-                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+                                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consectetur, adipisci velit, sed quia non numquam eius</p>
                                                 <div class="d-flex align-items-center">
                                                     <a href="#" class="like">like</a>
                                                     <a href="#" class="reply">Reply</a>
@@ -375,16 +400,20 @@
                                     <form action="#" method="post">
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
-                                                <input type="text" class="form-control" id="name" placeholder="Your Name*">
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="Your Name*">
                                             </div>
                                             <div class="col-12 col-lg-6">
-                                                <input type="email" class="form-control" id="email" placeholder="Your Email*">
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Your Email*">
                                             </div>
                                             <div class="col-12">
-                                                <textarea name="message" class="form-control" id="message" placeholder="Message*"></textarea>
+                                                <textarea name="message" class="form-control" id="message"
+                                                    placeholder="Message*"></textarea>
                                             </div>
                                             <div class="col-12">
-                                                <button class="btn vizew-btn mt-30" type="submit">Submit Comment</button>
+                                                <button class="btn vizew-btn mt-30" type="submit">Submit
+                                                    Comment</button>
                                             </div>
                                         </div>
                                     </form>
@@ -442,11 +471,13 @@
                     <div class="footer-widget mb-70">
                         <!-- Logo -->
                         <a href="index.html" class="foo-logo d-block mb-4"><img src="img/core-img/logo2.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna</p>
                         <!-- Footer Newsletter Area -->
                         <div class="footer-nl-area">
                             <form action="#" method="post">
-                                <input type="email" name="nl-email" class="form-control" id="nlEmail" placeholder="Your email">
+                                <input type="email" name="nl-email" class="form-control" id="nlEmail"
+                                    placeholder="Your email">
                                 <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                             </form>
                         </div>
@@ -464,11 +495,13 @@
                             <div class="single--twitter-slide">
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
+                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
                                 </div>
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
+                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
                                 </div>
                             </div>
 
@@ -476,11 +509,13 @@
                             <div class="single--twitter-slide">
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
+                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
                                 </div>
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
+                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
                                 </div>
                             </div>
 
@@ -555,9 +590,14 @@
                 <div class="row align-items-center">
                     <!-- Copywrite Text -->
                     <div class="col-12 col-sm-6">
-                        <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p class="copywrite-text">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
                     </div>
                     <div class="col-12 col-sm-6">
                         <nav class="footer-nav">
@@ -574,7 +614,7 @@
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area End ##### -->    
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
