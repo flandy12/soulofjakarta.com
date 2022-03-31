@@ -319,202 +319,13 @@
     </section>
     <!-- ##### Trending Posts Area End ##### -->
 
-    <!-- ##### Vizew Post Area Start ##### -->
+    <!-- ##### Latest News + Sidebar ##### -->
     <section class="vizew-post-area mb-50">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-7 col-lg-8">
                     <div class="all-posts-area">
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2">
-                            <h4>Featured Videos</h4>
-                            <div class="line"></div>
-                        </div>
-
-                        <!-- Featured Post Slides -->
-                        <div class="featured-post-slides owl-carousel mb-30">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image: url('{{asset('storage/'.$datas->gambar_besar)}}');">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-md-6">
-                                <div class="single-post-area mb-80">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{asset('storage/'.$trending[0]->gambar_besar)}}" alt="">
-
-
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held
-                                            me on Westminste Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-md-6">
-                                <div class="single-post-area mb-80">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
-
-
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Love Island star's boyfriend found
-                                            dead after her funeral</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <!-- Section Heading -->
-                                <div class="section-heading style-2">
-                                    <h4>Sport Videos</h4>
-                                    <div class="line"></div>
-                                </div>
-
-                                <!-- Sports Video Slides -->
-                                <div class="sport-video-slides owl-carousel mb-50">
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail">
-                                            <img src="{{asset('storage/'.$trending[1]->gambar_besar)}}" alt="">
-
-
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                            <a href="single-post.html" class="post-title">Searching for the 'angel' who
-                                                held me on Westminster Bridge</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <!-- Section Heading -->
-                                <div class="section-heading style-2">
-                                    <h4>Business Videos</h4>
-                                    <div class="line"></div>
-                                </div>
-
-                                <!-- Business Video Slides -->
-                                <div class="business-video-slides owl-carousel mb-50">
-                                    <!-- Single Blog Post -->
-                                    <div class="single-post-area">
-                                        <!-- Post Thumbnail -->
-                                        <div class="post-thumbnail ">
-                                            <img src="{{asset('storage/'.$Chenel[2]->gambar_besar)}}" alt="">
-                                        </div>
-
-                                        <!-- Post Content -->
-                                        <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                            <a href="single-post.html" class="post-title">Full article Prince Charles's
-                                                'urgent' global research</a>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-30">
-                            @foreach($Sport as $sport)
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{asset('storage/'.$sport->gambar_besar)}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Epileptic boy's cannabis let
-                                            through border</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-
-                            @foreach($Business as $business)
-                            <!-- Single Blog Post -->
-                            <div class="col-12 col-lg-6">
-                                <div class="single-blog-post style-3 d-flex mb-50">
-                                    <div class="post-thumbnail">
-                                        <img src="{{asset('storage/'.$business->gambar_besar)}}" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <a href="single-post.html" class="post-title">Tory vice-chairs quit over PM's
-                                            Brexit plan</a>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-
+                    
                         <!-- Section Heading -->
                         <div class="section-heading style-2">
                             <h4>Latest News</h4>
@@ -601,7 +412,7 @@
                         </div> -->
 
                         <!-- ***** Single Widget ***** -->
-                        <div class="single-widget latest-video-widget mb-50">
+                        <div class="single-widget latest-video-widget">
                             <!-- Section Heading -->
                             <div class="section-heading style-2 mb-30">
                                 <h4>Latest Video</h4>
@@ -727,7 +538,7 @@
             </div>
         </div>
     </section>
-    <!-- ##### Vizew Psot Area End ##### -->
+    <!-- ##### Latest News + Sidebar End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -866,16 +677,29 @@
             </div>
         </div>
     </footer>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/active.js') }}"></script>
-    <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="{{ asset('js/style.js') }}"></script>
+
+        <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <!-- <script src="js/active.js"></script>gg -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+    </script> 
+    <!-- <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/active.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/style.js') }}"></script>
+   
 </body>
 
 </html>

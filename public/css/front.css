@@ -1050,6 +1050,7 @@ input:focus {
     margin-bottom: 20px;
 }
 
+.latest-video-widget .
 .single-blog-post:last-child {
     margin-bottom: 0;
 }
@@ -1133,6 +1134,9 @@ input:focus {
     color: #595959;
     padding: 0 10px 0 0 ;
     font-size: 12px;
+}
+.trending-posts-area .single-post-area .post-meta {
+    padding: 20px 0;
 }
 
 .single-blog-post .post-content .post-meta a:hover,
@@ -1501,7 +1505,7 @@ input:focus {
     z-index: 79;
 }
 
-.single-post-area .post-content {
+.trending-posts-area .single-post-area .post-content {
     position: relative;
     z-index: 1;
     height: 300px;
