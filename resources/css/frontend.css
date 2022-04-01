@@ -1025,7 +1025,6 @@ input:focus {
     margin-bottom: 20px;
 }
 
-.latest-video-widget .
 .single-blog-post:last-child {
     margin-bottom: 0;
 }
@@ -1421,7 +1420,9 @@ input:focus {
     margin-bottom: 15px;
     display: inline-block;
 }
-
+.post-cata:hover  {
+    text-decoration: none;
+}
 .post-cata.cata-success {
     background-color: #3cb878;
 }
@@ -1750,6 +1751,7 @@ input:focus {
     z-index: 1;
     padding-left: 20px;
     font-size: 16px;
+    color: #9c9c9b;
     margin-bottom: 10px;
 }
 
@@ -2338,7 +2340,7 @@ input:focus {
 
 @media only screen and (max-width: 767px) {
     .single-widget {
-        padding: 30px 20px;
+        padding:30px 10px;
     }
 }
 #judul {
@@ -2962,4 +2964,23 @@ textarea.form-control {
     height: 140px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* icon search */
+@media only screen and (min-width: 1200px) {
+    #search-input {
+        display: none;
+    }
+ 
+}
+@media only screen and (min-width: 768px) {
+    #search {
+        display: none;
+    }
+}
+#search {
+    display: block;
+    align-items: center;
+    width: 30px;
+    color: white;
+    background-color: black;
+    border: none;
+}

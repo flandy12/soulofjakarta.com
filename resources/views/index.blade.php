@@ -13,10 +13,12 @@
 
     <!-- Favicon -->
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/app.css" rel="stylesheet"> -->
+    
+
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     </div> -->
 
     <!-- ##### Header Area Start ##### -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
             <img src="{{asset('images/logo.svg')}}" alt="" class="navbar-brand" width="200px">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -58,8 +60,12 @@
                     <li class="nav-item">
                         <a class="nav-link">Media Partner</a>
                     </li>
-                </ul>
 
+                </ul>
+                <form class="d-flex">
+                    <input type="text" placeholder="Search.." name="search" class="form-control me-2" id="search-input">
+                    <button type="submit"id="search"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </div>
     </nav>
@@ -80,13 +86,12 @@
                                                 alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100"
+                                            <img class="d-block w-100 single-feature-post video-post bg-img"
                                                 src="{{asset('storage/'.$trending[0]->gambar_besar)}}"
                                                 alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100"
-                                                src="{{asset('storage/'.$trending[1]->gambar_besar)}}"
+                                            <img class="d-block w-100 single-feature-post video-post bg-img"src="{{asset('storage/'.$trending[1]->gambar_besar)}}"
                                                 alt="Third slide">
                                         </div>
                                     </div>
@@ -288,7 +293,7 @@
                 <!-- Single Blog Post -->
                 @foreach($trending as $trendings)
                 <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80">
+                    <div class="single-post-area mb-80" data-aos="zoom-in">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail-top">
                             <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt=""
@@ -325,7 +330,7 @@
             <div class="row">
                 <div class="col-12 col-md-7 col-lg-8">
                     <div class="all-posts-area">
-                    
+
                         <!-- Section Heading -->
                         <div class="section-heading style-2">
                             <h4>Latest News</h4>
@@ -343,7 +348,7 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
+                                    <a href="#" class="post-cata">Lifesyle</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be completed Thursday</a>
                                     <div class="post-meta d-flex">
@@ -375,7 +380,7 @@
                                 <div class="col-12 col-lg-6">
                                     <!-- Post Content -->
                                     <div class="post-content mt-0">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
+                                        <a href="#" class="post-cata cata-sm cata-success">Lifesyle`</a>
                                         <a href="single-post.html" class="post-title mb-2">May fights on after Johnson
                                             savages Brexit approach</a>
                                         <div class="post-meta d-flex align-items-center mb-2">
@@ -486,53 +491,6 @@
                             </div>
                             @endforeach
                         </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget newsletter-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Newsletter</h4>
-                                <div class="line"></div>
-                            </div>
-                            <p>Subscribe our newsletter gor get notification about new updates, information discount,
-                                etc.</p>
-                            <!-- Newsletter Form -->
-                            <div class="newsletter-form">
-                                <form action="#" method="post">
-                                    <input type="email" name="nl-email" class="form-control mb-15" id="emailnl"
-                                        placeholder="Enter your email">
-                                    <button type="submit" class="btn vizew-btn w-100">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <!-- ***** Single Widget ***** -->
-                        <div class="single-widget mb-50">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2 mb-30">
-                                <h4>Most Viewed Playlist</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            @foreach($Chenel as $chenels)
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex">
-                                <div class="post-thumbnail">
-                                    <img src="{{asset('storage/'.$chenels->gambar_besar)}}" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making
-                                        of</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -678,7 +636,7 @@
         </div>
     </footer>
 
-        <!-- ##### All Javascript Script ##### -->
+    <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -687,19 +645,16 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
     <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <!-- <script src="js/active.js"></script>gg -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script> 
+
+    <script src="js/animations.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="{{ asset('js/style.js') }}"></script>
-   
+    <script src="{{ asset('js/style.js') }}"></script>-->
+
 </body>
 
 </html>

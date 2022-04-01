@@ -13,7 +13,7 @@
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">

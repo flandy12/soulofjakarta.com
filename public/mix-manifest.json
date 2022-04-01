@@ -2,6 +2,8 @@
     "/js/app.js": "/js/app.js",
     "/js/tinymce.js": "/js/tinymce.js",
     "/js/style.js": "/js/style.js",
+    "/js/animations.js": "/js/animations.js",
+    "/js/alert.js": "/js/alert.js",
     "/css/main.css": "/css/main.css",
     "/css/backend.css": "/css/backend.css",
     "/css/bootstrap.css": "/css/bootstrap.css",

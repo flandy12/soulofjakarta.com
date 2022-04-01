@@ -15,8 +15,8 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/tinymce.js', 'public/js')
     // .js('resources/js/active.js', 'public/js')
     .js('resources/js/style.js', 'public/js')
-    // .js('resources/js/plugins/plugins.js', 'public/js')
-    // .copy('resources/image','public/images/')
+    .js('resources/js/animate.js', 'public/js/animations.js')
+    .js('resources/js/alert.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
@@ -32,8 +32,8 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/frontend.css', 'public/css/front.css')
     .postCss('resources/css/font-awesome.min.css', 'public/css/main.css')
     .postCss('resources/css/classy-nav.css', 'public/css/main.css')
-    .postCss('resources/css/bootstrap.css', 'public/css/bootstrap.css')
     .postCss('resources/css/animate.css', 'public/css/main.css')
+    .postCss('resources/css/bootstrap.css', 'public/css/bootstrap.css')
   
 if (mix.inProduction()) {
     mix.version();
