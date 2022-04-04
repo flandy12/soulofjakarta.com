@@ -37,9 +37,8 @@ class FrontEndController extends Controller
         $data = Article::where('id',$id)->join('sub_categories','articles.id_sub_category', '=' ,'sub_categories.id_sub_category')->get();
         $penulis = User::where('name',$data[0]->penulis)->get();
         $profile = $penulis[0]->profile_photo_path;
-       
-        // return dd($data);
-        return view('detail-page',compact('data','penulis','profile'));
+        // dd($data);
+        return view('detail-article',compact('data','penulis','profile'));
 
     }
     public function dataS(){

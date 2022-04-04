@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Storage;
 class ArticleController extends Controller
 {
      /**
-     * Display a listing of the resource.
-     *
+     * Display article page
+     *  
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -23,18 +23,24 @@ class ArticleController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new article.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {   
-        // $data = Artikel::join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
-        // ->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
-        // ->get(['tb_artikel.*', 'tb_kategori.nama_kategori','sub_kategoris.sub_name_kategori']);
+
+        /**
+        *  Learn Join Table Database
+        *
+        * $data = Article::join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
+        *->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
+        *->get(['tb_artikel.*', 'tb_kategori.nama_kategori','sub_kategoris.*sub_name_kategori']);
+        *
+        */
+
         $kategori = Category::all();
         $subkategori = SubCategory::all();
-        // return dd($data);
         return view('admin.add-artikel-page',compact('kategori','subkategori'));
     }
 
@@ -45,7 +51,8 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+         /** Validation */
         $message = [
             'required' => "Wajid Diisi !",
             'Image_Artikel.image'=>'File Yang Dimasukan Tidak Sesuai',
@@ -106,17 +113,6 @@ class ArticleController extends Controller
 
         ]);
             
-        // if ($request->hasFile('image')) {
-        //     $filenameWithExt = $request->file('image')->getClientOriginalExtension();
-        //     $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-        //     $extension = $request->file('image')->getClientOriginalExtension();
-        //     $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-        //     $request->file('image')->move('storage/images', $fileNameToStore);
-
-        // } else {
-        //     $fileNameToStore = 'noimage.jpg';
-        // }
-        // return dd($data);
         $data_input = new Article($data);
         $data_input->save();
         return redirect('article');
@@ -124,9 +120,6 @@ class ArticleController extends Controller
 
     public function show($id)
     {   
-        // $dbartikel = Artikel::find($id)->join('tb_kategori','tb_artikel.id','tb_kategori.id_kategori')
-        //                                ->join('sub_kategoris','tb_artikel.idsubmenu','sub_kategoris.id_sub_kategori')
-        //                                ->get(['tb_artikel.*', 'tb_kategori.*','sub_kategoris.sub_name_kategori']);
         $dbartikel = Article::find($id);
         $categorys = Category::all();
         $subkategoris = SubCategory::all();
@@ -219,7 +212,7 @@ class ArticleController extends Controller
         // return redirect('artikel')->with('status','Update Data ' .$artikel->judul);;
     }
      /**
-        * restore specific post
+     * Restore specific post
      *
      * @return void
      */
@@ -228,12 +221,14 @@ class ArticleController extends Controller
         Article::withTrashed()->find($id)->restore();
         return redirect()->back();
     }  
+
     public function destroy($id){
         $image = Article::onlyTrashed()->find($id);
         $old_image = Storage::disk('local')->delete('public/'.$image->gambar_besar);
         $image->forceDelete();
         return redirect()->back();
     }
+    
     public function trash()
     {
         $artikel = Article::onlyTrashed()->get();
