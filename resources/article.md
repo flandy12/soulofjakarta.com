@@ -925,4 +925,117 @@
                         </div>
 
 
-            
+            //comment
+                       <!-- Comment Area Start -->
+                                <div class="comment_area clearfix mb-50">
+
+                                    <!-- Section Title -->
+                                    <div class="section-heading style-2">
+                                        <h4>Comment</h4>
+                                        <div class="line"></div>
+                                    </div>
+
+                                    <ul>
+                                        <!-- Single Comment Area -->
+                                        <li class="single_comment_area">
+                                            <!-- Comment Content -->
+                                            <div class="comment-content d-flex">
+                                                <!-- Comment Author -->
+                                                <div class="comment-author">
+                                                    <img src="{{asset('images/img-backend/user1.jpg')}}" alt="author" class="inline object-cover w-16 h-16 mr-2 rounded-full">
+                                                </div>
+                                                <!-- Comment Meta -->
+                                                <div class="comment-meta">
+                                                    <a href="#" class="comment-date">27 Aug 2019</a>
+                                                    <h6>Tomas Mandy</h6>
+                                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                        consectetur, adipisci velit, sed quia non numquam eius</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="#" class="like">like</a>
+                                                        <a href="#" class="reply">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <ol class="children">
+                                                <li class="single_comment_area">
+                                                    <!-- Comment Content -->
+                                                    <div class="comment-content d-flex">
+                                                        <!-- Comment Author -->
+                                                        <div class="comment-author">
+                                                            <img src="{{asset('images/img-backend/user3.jpg')}}" alt="author" class="inline object-cover w-16 h-16 mr-2 rounded-full">
+                                                        </div>
+                                                        <!-- Comment Meta -->
+                                                        <div class="comment-meta">
+                                                            <a href="#" class="comment-date">27 Aug 2019</a>
+                                                            <h6>Britney Millner</h6>
+                                                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                                                amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                            </p>
+                                                            <div class="d-flex align-items-center">
+                                                                <a href="#" class="like">like</a>
+                                                                <a href="#" class="reply">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <!-- Single Comment Area -->
+                                        <li class="single_comment_area">
+                                            <!-- Comment Content -->
+                                            <div class="comment-content d-flex">
+                                                <!-- Comment Author -->
+                                                <div class="comment-author">
+                                                    <img src="{{asset('images/img-backend/user2.jpg')}}" alt="author" class="inline object-cover w-16 h-16 mr-2 rounded-full">
+                                                </div>
+                                                <!-- Comment Meta -->
+                                                <div class="comment-meta">
+                                                    <a href="#" class="comment-date">27 Aug 2019</a>
+                                                    <h6>Simon Downey</h6>
+                                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                        consectetur, adipisci velit, sed quia non numquam eius</p>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="#" class="like">like</a>
+                                                        <a href="#" class="reply">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Post A Comment Area -->
+                                <div class="post-a-comment-area">
+
+                                    <!-- Section Title -->
+                                    <div class="section-heading style-2">
+                                        <h4>Leave a reply</h4>
+                                        <div class="line"></div>
+                                    </div>
+
+                                    <!-- Reply Form -->
+                                    <div class="contact-form-area">
+                                        <form action="#" method="post">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <input type="text" class="form-control" id="name"
+                                                        placeholder="Your Name*">
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Your Email*">
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea name="message" class="form-control" id="message"
+                                                        placeholder="Message*"></textarea>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="btn vizew-btn mt-30" type="submit">Submit
+                                                        Comment</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>

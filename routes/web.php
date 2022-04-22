@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\MessageCreated;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\CategoryController;
@@ -24,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontEndController::class,'index']);
+
 Route::get('/data', [FrontEndController::class,'Data']);
 Route::get('/artikel',[FrontEndController::class,'all']);
 Route::get('/artikel/{id}',[FrontEndController::class,'HeadArtikel']);

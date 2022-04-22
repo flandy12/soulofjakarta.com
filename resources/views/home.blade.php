@@ -14,10 +14,10 @@
     <!-- Favicon -->
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/app.css" rel="stylesheet"> -->
-    
+
 
 </head>
 
@@ -35,7 +35,7 @@
     <!-- ##### Header Area Start ##### -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <img src="{{asset('images/logo.svg')}}" alt="" class="navbar-brand" width="200px">
+            <img src="{{asset('images/logo/logo.svg')}}" alt="" class="navbar-brand" width="200px">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,212 +64,215 @@
                 </ul>
                 <form class="d-flex">
                     <input type="text" placeholder="Search.." name="search" class="form-control me-2" id="search-input">
-                    <button type="submit"id="search"><i class="fa fa-search"></i></button>
+                    <button type="submit" id="search"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
     </nav>
 
     <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area section-padding-80">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
-                            <div class="single-feature-post video-post bg-img">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img class="d-block w-100 single-feature-post video-post bg-img"
-                                                src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}"
-                                                alt="First slide">
+    <section class="hero-area-main">
+        <div class="hero-area section-padding-80">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="post-1" role="tabpanel"
+                                aria-labelledby="post-1-tab">
+                                <div class="single-feature-post video-post bg-img">
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100 single-feature-post video-post bg-img"
+                                                    src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}"
+                                                    alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 single-feature-post video-post bg-img"
+                                                    src="{{asset('storage/'.$trending[0]->gambar_besar)}}"
+                                                    alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 single-feature-post video-post bg-img"
+                                                    src="{{asset('storage/'.$trending[1]->gambar_besar)}}"
+                                                    alt="Third slide">
+                                            </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100 single-feature-post video-post bg-img"
-                                                src="{{asset('storage/'.$trending[0]->gambar_besar)}}"
-                                                alt="Second slide">
+                                    </div>
+
+                                    <!-- Post Content -->
+                                    <div class="post-content-one">
+                                        <div class="post-content-body">
+                                            <a href="#" class="post-cata">LifeStyle</a>
+                                            <a href="single-post.html" class="post-title">{{$FeatureArticle->judul}}</a>
+                                            <div class="text">@php
+                                                echo substr($FeatureArticle->isi,0,150)
+                                                @endphp
+                                            </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100 single-feature-post video-post bg-img"src="{{asset('storage/'.$trending[1]->gambar_besar)}}"
-                                                alt="Third slide">
+                                        <!-- <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
+                                <!-- Single Feature Post -->
+                                <div class="single-feature-post video-post bg-img"
+                                    style="background-image:url('{{asset('storage/'.$FeatureArticle->gambar_besar)}}');">
+                                    <!-- Play Button -->
+                                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
+                                            aria-hidden="true"></i></a>
+
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata">Sports</a>
+                                        <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                            parents should be completed Thursday</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
                                         </div>
                                     </div>
+
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
                                 </div>
-                                <!-- <img src="{{asset('storage/'.$FeatureArticle->gambar_besar)}}" alt="" id="ImageHead"
-                                    class="single-feature-post video-post bg-img"> -->
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">LifeStyle</a>
-                                    <a href="single-post.html" class="post-title">{{$FeatureArticle->judul}}</a>
-                                    <div class="text">@php
-                                        echo substr($FeatureArticle->isi,0,150)
-                                        @endphp</div>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image:url('{{asset('storage/'.$FeatureArticle->gambar_besar)}}');">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+
+                            <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
+                                <!-- Single Feature Post -->
+                                <div class="single-feature-post video-post bg-img"
+                                    style="background-image: url(img/bg-img/10.jpg);">
+                                    <!-- Play Button -->
+                                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
+                                            aria-hidden="true"></i></a>
+
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata">Sports</a>
+                                        <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                            parents should be completed Thursday</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
+                                </div>
                             </div>
-                        </div>
 
+                            <div class="tab-pane fade" id="post-5" role="tabpanel" aria-labelledby="post-5-tab">
+                                <!-- Single Feature Post -->
+                                <div class="single-feature-post video-post bg-img"
+                                    style="background-image: url(img/bg-img/7.jpg);">
+                                    <!-- Play Button -->
+                                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
+                                            aria-hidden="true"></i></a>
 
-                        <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image: url(img/bg-img/10.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata">Sports</a>
+                                        <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                            parents should be completed Thursday</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="post-5" role="tabpanel" aria-labelledby="post-5-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image: url(img/bg-img/7.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
+                            <div class="tab-pane fade" id="post-6" role="tabpanel" aria-labelledby="post-6-tab">
+                                <!-- Single Feature Post -->
+                                <div class="single-feature-post video-post bg-img"
+                                    style="background-image: url(img/bg-img/10.jpg);">
+                                    <!-- Play Button -->
+                                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
+                                            aria-hidden="true"></i></a>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata">Sports</a>
+                                        <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                            parents should be completed Thursday</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="post-6" role="tabpanel" aria-labelledby="post-6-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image: url(img/bg-img/10.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
+                            <div class="tab-pane fade" id="post-7" role="tabpanel" aria-labelledby="post-7-tab">
+                                <!-- Single Feature Post -->
+                                <div class="single-feature-post video-post bg-img"
+                                    style="background-image: url(img/bg-img/7.jpg);">
+                                    <!-- Play Button -->
+                                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
+                                            aria-hidden="true"></i></a>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-cata">Sports</a>
+                                        <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                            parents should be completed Thursday</a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
+                                        </div>
                                     </div>
+
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
                                 </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="post-7" role="tabpanel" aria-labelledby="post-7-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img"
-                                style="background-image: url(img/bg-img/7.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play"
-                                        aria-hidden="true"></i></a>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
-                                        parents should be completed Thursday</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                    </div>
-                                </div>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-12 col-md-5 col-lg-4">
-                    <ul class="nav vizew-nav-tab" role="tablist">
-                        @foreach($HeadArticle as $datas)
-                        <li class="nav-item">
-                            <a class="nav-link" href="/artikel/{{$datas->id}}/detail" data-name="lan">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail" data-id="{{$datas->id}}">
-                                        <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt=""
-                                            class="h-24 rounded-md">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title-head">{{$datas->judul}}</h6>
-                                        <div class="text" id="text">@php echo substr($datas->isi,0,20).'...'@endphp
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <ul class="nav vizew-nav-tab" role="tablist">
+                            @foreach($HeadArticle as $datas)
+                            <li class="nav-item">
+                                <a class="nav-link" href="/artikel/{{$datas->id}}/detail" data-name="lan">
+                                    <!-- Single Blog Post -->
+                                    <div class="single-blog-post style-2 d-flex align-items-center">
+                                        <div class="post-thumbnail" data-id="{{$datas->id}}">
+                                            <img src="{{asset('storage/'.$datas->gambar_besar)}}" alt=""
+                                                class="h-24 rounded-md">
                                         </div>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
-                                            <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
-                                            <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 19</span>
+                                        <div class="post-content">
+                                            <h6 class="post-title-head">{{$datas->judul}}</h6>
+                                            <div class="text" id="text">@php echo substr($datas->isi,0,20).'...'@endphp
+                                            </div>
+                                            <div class="post-meta d-flex justify-content-between">
+                                                <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
+                                                <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
+                                                <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 19</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -279,7 +282,7 @@
     <!-- ##### Trending Posts Area Start ##### -->
     <section class="trending-posts-area">
         <div class="container">
-            <div class="row grid">
+            <div class="row ">
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading">
@@ -289,31 +292,30 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row pb-5">
                 <!-- Single Blog Post -->
                 @foreach($trending as $trendings)
-                <div class="col-12 col-md-4">
-                    <div class="single-post-area mb-80" data-aos="zoom-in">
-                        <!-- Post Thumbnail -->
-                        <div class="post-thumbnail-top">
-                            <img src="{{asset('storage/'.$trendings->gambar_kecil)}}" alt=""
-                                class="single-feature-post-trending">
+                <div class="col-12 col-md-4 mb-4" data-aos="zoom-in">
 
 
+
+                    <div class="card h-100">
+                        <div class="card-img-trending">
+                            <span class="post-catas">LifeStyle</span>
+                            <img class="card-img-top" src="{{asset('storage/'.$trendings->gambar_kecil)}}"
+                                alt="Card image cap">
                         </div>
-
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                            <span class="post-title">{{$trendings->judul}}</span>
-                            <div class="">@php
-                                echo substr($trendings->isi,0,120)
-                                @endphp</div>
-                            <div class="post-meta d-flex">
-                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
+                        <div class="card-body">
+                            <div class="card-text-trending-head">
+                                <p>{{($trendings->hari)}} , {{($trendings->tanggal)}}</p>
+                                <span> <b>{{($trendings->penulis)}}</b></span>
+                                <h5 class="text-dark mt-2">{{$trendings->judul}}</h5>
                             </div>
+                            <div class="card-text-trending-body">
+                                @php echo substr($trendings->isiutama,0,150) @endphp
+                                <span class="dots">...</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Detail</a>
                         </div>
                     </div>
                 </div>
@@ -367,7 +369,7 @@
                         @foreach($LatesNews as $data)
                         <!-- Single Post Area -->
                         <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center" data-aos="fade-down">
                                 <div class="col-12 col-lg-6">
                                     <!-- Post Thumbnail -->
                                     <div class="post-thumbnail">
@@ -400,6 +402,15 @@
                             </div>
                         </div>
                         @endforeach
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
 
@@ -446,7 +457,7 @@
                                 </div>
                             </div>
 
-                            <!-- Single Blog Post -->
+                            <!-- Single all Post -->
                             @foreach($trending as $trendings)
                             <div class="single-blog-post d-flex">
                                 <div class="post-thumbnail">
@@ -492,11 +503,140 @@
                             @endforeach
                         </div>
                     </div>
+
                 </div>
+               
             </div>
         </div>
     </section>
     <!-- ##### Latest News + Sidebar End ##### -->
+
+    <!-- ##### About + Popular Article Start ##### -->
+    <section class="about">
+        <div class="container">
+            <div class="row about-all">
+                <div class="col-xl-8 col-sm-12">
+                   <div class="popular-post-body mb-4">
+                   <h1>Popular Post</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{{asset('images/iklan/VMCEAGUST2021.jpg')}}"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Card title</h5>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{{asset('images/iklan/VMCEAGUST2021.jpg')}}"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Card title</h5>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{{asset('images/iklan/VMCEAGUST2021.jpg')}}"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-dark">Card title</h5>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{{asset('images/iklan/VMCEAGUST2021.jpg')}}"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-xl-4 col-sm-12 ">
+                    <div class="about-post-body">
+                    <h1>About</h1>
+                    <p>
+                        CKH Group is Indonesian MICE company based in Central Jakarta. Driven by our core values and
+                        with our own vision to bring more good managements and idea in order to support the MICE
+                        industry demand that getting higher not only in Jakarta, but also other cities in Indonesia.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About + Popular Article End ##### -->
+
+    <section>
+        <div class="container">
+            <div class="row m-5">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="{{asset('images/iklan/4. Bandung Of Jakarta 280x220.gif')}}"
+                            alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="{{asset('images/iklan/VMCEAGUST2021.jpg')}}"
+                            alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="{{asset('images/iklan/Web-Banner-CK.gif')}}"
+                            alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="{{asset('images/iklan/iklannvbcfase3.jpg')}}"
+                            alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -635,6 +775,7 @@
             </div>
         </div>
     </footer>
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
@@ -649,6 +790,7 @@
     <script src="js/animations.js"></script>
     <script src="js/alert.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+
 
     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>

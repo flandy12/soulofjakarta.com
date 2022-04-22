@@ -16,8 +16,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    background-color: #060004;
-    color: #a6a6a6;
+    background-color: #191919;
+    color: #f3f3f3;
 }
 
 a {
@@ -331,6 +331,14 @@ input:focus {
 @media only screen and (max-width: 767px) {
     .section-heading h4 {
         font-size: 20px;
+    }
+    .hero-area .post-content-one{
+        height: 320px;  
+        display: block;
+    }
+    .hero-area .post-content-one .post-content-body {
+        display: block;
+        margin-top: 44px;
     }
 }
 
@@ -889,13 +897,49 @@ input:focus {
     background: #ffffff;
 }
 
-.hero-area {
+.hero-area-main{
     position: relative;
     z-index: 1;
     width: 100%;
-    background: rgb(0,0,0);
+    object-fit: cover;
+    background-size: cover;
+    opacity: 1.5;
+    background-image:url('../image/bg/bg-souja.jpg');
 }
 
+.hero-area .post-content-one {
+    position: absolute;
+    padding: 20px 20px 50px 20px;
+    bottom: 0px;
+    z-index: 99;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(22, 21, 21, 0.637) 55%, rgba(138, 139, 139, 0.048) 100%);
+}
+/* card-trending */
+.card-img-top {
+    z-index: 99;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.397) 0%, rgba(10, 10, 10, 0.801) 55%, rgba(0, 0, 0, 0.836) 100%);
+}
+.hero-area .post-content-one .post-1 {
+    background-color:#000000;
+}
+.hero-area .post-content-one .post-title-head {
+    font-weight: bold;
+}
+.hero-area .post-content-one .post-cata{
+    display: block;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.hero-area .post-content-one .post-title{
+    font-size: 30px;
+    width: 80%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -1119,6 +1163,7 @@ input:focus {
 }
 .trending-posts-area .single-post-area .post-meta {
     padding: 20px 0;
+    color: #000000;
 }
 
 .single-blog-post .post-content .post-meta a:hover,
@@ -1519,7 +1564,11 @@ input:focus {
     color: #111110;
     margin-bottom: 15px;
     font-size: 20px;
+ 
     text-decoration: none;
+}
+.trending-posts-area .single-post-area .post-content .post-meta a {
+    color: black;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-post-area .post-content .post-title {
@@ -1823,9 +1872,19 @@ input:focus {
     }
 }
 
-.post-details-content {
+.post-details-content { 
     position: relative;
     z-index: 1;
+}
+.blog-content-body {
+    padding:20px;
+    border: 1px solid #393c3d;
+    background-color: rgb(31, 30, 30);
+}
+.detail-body-all{
+    
+    width: 100%;
+    margin: 0;
 }
 
 .post-details-content .post-share-info {
@@ -2090,25 +2149,88 @@ input:focus {
     flex: 0 0 70px;
     min-width: 70px;
     margin-right: 20px;
+    width: 70px;
     height: 70px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .comment_area .comment-content .comment-author img {
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 @media only screen and (max-width: 767px) {
-    .comment_area .comment-content .comment-author {
+    /* .comment_area .comment-content .comment-author {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 40px;
         flex: 0 0 40px;
         min-width: 40px;
         margin-right: 10px;
         height: 40px;
+    } */
+}
+.about {
+    background-color: #f6f4fa;
+    padding: 20px 0;
+}
+.about h1{
+   color: #000000;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 20px;
+   font: bolder;
+   font-size: 24px;
+}
+.about-all {
+    padding: 30px;
+}
+@media(max-width: 767px){
+    .about-all {
+        display: block;
     }
 }
+@media(max-width: 420px){
+    .about-all .col{
+        display: block;
+    }
+}
+.rowiklanpre {
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.post-catas {
+    background-color: #dbbd37;
+    padding: 8px 15px ;
+    border-radius: 2px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    line-height: 1;
+    z-index: 99;
+    top: 170px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    
+}
+.post-catas::after{
+    display: block;
+    position: relative;
+    margin-top: -150px;
+    height: 150px;
+}
 
+.card-img-trending::after{
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(10, 10, 10, 0.486) 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
 .comment_area .comment-content .comment-meta {
     margin-bottom: 30px;
 }
@@ -2323,14 +2445,39 @@ input:focus {
 .trending-posts-area {
     background: #f6f4fa;
 }
+.all-post-area{
+    background-color: #cecece3f;
+    display: flex;
+    margin-right: 20px;
+}
 .single-widget {
+    margin-top: 50px;
     position: relative;
-    background-color: #1e2020;
+    background-color: #f6f4fa;
     z-index: 1;
     border: 1px solid #393c3d;
     border-radius: 3px;
     padding: 40px 30px;
 }
+.sidebar-area .single-widget .section-heading{
+    margin: 0;
+}
+.detail-body-all .single-widget {
+    margin-top: 0;
+    position: relative;
+    background-color: #1e1e1e;
+    z-index: 1;
+ 
+    border: 1px solid #393c3d;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.detail-body-all .single-widget .share-icon{
+   display: flex;
+}
+.detail-body-all .single-widget .share-icon a{
+    margin: 0 2px;
+ }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-widget {
@@ -2344,8 +2491,13 @@ input:focus {
     }
 }
 #judul {
+    font-size: 20px;
     margin-top: 50px;
     color: rgb(31, 31, 31);
+}
+.trending-posts-area .card-img-top img {
+    width: 100%;
+    height: 400px;
 }
 .followers-widget {
     display: -webkit-box;
@@ -2975,6 +3127,13 @@ textarea.form-control {
     #search {
         display: none;
     }
+    
+}
+@media (max-width: 576px) {
+    .hero-area .post-content-one .post-title{
+        font-size: 20px;
+    }
+
 }
 #search {
     display: block;
@@ -2983,4 +3142,45 @@ textarea.form-control {
     color: white;
     background-color: black;
     border: none;
+}
+/**
+* Detail Blog Body
+*/
+.blog-content-body {
+    color: rgb(139, 139, 139);
+}
+.blog-content-all {
+    padding: 20px;
+    margin: 0 50px;
+
+}
+.card-text-trending-head {
+    margin: 10px 0;
+    height: 100px;
+}
+.card-text-trending-head span b {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: rgb(143, 143, 143);
+}
+.card-text-trending-head .card-title {
+    font: bold;
+}
+.card-text-trending-head p{
+   margin: 0;
+   color: rgb(97, 97, 97);
+}
+
+.card-text-trending-body{
+    display: block;
+    height: 140px;
+}
+.popular-post-body {
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(97, 97, 97, 0.247);
+    background-color: #ffffff;
+}
+
+.about-post-body{
+    padding: 20px;
 }

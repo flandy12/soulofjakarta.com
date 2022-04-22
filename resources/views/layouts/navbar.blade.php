@@ -459,7 +459,9 @@
     <!-- end wrapper -->
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tiny.cloud/1/gl0q3ajetph6n89g2yh4aaiy9mmsrbkcj7ewjrfgnea7dqsi/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="js/scripts.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
     <!-- end script -->
 </body>
 

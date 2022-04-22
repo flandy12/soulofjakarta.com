@@ -3468,7 +3468,7 @@ setTimeout(function () {
     padding: '3em',
     color: '#ffffff',
     background: 'url("/storage/artikel-photos/justin.jpg") ',
-    backdrop: "\n            rgba(0,0,123,0.4)\n            left top\n            no-repeat\n        "
+    backdrop: "\n            #0a0a0a3a\n            left top\n            no-repeat\n        "
   });
 }, 5000);
 })();

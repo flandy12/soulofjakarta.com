@@ -10,7 +10,7 @@ setTimeout(() => {
         color: '#ffffff',
         background: 'url("/storage/artikel-photos/justin.jpg") ',
         backdrop: `
-            rgba(0,0,123,0.4)
+            #0a0a0a3a
             left top
             no-repeat
         `

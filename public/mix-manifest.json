@@ -8,5 +8,6 @@
     "/css/backend.css": "/css/backend.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/css/front.css": "/css/front.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/images/logo.svg": "/images/logo.svg"
 }

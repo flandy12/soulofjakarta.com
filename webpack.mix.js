@@ -13,15 +13,15 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/tinymce.js', 'public/js')
-    // .js('resources/js/active.js', 'public/js')
     .js('resources/js/style.js', 'public/js')
     .js('resources/js/animate.js', 'public/js/animations.js')
     .js('resources/js/alert.js', 'public/js')
+    
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
- 
+    .copy('resources/image/','public/images')
     //backend style
     .postCss('resources/css/backend.css', 'public/css/')
 
