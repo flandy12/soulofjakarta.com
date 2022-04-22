@@ -21,7 +21,7 @@ mix.js('resources/js/app.js', 'public/js')
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .copy('resources/image/','public/images')
+    // .copy('resources/image/','public/images')
     //backend style
     .postCss('resources/css/backend.css', 'public/css/')
 
