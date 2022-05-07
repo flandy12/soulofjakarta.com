@@ -179,7 +179,7 @@ class ArticleController extends Controller
                 'Image_Artikel.image'=>'Foto Harus Berupa (jpg,png,jpeg)',
             ];
             $this->validate($request,[
-                'Image_Artikel' =>'required|file|image|max:2048',
+                'Image_Artikel' =>'required|file|image',
             ],$message);
 
             // //Storage LARAVEL

@@ -18,7 +18,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 
-
 </head>
 
 <body>
@@ -72,37 +71,306 @@
 
     <!-- ##### Hero Area Start ##### -->
     <section class="main-one">
-
         <div class="main-one-container">
             <div class="main-one-body">
                 <div class="main-headline">
-                    
-                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="" class="img-headline">
+                    <a href="/artikel/1/detail">
+                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt=""
+                            class="img-headline">
                         <div class="content-body">
-                            <h2 class="content-body">Richard Ekwonye - Portfolio</h2>
-                            <p >
-                            Hai Sobat Souja, buat kalian para penggemar karya musik dari penyanyi ganteng Justin Bieber kayaknya harus siap merogoh kocek yang lumayan banyak ta
+                            <h2 class="title">Richard Ekwonye - Portfolio</h2>
+                            <p>
+                                Hai Sobat Souja, buat kalian para penggemar karya musik dari penyanyi ganteng Justin
+                                Bieber
+                                kayaknya harus siap merogoh kocek yang lumayan banyak ta
                             </p>
                         </div>
-                 
+                    </a>
                 </div>
                 <div class="headline">
                     <div class="main-headline-second">
-                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="" class="img-headline-second">
+                        <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="" class="img-headline-second">
+                        <div class="headline-second-body">
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                        </div>
                     </div>
                     <div class="main-headline-second">
-                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="" class="img-headline-second">
+                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt=""
+                            class="img-headline-second">
+                        <div class="headline-second-body">
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                        </div>
+
                     </div>
                 </div>
-                <div class="sidebar">
-                    sacascascas
+            </div>
+        </div>
+
+    </section>
+    <div class="ads">
+        <div class="ads-container">
+            <img src="{{asset('storage/ads/benner.png')}}" alt="" srcset="">
+        </div>
+    </div>
+    <section class="main-two">
+        <div class="container">
+            <div class="main-two-all">
+                <div class="main-two-body">
+                    <div class="main-two-title">
+                        <h2>Must Popular</h2>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <a href="/artikel/1/detail"> <img
+                                                src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                                alt=""></a>
+                                        <span class="category Music">MUSIC</span>
+                                    </div>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <h2 class="title">Most Frequently Asked Questions!</h2>
+                                            <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
+                                        </div>
+                                        <div class="sidebar-footer-text">
+                                            <p>BY <span class="auth"> FLANDY</span>
+                                            </p>
+                                            <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                            alt="">
+                                        <span class="category Lifestyle">Lifestyle</span>
+                                    </div>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
+                                        </div>
+                                        <div class="sidebar-footer-text">
+                                            <p>BY <span class="auth">FLANDY</span>
+                                            </p>
+                                            <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                            alt="">
+                                        <span class="category Culinary">Culinary</span>
+                                    </div>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
+                                        </div>
+                                        <div class="sidebar-footer-text">
+                                            <p>BY <span class="auth">FLANDY</span>
+                                            </p>
+                                            <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
+                                        <span class="category Music">MUSIC</span>
+                                    </div>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
+                                        </div>
+                                        <div class="sidebar-footer-text">
+                                            <p>BY <span class="auth">FLANDY</span>
+                                            </p>
+                                            <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <section class="main-three">
+        <div class="container">
+            <div class="main-three-all">
+                <div class="main-three-title">
+                    <h2>Hot Article</h2>
+                </div>
+                <div class="main-three-body">
+                    <div class="content lifestyle">
+                        <div class="sidebar-img">
+                            <a href="">
+                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            </a>
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Lifestyle</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content music">
+                        <div class="sidebar-img">
+                            <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Music</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content culinary">
+                        <div class="sidebar-img">
+                            <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Culinary</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content lifestyle">
+                        <div class="sidebar-img">
+                            <a href="">
+                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            </a>
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Lifestyle</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content lifestyle">
+                        <div class="sidebar-img">
+                            <a href="">
+                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            </a>
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Lifestyle</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content lifestyle">
+                        <div class="sidebar-img">
+                            <a href="">
+                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            </a>
+                        </div>
+                        <div class="sidebar-body">
+                            <span class="category">Lifestyle</span>
+                            <h2>Most Frequently Asked Questions!</h2>
+                            <div class="sidebar-body-text">
+                                <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                            </div>
+                            <div class="sidebar-footer-text">
+                                <p>BY <span class="auth">FLANDY</span>
+                                </p>
+                                <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="main-three-side">
+                <div class="head-side">
+                    <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                </div>
+                <div class="body-side">
+                        <div class="body-img">
+                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="content-body">
+                            <p>sacas</p>
+                            <p>sacsacascas asas asas as assa</p>
+                        </div>
+              
+                </div>
 
+                <div class="body-side">
+                        <div class="body-img">
+                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="content-body">
+                            <p>sacas</p>
+                            <p>sacsacascas asas asas as assa</p>
+                        </div>
+              
+                </div>
+                <div class="body-side">
+                        <div class="body-img">
+                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="content-body">
+                            <p>sacas</p>
+                            <p>sacsacascas asas asas as assa</p>
+                        </div>
+              
+                </div>            </div>
+        </div>
+    </section>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -256,7 +524,7 @@
     <script src="js/animations.js"></script>
     <script src="js/alert.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-
+    <script src="{{ asset('js/slide.js') }}"></script>
 
     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>

@@ -70,217 +70,181 @@
     </nav>
     <!-- ##### Header Area End ##### -->
 
-    <section class="detail-article">
-        <!-- ##### Breadcrumb Area Start ##### -->
-        <div class="vizew-breadcrumb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                                        Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">{{$data[0]->nama}}</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Reunification of migrant toddlers
-                                </li>
-                            </ol>
-                        </nav>
+    <section>
+        <div class="img-detail">
+            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+        </div>
+        <div class="container">
+            <div class="detail-article">
+
+                <div class="main-article-detail">
+                    <div class="main-detail-container">
+
+                        <div class="main-detail-body">
+                            <div class="article-body">
+                                <div class="title">
+                                    <h2>Kolaborasi Clothvin dan Tebuf di Jakcloth Lebaran 2022</h2>
+                                    <div class="title-footer">
+                                        <div class="time">
+                                            <p>Selasa, 26/04/2022 - 16:21 WIB</p>
+                                        </div>
+                                        <div class="sosmed"><img src="{{asset('images/core-img/fb.png')}}" alt=""></div>
+                                    </div>
+                                </div>
+                                <p> JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya
+                                    Lebaran.
+                                    JakCloth Lebaran tahun ini diadakan di tujuh kota dan dibagi menjadi dua sesi. Sesi
+                                    pertama
+                                    di
+                                    tanggal 9 sampai 17 April 2022, dan sesi kedua 22 sampai 30 April 2022. Ketujuh kota
+                                    itu
+                                    antara
+                                    lain
+                                    Cikarang Bekasi, Cikupa Tangerang, Surabaya, Lampung, Kota Bekasi, Malang, dan di
+                                    Senayan
+                                    Jakarta.</p>
+
+                                <p> Untuk agenda Jakcloth Lebaran 2022 sesi Jakarta yang diselenggarakan di Jakarta
+                                    Convention
+                                    Centre
+                                    Senayan pada 22 hingga 30 April ini, akan bertambah seru dengan adanya area Hijab
+                                    Market,
+                                    yang
+                                    akan
+                                    menghadirkan puluhan brand muslim dan hijab, hasil kolaborasi pihak JakCloth dan
+                                    Hijab Fest
+                                    Indonesia.</p>
+
+                                <p>Meskipun diselenggarakan di tengah pandemi, Event Clothing terbesar JakCloth Lebaran
+                                    2022
+                                    yang
+                                    digelar di JCC Senayan pada tanggal 22-30 April 2022 kian ramai bersamaan dengan
+                                    cairnya
+                                    tunjangan
+                                    hari raya Lebaran.</p>
+
+                                <p> JakCloth Lebaran 2022 menghadirkan ratusan brand Clothing dan Fashion lokal dengan
+                                    menghadirkan
+                                    beragam produk, seperti baju, tas, sepatu, dan lainnya dengan harga terjangkau,
+                                    salah
+                                    satunya
+                                    Clothvin.</p>
+
+                                <p> Clothvin adalah brand lokal yang menjual produk t-shirt dengan tema I Am Legend yang
+                                    mengutamakan
+                                    desain yang mewakili budaya Indonesia, seperti wayang. Salah satu desain nya yaitu
+                                    Gunungan
+                                    Wayang
+                                    yang melambangkan kehidupan mulai dari manusia, hewan, serta hutan. Selain
+                                    melestarikan
+                                    budaya
+                                    lokal, CLothvin juga memiliki beberapa design lain yang sangat mewakili anak muda.
+                                    Tidak
+                                    hanya
+                                    itu,
+                                    harga yang ditawarkan Clothvin juga sangat terjangkau untuk kalangan anak muda.
+                                    Selain
+                                    Clothvin,
+                                    terdapat clothing line Tebuf yang menampilkan beragam unsur ethnic, mulai dari baju
+                                    hingga
+                                    aksesoris
+                                    seperti topi, kalung, tas, gelang kulit, dan lain-lain.
+                                </p>
+                                <p>Berbagai pilihan t-shirt dan aksesoris Clothvin dan Tebuf kini hadir di JakCloth
+                                    Lebaran 2022
+                                    untuk
+                                    melengkapi Hari Raya kalian. Jangan lupa untuk mengunjungi booth Clothvin dan Tebuf
+                                    di
+                                    Jakcloth
+                                    Lebaran 2022 dan jangan sampai kelewatan ya! Untuk liat koleksi lainnya bisa kalian
+                                    cek di
+                                    instagram
+                                    @clothvin.id & website https://clothvin.id/</p>
+
+                                <div class="user-profile">
+                                    <div class="img"><img
+                                            src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                            class="rounded-circle" alt=""></div>
+                                    <div class="detail-user">
+                                        <span>Flandy</span>
+                                        <p>Developer Web</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-content">
+                                <div class="ads">
+                                    <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                        class="" alt="">
+                                </div>
+                                <div class="side-article">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="detail-s">
+                <div class="popular-post">
+                    <h2>Popular Posts</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="content lifestyle">
+                                <div class="sidebar-img">
+                                    <a href="">
+                                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="sidebar-body">
+                                    <span class="category">Lifestyle</span>
+                                    <h2>Most Frequently Asked Questions!</h2>
+                                    <div class="sidebar-body-text">
+                                        <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                                    </div>
+                                    <div class="sidebar-footer-text">
+                                        <p>By <span class="auth">Flandy On</span>
+                                        </p>
+                                        <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="content lifestyle">
+                                <div class="sidebar-img">
+                                    <a href="">
+                                        <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="sidebar-body">
+                                    <span class="category">Lifestyle</span>
+                                    <h2>Most Frequently Asked Questions!</h2>
+                                    <div class="sidebar-body-text">
+                                        <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
+                                    </div>
+                                    <div class="sidebar-footer-text">
+                                        <p>By <span class="auth">Flandy On</span>
+                                        </p>
+                                        <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ##### Breadcrumb Area End ##### -->
-
-        <!-- ##### Post Details Area Start ##### -->
-        <div class="post-details-area mb-80">
-            <div class="container">          
-                <div class="detail-body-all">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mb-20">
-                                <img src="{{asset('storage/'.$data[0]->gambar_kecil)}}" alt="" class="h-1/2 w-full">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Post Details Content Area -->
-                        <div class="col-lg-8">
-                            <div class="post-details-content">
-                                <!-- Blog Content -->
-                                <div class="blog-content detail-article">
-                                    <!-- Post Content -->
-                                    <div class="blog-content-body">
-                                    <div class="post-content mt-0">
-                                        <p class="post-cata cata-sm cata-danger">{{$data[0]->nama}}</p>
-                                        <p class="post-title mb-2">{{$data[0]->judul}}</p>
-
-                                        <div class="d-flex justify-content-between mb-30">
-                                            <div class="post-meta d-flex align-items-center">
-                                                <a href="#" class="post-author">By {{$penulis[0]->name}}</a>
-                                                <i class="fa fa-circle" aria-hidden="true"></i>
-                                                <a href="#"
-                                                    class="post-date">{{date('d M y',strtotime($data[0]->created_at))}}</a>
-                                            </div>
-                                            <div class="post-meta d-flex">
-                                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <?php 
-                                        echo $data[0]->isi
-                                    ?>
-                                    </div>
-
-                                    <!-- Post Tags -->
-                                    <div class="post-tags mt-30">
-                                        <ul>
-                                            <li><a href="#">HealthFood</a></li>
-                                            <li><a href="#">Sport</a></li>
-                                            <li><a href="#">Game</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Post Author -->
-                                    <div class="vizew-post-author d-flex align-items-center py-5">
-                                        <div class="post-author-thumb">
-                                            <img src="{{asset('/storage/'.$profile)}}" alt="">
-                                        </div>
-                                        <div class="post-author-desc pl-4">
-                                            <a href="#" class="author-name">{{$penulis[0]->name}}</a>
-                                            <p>Hello! My name is Nicolas Sarkozy. I’m a web designer and front-end web
-                                                developer
-                                                with over fifteen years of professional.</p>
-                                            <div class="post-author-social-info">
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- `Relate`d Post Area -->
-                                    <div class="related-post-area mt-5">
-                                        <!-- Section Title -->
-                                        <div class="section-heading style-2">
-                                            <h4>Related Post</h4>
-                                            <div class="line"></div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <!-- Single Blog Post -->
-                                            <div class="col-12 col-md-6">
-                                                <div class="single-post-area mb-50">
-                                                    <!-- Post Thumbnail -->
-                                                    <div class="post-thumbnail">
-                                                        <img src="img/bg-img/11.jpg" alt="">
-
-                                                        <!-- Video Duration -->
-                                                        <span class="video-duration">05.03</span>
-                                                    </div>
-
-                                                    <!-- Post Content -->
-                                                    <div class="post-content">
-                                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                                        <a href="single-post.html" class="post-title">Warner Bros.
-                                                            Developing
-                                                            ‘The accountant’ Sequel</a>
-                                                        <div class="post-meta d-flex">
-                                                            <a href="#"><i class="fa fa-comments-o"
-                                                                    aria-hidden="true"></i>
-                                                                22</a>
-                                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i>
-                                                                16</a>
-                                                            <a href="#"><i class="fa fa-thumbs-o-up"
-                                                                    aria-hidden="true"></i>
-                                                                15</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Single Blog Post -->
-                                            <div class="col-12 col-md-6">
-                                                <div class="single-post-area mb-50">
-                                                    <!-- Post Thumbnail -->
-                                                    <div class="post-thumbnail">
-                                                        <img src="img/bg-img/12.jpg" alt="">
-
-                                                        <!-- Video Duration -->
-                                                        <span class="video-duration">05.03</span>
-                                                    </div>
-
-                                                    <!-- Post Content -->
-                                                    <div class="post-content">
-                                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                                        <a href="single-post.html" class="post-title">Searching for the
-                                                            'angel'
-                                                            who held me on Westminste</a>
-                                                        <div class="post-meta d-flex">
-                                                            <a href="#"><i class="fa fa-comments-o"
-                                                                    aria-hidden="true"></i>
-                                                                28</a>
-                                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i>
-                                                                17</a>
-                                                            <a href="#"><i class="fa fa-thumbs-o-up"
-                                                                    aria-hidden="true"></i>
-                                                                22</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sidebar Widget -->
-                        <div class="col-lg-4">
-                            <div class="sidebar-area">
-
-                                <!-- ***** Single Widget ***** -->
-                                <div class="single-widget share-post-widget mb-50">
-                                    <p>Share This Post</p>
-                                    <div class="share-icon">
-                                        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
-                                            Facebook</a>
-                                        <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
-                                            Twitter</a>
-                                        <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i>
-                                            Google+</a>
-                                    </div>
-                                </div>
-
-                                <!-- ***** Single Widget ***** -->
-                                <div class="single-widget p-0 author-widget">
-                                    <div class="p-4">
-                                        <img class="author-avatar" src="{{asset('/storage/'.$profile)}}" alt="">
-                                        <a href="#" class="author-name">Chris Hemsworth</a>
-                                        <div class="author-social-info">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                    </div>
-
-                                    <div class="authors--meta-data d-flex">
-                                        <p>Posted<span class="counter">80</span></p>
-                                        <p>Comments<span class="counter">230</span></p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+        <div class="ads">
+            <div class="ads-container">
+                <img src="{{asset('storage/ads/benner.png')}}" alt="" srcset="">
             </div>
         </div>
     </section>

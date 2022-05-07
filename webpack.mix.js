@@ -16,7 +16,7 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/style.js', 'public/js')
     .js('resources/js/animate.js', 'public/js/animations.js')
     .js('resources/js/alert.js', 'public/js')
-    
+    .js('resources/js/swiper.js', 'public/js/slide.js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
@@ -30,6 +30,7 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/style.css', 'public/css/main.css')
     .postCss('resources/css/magnific-popup.css', 'public/css/main.css')
     .postCss('resources/css/frontend.css', 'public/css/front.css')
+    .postCss('resources/css/swiper.css', 'public/css/front.css')
     .postCss('resources/css/font-awesome.min.css', 'public/css/main.css')
     .postCss('resources/css/classy-nav.css', 'public/css/main.css')
     .postCss('resources/css/animate.css', 'public/css/main.css')
