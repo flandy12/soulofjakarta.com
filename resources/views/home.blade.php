@@ -220,6 +220,12 @@
                 <div class="main-three-title">
                     <h2>Hot Article</h2>
                 </div>
+                <div class="category-article">
+                    <span class="active"> Lifestyle</span>
+                    <span> Music</span>
+                    <span> Culinary</span>
+                    <span> Event</span>
+                </div>
                 <div class="main-three-body">
                     <div class="content lifestyle">
                         <div class="sidebar-img">
@@ -277,7 +283,8 @@
                     <div class="content lifestyle">
                         <div class="sidebar-img">
                             <a href="">
-                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                    alt="">
                             </a>
                         </div>
                         <div class="sidebar-body">
@@ -315,7 +322,7 @@
                     <div class="content lifestyle">
                         <div class="sidebar-img">
                             <a href="">
-                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                                <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="sidebar-body">
@@ -331,44 +338,54 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
             <div class="main-three-side">
                 <div class="head-side">
-                    <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                    <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
                 </div>
-                <div class="body-side">
+                <div class="body-slide-all">
+                    <div class="body-side">
                         <div class="body-img">
-                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p>sacas</p>
-                            <p>sacsacascas asas asas as assa</p>
+                            <p class="lifestyle">Lifestyle</p>
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
-              
-                </div>
 
-                <div class="body-side">
+                    </div>
+                    <div class="body-side">
                         <div class="body-img">
-                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p>sacas</p>
-                            <p>sacsacascas asas asas as assa</p>
+                            <p class="culinary">Culinary</p>
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
-              
+                    </div>
+                    <div class="body-side">
+                        <div class="body-img">
+                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="content-body">
+                            <p class="lifestyle">Lifestyle</p>
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                        </div>
+
+                    </div>
+                    <div class="body-side">
+                        <div class="body-img">
+                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                        </div>
+                        <div class="content-body">
+                            <p class="music">Music</p>
+                            <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="body-side">
-                        <div class="body-img">
-                              <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
-                        </div>
-                        <div class="content-body">
-                            <p>sacas</p>
-                            <p>sacsacascas asas asas as assa</p>
-                        </div>
-              
-                </div>            </div>
+            </div>
         </div>
     </section>
 

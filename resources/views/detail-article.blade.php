@@ -192,7 +192,7 @@
     <section>
         <div class="container">
             <div class="detail-s">
-                <div class="popular-post">
+                <div class="populer-post">
                     <h2>Popular Posts</h2>
                     <div class="row">
                         <div class="col">
