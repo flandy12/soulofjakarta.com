@@ -3,7 +3,11 @@
       Navigation,
       Pagination
   } from 'swiper';
+  //scroll smooth 
 
+// import ScrollReveal from "scrollreveal";
+
+// ScrollReveal().reveal('.swiper-slide',{  delay:600 });
   // Now you can use Swiper
   const swiper = new Swiper('.swiper', {
       // Install modules
