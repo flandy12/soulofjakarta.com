@@ -11009,7 +11009,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".post-thumbnail").on("click", fun
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#close').on('click', function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#body-alert').hide();
-}); // Mengambil Data Dari DataBase 
+}); // setTimeout(function () {
+//     $('body').removeClass('.preloader');
+//     console.log('jadi')
+// }, 1500);
+// <-- time in milliseconds
+// Execute somethingElse() every 2 seconds.
+// Mengambil Data Dari DataBase 
 // function ArticelUpdate() {
 //     $.ajax({
 //         type: "get",

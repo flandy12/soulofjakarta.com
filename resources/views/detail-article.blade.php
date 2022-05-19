@@ -9,15 +9,23 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Vizew - Blog &amp; Magazine HTML Template</title>
+    <title>SoulOfJakarta</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/cgv2xtg.css">
 </head>
 
 <body>
@@ -178,7 +186,51 @@
                                         class="" alt="">
                                 </div>
                                 <div class="side-article">
-                                    
+          
+                                        <div class="title">
+                                            <h2>Berita Populer Bulan Ini </h2>
+                                        </div>
+                                        <div class="body-side">
+                                            <div class="left-text">
+                                                <h1>#1</h1>
+                                            </div>
+                                            <div class="content-body">
+                                                <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                                            </div>
+                                        </div>
+                                        <div class="body-side">
+                                            <div class="left-text">
+                                                <h1>#2</h1>
+                                            </div>
+                                            <div class="content-body">
+                                                <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                                            </div>
+                                        </div>
+                                        <div class="body-side">
+                                            <div class="left-text">
+                                                <h1>#3</h1>
+                                            </div>
+                                            <div class="content-body">
+                                                <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                                            </div>
+                                        </div>
+                                        <div class="body-side">
+                                            <div class="left-text">
+                                                <h1>#4</h1>
+                                            </div>
+                                            <div class="content-body">
+                                                <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                                            </div>
+                                        </div>
+                                        <div class="body-side">
+                                            <div class="left-text">
+                                                <h1>#5</h1>
+                                            </div>
+                                            <div class="content-body">
+                                                <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                                            </div>
+                                        </div>
+                        
                                 </div>
                             </div>
                         </div>
@@ -194,59 +246,90 @@
             <div class="detail-s">
                 <div class="populer-post">
                     <h2>Popular Posts</h2>
-                    <div class="row">
-                        <div class="col">
-                            <div class="content lifestyle">
-                                <div class="sidebar-img">
-                                    <a href="">
-                                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <a href="/artikel/1/detail"> <img
+                                                src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <a href="/artikel/1/detail">
+                                            <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sidebar-body">
+
+
+                                        <div class="sidebar-body-text">
+                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
+                                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="sidebar-body">
-                                    <span class="category">Lifestyle</span>
-                                    <h2>Most Frequently Asked Questions!</h2>
-                                    <div class="sidebar-body-text">
-                                        <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
                                     </div>
-                                    <div class="sidebar-footer-text">
-                                        <p>By <span class="auth">Flandy On</span>
-                                        </p>
-                                        <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="content lifestyle">
-                                <div class="sidebar-img">
-                                    <a href="">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="sidebar-img">
                                         <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
-                                    </a>
-                                </div>
-                                <div class="sidebar-body">
-                                    <span class="category">Lifestyle</span>
-                                    <h2>Most Frequently Asked Questions!</h2>
-                                    <div class="sidebar-body-text">
-                                        <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
                                     </div>
-                                    <div class="sidebar-footer-text">
-                                        <p>By <span class="auth">Flandy On</span>
-                                        </p>
-                                        <i>Jumat, 22/04/2022 - 10:36 WIB</i>
+                                    <div class="sidebar-body">
+
+                                        <div class="sidebar-body-text">
+                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ads">
+        <!-- <div class="ads">
             <div class="ads-container">
                 <img src="{{asset('storage/ads/benner.png')}}" alt="" srcset="">
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- ##### Post Details Area End ##### -->
 
@@ -404,16 +487,25 @@
     </footer>
     <!-- ##### Footer Area End ##### -->
 
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
     <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-    <!-- Active js -->
-    <script src="{{asset('js/app.js')}}"></script>
+
+    <script src="js/animations.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
+
+    <!-- <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/active.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/style.js') }}"></script>-->
 </body>
 
 </html>

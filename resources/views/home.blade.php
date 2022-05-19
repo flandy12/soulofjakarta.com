@@ -17,7 +17,12 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300&family=Lexend:wght@300;500;700&family=News+Cycle:wght@400;700&family=Playfair+Display:wght@400;600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
+    <!-- adobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/cgv2xtg.css">
 </head>
 
 <body>
@@ -61,10 +66,6 @@
                     </li>
 
                 </ul>
-                <form class="d-flex">
-                    <input type="text" placeholder="Search.." name="search" class="form-control me-2" id="search-input">
-                    <button type="submit" id="search"><i class="fa fa-search"></i></button>
-                </form>
             </div>
         </div>
     </nav>
@@ -78,7 +79,9 @@
                         <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt=""
                             class="img-headline">
                         <div class="content-body">
-                            <h2 class="title">Richard Ekwonye - Portfolio</h2>
+                            <span class="category Lifestyle">Lifestyle</span>
+                            <h2 class="title">
+                                Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                             <p>
                                 Hai Sobat Souja, buat kalian para penggemar karya musik dari penyanyi ganteng Justin
                                 Bieber
@@ -91,6 +94,7 @@
                     <div class="main-headline-second">
                         <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="" class="img-headline-second">
                         <div class="headline-second-body">
+                        <span class="category Music">Music</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
                     </div>
@@ -98,6 +102,7 @@
                         <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt=""
                             class="img-headline-second">
                         <div class="headline-second-body">
+                        <span class="category Culinary">Culinary</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
 
@@ -117,8 +122,8 @@
     <section class="main-two">
         <div class="container">
             <div class="main-two-all">
-                <div class="main-two-body" >
-                    <div class="main-two-title" data-aos ="fade-up" data-aos-duration="2000">
+                <div class="main-two-body">
+                    <div class="main-two-title" data-aos="fade-up" data-aos-duration="2000">
                         <h2>Must Popular</h2>
                     </div>
                     <div class="swiper" data-aos="fade-left" data-aos-duration="1000">
@@ -135,7 +140,9 @@
 
                                         <div class="sidebar-body-text">
                                             <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
-                                            <h2 class="title">Most Frequently Asked Questions!</h2>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
                                             <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
                                         </div>
                                         <div class="sidebar-footer-text">
@@ -147,17 +154,23 @@
                             <div class="swiper-slide">
                                 <div class="content">
                                     <div class="sidebar-img">
-                                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                            alt="">
+                                        <a href="/artikel/1/detail">
+                                            <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                                alt="">
+                                        </a>
                                         <span class="category Lifestyle">Lifestyle</span>
                                     </div>
                                     <div class="sidebar-body">
 
+
                                         <div class="sidebar-body-text">
                                             <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
-                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
                                             <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
                                         </div>
+
                                         <div class="sidebar-footer-text">
                                             <i>1 Jam Yang Lalu</i>
                                         </div>
@@ -175,7 +188,9 @@
 
                                         <div class="sidebar-body-text">
                                             <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
-                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
                                             <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
                                         </div>
                                         <div class="sidebar-footer-text">
@@ -194,7 +209,9 @@
 
                                         <div class="sidebar-body-text">
                                             <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
-                                            <h2>Most Frequently Asked Questions!</h2>
+                                            <a href="/artikel/1/detail">
+                                                <h2>Most Frequently Asked Questions!</h2>
+                                            </a>
                                             <p>Hai Sobat Souja, buat kalian para penggemar karya musik </p>
                                         </div>
                                         <div class="sidebar-footer-text">
@@ -216,8 +233,8 @@
         <div class="container">
             <div class="main-three-all">
                 <!-- Start Hot-Article -->
-                <div class="main-three-title" data-aos ="fade-up" data-aos-duration="500">
-                    <h2 >Hot Article</h2>
+                <div class="main-three-title" data-aos="fade-up" data-aos-duration="500">
+                    <h2>Hot Article</h2>
                 </div>
                 <div class="category-article" data-aos="fade-left" data-aos-duration="500">
                     <span class="active"> Lifestyle</span>
@@ -228,13 +245,15 @@
                 <div class="main-three-body">
                     <div class="content lifestyle" data-aos="fade-left" data-aos-duration="2000">
                         <div class="sidebar-img">
-                            <a href="">
+                            <a href="/artikel/1/detail">
                                 <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="sidebar-body">
                             <span class="category">Lifestyle</span>
-                            <h2>Most Frequently Asked Questions!</h2>
+                            <a href="/artikel/1/detail">
+                                <h2>Most Frequently Asked Questions!</h2>
+                            </a>
                             <div class="sidebar-body-text">
                                 <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
                             </div>
@@ -245,13 +264,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content music" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="content music" data-aos="fade-left" data-aos-duration="2000">
                         <div class="sidebar-img">
-                            <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
+                            <a href="/artikel/1/detail">
+                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            </a>
                         </div>
                         <div class="sidebar-body">
                             <span class="category">Music</span>
-                            <h2>Most Frequently Asked Questions!</h2>
+                            <a href="/artikel/1/detail">
+                                <h2>Most Frequently Asked Questions!</h2>
+                            </a>
                             <div class="sidebar-body-text">
                                 <p>Hai Sobat Souja, buat kalian para penggemar karya musik ... </p>
                             </div>
@@ -268,99 +291,133 @@
                 <!--Start Article Headline -->
                 <div class="main-three-headline">
                     <!-- Image width : 96%; height: 350px; -->
-                    <div class="headline" data-aos ="fade-up" data-aos-duration="500">
-                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                    <div class="headline" data-aos="fade-up" data-aos-duration="500">
+                        <a href="/artikel/1/detail"><img
+                                src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt=""></a>
                         <div class="text">
                             <span class="Culinary">Culinary</span>
-                            <h1>Most Frequently Asked Questions!</h1>
+                            <a href="/artikel/1/detail">
+                                <h1>Most Frequently Asked Questions!</h1>
+                            </a>
                             <p>1 Jam Yang Lalu</p>
                         </div>
                     </div>
 
                     <div class="all-article-main-three">
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
+
+                        <!-- Small article -->
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
                                 <p class="time"></p>
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
                                 <p class="time"></p>
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
-                            
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <p class="time"></p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
-                        <div class="content-medium" data-aos ="fade-up" data-aos-duration="500">
+
+                        <!-- Medium article -->
+                        <div class="content-medium" data-aos="fade-up" data-aos-duration="500">
                             <div class="text">
                                 <span>Lifestyle</span>
-                                <h1>"FOTO: Jepretan Momen Horor 'Tsunami Covid' di India Menang Pulitzer"</h1>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <h1>" Jepretan Momen Horor 'Tsunami Covid' di India Menang Pulitzer "</h1>
+                                <span><i>Jumaat, 24 April 2002 </i></span>
                             </div>
                             <div class="img-content">
                                 <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
                                     alt="">
                             </div>
                         </div>
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
+
+                        <!-- Small article -->
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
                                 <p class="time"></p>
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
                                 <p class="time"></p>
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
-                        <div class="content" data-aos ="fade-up" data-aos-duration="500">
+                        <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
-                                    alt="">
+                                <a href="/artikel/1/detail"><img
+                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        alt=""></a>
                             </div>
                             <div class="content-body">
                                 <p class="time"></p>
-                                <h1>Most Frequently Asked Questions!</h1>
-                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari Raya Lebaran. </p>
+                                <a href="/artikel/1/detail">
+                                    <h1>Most Frequently Asked Questions!</h1>
+                                </a>
+                                <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
+                                    Raya Lebaran. </p>
                                 <span><i>Jumaat ,24 April 2002 </i></span>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <!--End Article Headline -->
@@ -383,7 +440,7 @@
                             <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p class="lifestyle">Lifestyle</p>
+                            <span>Lifestyle</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
 
@@ -393,7 +450,7 @@
                             <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p class="culinary">Culinary</p>
+                            <span>Culinary</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
                     </div>
@@ -402,7 +459,7 @@
                             <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p class="lifestyle">Lifestyle</p>
+                            <span>Lifestyle</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
 
@@ -412,19 +469,19 @@
                             <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
-                            <p class="music">Music</p>
+                            <span>Music</span>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
                     </div>
                 </div>
 
                 <!-- Start Iklan Image height: 280px;-->
-                  <div class="second-side">
+                <div class="second-side">
                     <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
-                 </div>
+                </div>
                 <!-- End Iklan -->
 
-                     
+
                 <div class="body-slide-two">
                     <div class="title">
                         <h2>Berita Populer Bulan Ini </h2>
@@ -628,11 +685,11 @@
     <script src="js/alert.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/style.js') }}"></script>
 
     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="{{ asset('js/style.js') }}"></script>-->
 
 </body>
 

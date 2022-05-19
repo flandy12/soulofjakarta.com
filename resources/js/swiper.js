@@ -18,6 +18,7 @@
           el: ".swiper-pagination",
           clickable: true,
       },
+    
       breakpoints: {
           // when window width is >= 320px
           320: {
@@ -32,7 +33,43 @@
           // when window width is >= 640px
           640: {
               slidesPerView: 3,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
               spaceBetween: 40
           }
       }
   });
+  const swiper_popular = new Swiper('.swiper1', {
+    // Install modules
+    modules: [Navigation, Pagination],
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+  
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: "auto",
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            spaceBetween: 40
+        }
+    }
+});

@@ -12924,6 +12924,41 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     // when window width is >= 640px
     640: {
       slidesPerView: 3,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      spaceBetween: 40
+    }
+  }
+});
+var swiper_popular = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper1', {
+  // Install modules
+  modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
       spaceBetween: 40
     }
   }

@@ -41,6 +41,12 @@ $('#close').on('click', function () {
     $('#body-alert').hide();
 });
 
+// setTimeout(function () {
+//     $('body').removeClass('.preloader');
+//     console.log('jadi')
+// }, 1500);
+// <-- time in milliseconds
+// Execute somethingElse() every 2 seconds.
 // Mengambil Data Dari DataBase 
 // function ArticelUpdate() {
 //     $.ajax({
