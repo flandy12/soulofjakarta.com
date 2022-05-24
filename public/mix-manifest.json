@@ -5,9 +5,10 @@
     "/js/animations.js": "/js/animations.js",
     "/js/alert.js": "/js/alert.js",
     "/js/slide.js": "/js/slide.js",
-    "/css/main.css": "/css/main.css",
     "/css/front.css": "/css/front.css",
+    "/css/main.css": "/css/main.css",
     "/css/backend.css": "/css/backend.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/images/logo.svg": "/images/logo.svg"
 }

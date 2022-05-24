@@ -16,13 +16,15 @@
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300&family=Lexend:wght@300;500;700&family=News+Cycle:wght@400;700&family=Playfair+Display:wght@400;600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
-    <!-- adobe font -->
-    <link rel="stylesheet" href="https://use.typekit.net/cgv2xtg.css">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300&family=Lexend:wght@300;500;700&family=News+Cycle:wght@400;700&family=Playfair+Display:wght@400;600&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,6 +37,14 @@
             <div></div>
         </div>
     </div> -->
+
+    <!-- ukuran pop up 600 X 400 -->
+    <div class="alert-ads">
+        <div class="alert-body">
+            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+            <span class="close" id="alert-ads">X</span>
+        </div>
+    </div>
 
     <!-- ##### Header Area Start ##### -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -80,8 +90,8 @@
                             class="img-headline">
                         <div class="content-body">
                             <span class="category Lifestyle">Lifestyle</span>
-                            <h2 class="title">
-                                Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
+                            <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                            <h2 class="title"> Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                             <p>
                                 Hai Sobat Souja, buat kalian para penggemar karya musik dari penyanyi ganteng Justin
                                 Bieber
@@ -94,7 +104,8 @@
                     <div class="main-headline-second">
                         <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="" class="img-headline-second">
                         <div class="headline-second-body">
-                        <span class="category Music">Music</span>
+                            <span class="category Music">Music</span>
+                            <p>Rabu, 18/05/2022 - 16:49 WIB</p>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
                     </div>
@@ -102,7 +113,8 @@
                         <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt=""
                             class="img-headline-second">
                         <div class="headline-second-body">
-                        <span class="category Culinary">Culinary</span>
+                            <span class="category Culinary">Culinary</span>
+                            <p>Rabu, 18/05/2022 - 16:49 WIB</p>
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
 
@@ -110,12 +122,12 @@
                 </div>
             </div>
         </div>
-
     </section>
+
 
     <div class="ads">
         <div class="ads-container">
-            <img src="{{asset('storage/ads/benner.png')}}" alt="" srcset="">
+            <img src="{{asset('storage/ads/benner.jpg')}}" alt="" srcset="">
         </div>
     </div>
 
@@ -233,10 +245,10 @@
         <div class="container">
             <div class="main-three-all">
                 <!-- Start Hot-Article -->
-                <div class="main-three-title" data-aos="fade-up" data-aos-duration="500">
+                <div class="main-three-title" data-aos="fade-up" data-aos-duration="2000">
                     <h2>Hot Article</h2>
                 </div>
-                <div class="category-article" data-aos="fade-left" data-aos-duration="500">
+                <div class="category-article" data-aos="fade-left" data-aos-duration="2000">
                     <span class="active"> Lifestyle</span>
                     <span> Music</span>
                     <span> Culinary</span>
@@ -319,7 +331,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Jumaat ,24 April 2002 </p>
+                                </span>
                             </div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
@@ -335,7 +349,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                                </span>
                             </div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
@@ -351,7 +367,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                                </span>
                             </div>
                         </div>
 
@@ -360,7 +378,7 @@
                             <div class="text">
                                 <span>Lifestyle</span>
                                 <h1>" Jepretan Momen Horor 'Tsunami Covid' di India Menang Pulitzer "</h1>
-                                <span><i>Jumaat, 24 April 2002 </i></span>
+                                <span>Rabu, 18/05/2022 - 16:49 WIB</span>
                             </div>
                             <div class="img-content">
                                 <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
@@ -427,13 +445,13 @@
             <div class="main-three-side">
                 <!-- Start Iklan Image height: 280px;-->
                 <div class="head-side">
-                    <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
+                    <img src="{{asset('storage/ads/benner3.jpg')}}" alt="">
                 </div>
                 <!-- End Iklan -->
 
                 <div class="body-slide-all">
                     <div class="title">
-                        <h2>Berita Terpopuler</h2>
+                        <span>Berita Terpopuler</span>
                     </div>
                     <div class="body-side">
                         <div class="body-img">
@@ -477,7 +495,7 @@
 
                 <!-- Start Iklan Image height: 280px;-->
                 <div class="second-side">
-                    <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt="">
+                    <img src="{{asset('storage/ads/benner2.jpg')}}" alt="">
                 </div>
                 <!-- End Iklan -->
 
@@ -532,32 +550,16 @@
         </div>
     </section>
 
+
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
             <div class="row">
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <!-- Logo -->
-                        <a href="index.html" class="foo-logo d-block mb-4"><img src="img/core-img/logo2.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna</p>
-                        <!-- Footer Newsletter Area -->
-                        <div class="footer-nl-area">
-                            <form action="#" method="post">
-                                <input type="email" name="nl-email" class="form-control" id="nlEmail"
-                                    placeholder="Your email">
-                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Latest Twister</h6>
+                        <h6 class="widget-title">EVENT'S CATEGORY</h6>
                         <!-- Twitter Slides -->
                         <div class="twitter-slides owl-carousel">
 
@@ -565,13 +567,11 @@
                             <div class="single--twitter-slide">
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
-                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p>CULINARY</p>
                                 </div>
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
-                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p>Music</p>
                                 </div>
                             </div>
 
@@ -579,13 +579,10 @@
                             <div class="single--twitter-slide">
                                 <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
-                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p>Fashion, Health & Beauty</p>
                                 </div>
-                                <!-- Single Twit -->
                                 <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
-                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                    <p>Othrer</p>
                                 </div>
                             </div>
 
@@ -593,79 +590,36 @@
                     </div>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Sport Videos</h6>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/1.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana the</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
+                <div class="col-12 col-sm-6 col-xl-6">
                     <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Our Address</h6>
-                        <!-- Contact Address -->
-                        <div class="contact-address">
-                            <p>101 E 129th St, East Chicago, <br>IN 46312, US</p>
-                            <p>Phone: 001-1234-88888</p>
-                            <p>Email: info.colorlib@gmail.com</p>
-                        </div>
-                        <!-- Footer Social Area -->
-                        <div class="footer-social-area">
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        <h6 class="widget-title">OUR MEDIA PARTNER</h6>
+                        <div class="widget"><a href="">
+                            <img src="{{asset('images/logo/logo.png')}}" alt="">
+                            <img src="{{asset('images/logo/01ckhgroup.png')}}" alt=""></a>
+                            <img src="{{asset('images/logo/03ckhent.png')}}" alt="">
+                            <img src="{{asset('images/logo/04citrakreasihutama.png')}}"alt="">
+                            <img src="{{asset('images/logo/08ckhologram.png')}}" alt="">
+                            <img src="{{asset('images/logo/09nusantara.png')}}" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Copywrite Area -->
-        <div class="copywrite-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-sm-6">
-                        <p class="copywrite-text">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="#">Advertise</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </nav>
+                                <!-- Footer Widget Area -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <!-- Footer Newsletter Area -->
+                        <div class="footer-nl-area">
+                            <form action="#" method="post">
+                                <input type="email" name="nl-email" class="form-control" id="nlEmail"
+                                    placeholder="Email Address ">
+                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </footer>
@@ -673,23 +627,23 @@
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- <script src="js/jquery/jquery-2.2.4.min.js"></script> -->
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- <script src="js/bootstrap/popper.min.js"></script> -->
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap/bootstrap.min.js"></script> -->
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <!-- <script src="js/plugins/plugins.js"></script> -->
 
     <script src="js/animations.js"></script>
     <script src="js/alert.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/slide.js') }}"></script>
     <script src="{{ asset('js/style.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
-    <!-- <script src="{{ asset('js/app.js') }}"></script>
+     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>
-    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>  -->
 
 </body>
 

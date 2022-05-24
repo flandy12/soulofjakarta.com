@@ -69,14 +69,9 @@
                     </li>
 
                 </ul>
-                <form class="d-flex">
-                    <input type="text" placeholder="Search.." name="search" class="form-control me-2" id="search-input">
-                    <button type="submit" id="search"><i class="fa fa-search"></i></button>
-                </form>
             </div>
         </div>
     </nav>
-    <!-- ##### Header Area End ##### -->
 
     <section>
         <div class="img-detail">
@@ -96,7 +91,7 @@
                                         <div class="time">
                                             <p>Selasa, 26/04/2022 - 16:21 WIB</p>
                                         </div>
-                                        <div class="sosmed"><img src="{{asset('images/core-img/fb.png')}}" alt=""></div>
+                                        <!-- <div class="sosmed"><img src="{{asset('images/core-img/fb.png')}}" alt=""></div> -->
                                     </div>
                                 </div>
                                 <p> JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
@@ -182,56 +177,68 @@
                             </div>
                             <div class="side-content">
                                 <div class="ads">
-                                    <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
-                                        class="" alt="">
+                                    <img src="{{asset('storage/ads/benner3.jpg')}}" alt="">
                                 </div>
                                 <div class="side-article">
-          
-                                        <div class="title">
-                                            <h2>Berita Populer Bulan Ini </h2>
+
+                                    <div class="title">
+                                        <h2>Berita Populer Bulan Ini </h2>
+                                    </div>
+                                    <div class="body-side">
+                                        <div class="left-text">
+                                            <h1>#1</h1>
                                         </div>
-                                        <div class="body-side">
-                                            <div class="left-text">
-                                                <h1>#1</h1>
-                                            </div>
-                                            <div class="content-body">
+                                        <div class="content-body">
+                                            <a href="/artikel/1/detail">
                                                 <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <div class="body-side">
-                                            <div class="left-text">
-                                                <h1>#2</h1>
-                                            </div>
-                                            <div class="content-body">
+                                    </div>
+                                    <div class="body-side">
+                                        <div class="left-text">
+                                            <h1>#2</h1>
+                                        </div>
+                                        <div class="content-body">
+                                            <a href="/artikel/1/detail">
                                                 <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <div class="body-side">
-                                            <div class="left-text">
-                                                <h1>#3</h1>
-                                            </div>
-                                            <div class="content-body">
+                                    </div>
+                                    <div class="body-side">
+                                        <div class="left-text">
+                                            <h1>#3</h1>
+                                        </div>
+                                        <div class="content-body">
+                                            <a href="/artikel/1/detail">
                                                 <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <div class="body-side">
-                                            <div class="left-text">
-                                                <h1>#4</h1>
-                                            </div>
-                                            <div class="content-body">
+                                    </div>
+                                    <div class="body-side">
+                                        <div class="left-text">
+                                            <h1>#4</h1>
+                                        </div>
+                                        <div class="content-body">
+                                            <a href="/artikel/1/detail">
                                                 <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <div class="body-side">
-                                            <div class="left-text">
-                                                <h1>#5</h1>
-                                            </div>
-                                            <div class="content-body">
+                                    </div>
+                                    <div class="body-side">
+                                        <div class="left-text">
+                                            <h1>#5</h1>
+                                        </div>
+                                        <div class="content-body">
+                                            <a href="/artikel/1/detail">
                                                 <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
-                                            </div>
+                                            </a>
                                         </div>
-                        
+                                    </div>
+
                                 </div>
+                                <!-- <div class="ads">
+                                    <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -241,11 +248,11 @@
         </div>
     </section>
 
-    <section>
+    <section class="recoment-post">
         <div class="container">
             <div class="detail-s">
                 <div class="populer-post">
-                    <h2>Popular Posts</h2>
+                    <h2>Rekomendasi untuk anda</h2>
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -258,7 +265,7 @@
                                     <div class="sidebar-body">
 
                                         <div class="sidebar-body-text">
-                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <p class="time">Jumat, 22-04-2022 - 10:36 WIB </p>
                                             <a href="/artikel/1/detail">
                                                 <h2>Most Frequently Asked Questions!</h2>
                                             </a>
@@ -278,7 +285,7 @@
 
 
                                         <div class="sidebar-body-text">
-                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <p class="time">Jumat, 22-04-2022 - 10:36 WIB </p>
                                             <a href="/artikel/1/detail">
                                                 <h2>Most Frequently Asked Questions!</h2>
                                             </a>
@@ -295,7 +302,7 @@
                                     <div class="sidebar-body">
 
                                         <div class="sidebar-body-text">
-                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                            <p class="time">Jumat, 22-04-2022 - 10:36 WIB </p>
                                             <a href="/artikel/1/detail">
                                                 <h2>Most Frequently Asked Questions!</h2>
                                             </a>
@@ -311,7 +318,7 @@
                                     <div class="sidebar-body">
 
                                         <div class="sidebar-body-text">
-                                            <i class="time">Jumat, 22-04-2022 - 10:36 WIB </i>
+                                        <p class="time">Jumat, 22-04-2022 - 10:36 WIB </p>
                                             <a href="/artikel/1/detail">
                                                 <h2>Most Frequently Asked Questions!</h2>
                                             </a>
@@ -337,13 +344,60 @@
     <footer class="footer-area">
         <div class="container">
             <div class="row">
+
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-widget mb-70">
-                        <!-- Logo -->
-                        <a href="index.html" class="foo-logo d-block mb-4"><img src="img/core-img/logo2.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna</p>
+                        <h6 class="widget-title">EVENT'S CATEGORY</h6>
+                        <!-- Twitter Slides -->
+                        <div class="twitter-slides owl-carousel">
+
+                            <!-- Single Twitter Slide -->
+                            <div class="single--twitter-slide">
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p>CULINARY</p>
+                                </div>
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p>Music</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Twitter Slide -->
+                            <div class="single--twitter-slide">
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p>Fashion, Health & Beauty</p>
+                                </div>
+                                <div class="single-twit">
+                                    <p>Othrer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-6">
+                    <div class="footer-widget mb-70">
+                        <h6 class="widget-title">OUR MEDIA PARTNER</h6>
+                        <div class="widget"><a href="">
+                            <img src="{{asset('images/logo/logo.png')}}" alt="">
+                            <img src="{{asset('images/logo/01ckhgroup.png')}}" alt=""></a>
+                            <img src="{{asset('images/logo/03ckhent.png')}}" alt="">
+                            <img src="{{asset('images/logo/04citrakreasihutama.png')}}"alt="">
+                            <img src="{{asset('images/logo/08ckhologram.png')}}" alt="">
+                            <img src="{{asset('images/logo/09nusantara.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Footer Widget Area -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
                         <!-- Footer Newsletter Area -->
                         <div class="footer-nl-area">
                             <form action="#" method="post">
@@ -355,133 +409,6 @@
                     </div>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Latest Twister</h6>
-                        <!-- Twitter Slides -->
-                        <div class="twitter-slides owl-carousel">
-
-                            <!-- Single Twitter Slide -->
-                            <div class="single--twitter-slide">
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
-                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found
-                                        this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                            </div>
-
-                            <!-- Single Twitter Slide -->
-                            <div class="single--twitter-slide">
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
-                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                                <!-- Single Twit -->
-                                <div class="single-twit">
-                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I
-                                        found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Sport Videos</h6>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/1.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana the</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/2.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer-widget mb-70">
-                        <h6 class="widget-title">Our Address</h6>
-                        <!-- Contact Address -->
-                        <div class="contact-address">
-                            <p>101 E 129th St, East Chicago, <br>IN 46312, US</p>
-                            <p>Phone: 001-1234-88888</p>
-                            <p>Email: info.colorlib@gmail.com</p>
-                        </div>
-                        <!-- Footer Social Area -->
-                        <div class="footer-social-area">
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copywrite Area -->
-        <div class="copywrite-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-sm-6">
-                        <p class="copywrite-text">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="#">Advertise</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>

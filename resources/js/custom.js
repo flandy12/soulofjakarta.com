@@ -17,8 +17,8 @@ $('.btn-hps').on("click", function () {
 });
 //notif close setTimeput
 setTimeout(function () {
-    $('#body-alert').hide();
-}, 2000)
+    $('.alert-ads').show();
+}, 10000)
 
 //headData
 $(".post-thumbnail").on("click", function () {
@@ -37,8 +37,8 @@ $(".post-thumbnail").on("click", function () {
 });
 
 //Action Notif Close 
-$('#close').on('click', function () {
-    $('#body-alert').hide();
+$('#alert-ads').on('click', function () {
+    $('.alert-ads').hide();
 });
 
 // Mengambil Data Dari DataBase 
