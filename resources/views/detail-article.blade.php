@@ -236,9 +236,9 @@
                                     </div>
 
                                 </div>
-                                <!-- <div class="ads">
+                                <div class="ads">
                                     <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>

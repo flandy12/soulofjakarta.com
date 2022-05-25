@@ -7,7 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #f3f3f3;
-    background: #ffffff;
+    background: #101010;
 
 }
 
@@ -16,8 +16,9 @@ body {
     --font-size-mobile-body: 12px;
     --font-size-mobile-footer: 11px;
     --font-size-web: 14px;
-    --color-basic: #2b2e37;
+    --color-basic: #eaeaea;
     --color-bacic2: #2b2e37;
+    --color-basic3 : #141416;
     --color-basic-fade: #727171;
     --color-lifestyle: #8154ef;
     --color-music: #ff6363;
@@ -249,9 +250,7 @@ input:focus {
         margin: 30px 0;
     }
 
-    .detail-article {
-        background-color: #ffffff;
-    }
+
 
     .detail-article .user-profile {
         display: flex;
@@ -436,18 +435,18 @@ input:focus {
         margin-left: 5px;
         font-size: 18px;
         font-weight: bold;
-        color: var(--color-basic);
+        color: white;
         margin: 0 10px;
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
         border-radius: 10px;
 
-        border: 0.5px solid #d4d4d4;
+        border: 1px solid var(--color-bacic2);
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
-        color: #302f2f;
+        color: var(--color-basic-fade);
         font: 14px bold;
     }
 
@@ -465,7 +464,7 @@ input:focus {
         display: flex;
         padding: 5px 10px;
         border-radius: 0 0 10px 10px;
-        border-top: 1px solid #d3d1d1;
+        border-top: 1px solid var(--color-bacic2);
         background-color: #ffffff;
         align-items: center;
     }
@@ -543,6 +542,7 @@ input:focus {
 
     .main-three .main-three-all .content .sidebar-body {
         background-color: #ffffff;
+        border: 1px solid var(--color-basic);
         position: relative;
         border-radius: 0 8px 8px 0;
         height: 100%;
@@ -726,7 +726,7 @@ input:focus {
     }
 
     .detail-s {
-        background-color: white;
+
         margin: auto;
     }
 
@@ -735,9 +735,11 @@ input:focus {
     }
 
     .detail-s .populer-post h2 {
-        color: #3d3d3d;
+        color: var(--color-basic);
         font-size: 24px;
-        padding: 0 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        border-left: 5px solid var(--color-master);
         font-weight: bold;
     }
 
@@ -797,18 +799,18 @@ input:focus {
 
     .main-detail-body .article-body {
         padding: 10px 20px;
-        background-color: white;
+
     }
 
     .main-detail-body {
-        background-color: white;
         display: grid;
         grid-template-columns: 70% 30%;
     }
 
     .main-detail-body .side-content .side-article {
         position: sticky;
-        background-color: white;
+        background-color: var(--color-bacic2);
+        margin: 30px 0;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
 
@@ -817,7 +819,6 @@ input:focus {
         text-align: left;
         padding: 5px 10px 5px 10px;
         background-color: #ff8818;
-        margin-top: 30px;
         font-size: 20px;
         color: rgb(255, 255, 255);
     }
@@ -825,12 +826,15 @@ input:focus {
     .main-detail-body .side-content .side-article .body-side {
         margin-top: 20px;
         padding: 0 10px;
+        justify-content: center;
         display: flex;
     }
-
+    .main-detail-body .side-content .side-article .body-side:last-child(){
+        padding-bottom: 10px;
+    }
     .main-detail-body .side-content .side-article .body-side h2 {
         font-size: 16px;
-        color: #292929;
+        color: var(--color-basic);
     }
 
     /*
@@ -847,6 +851,7 @@ input:focus {
     }
 
     .detail-article .user-profile span {
+        color: var(--color-basic);
         font-weight: bold;
     }
 
@@ -881,7 +886,7 @@ input:focus {
 
     .detail-article .main-article-detail .article-body p {
         font-size: 16px;
-        color: #3d3d3d;
+        color: var(--color-basic-fade);
     }
 
     .body-side .content-body {
@@ -985,8 +990,9 @@ input:focus {
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 8px;
+        
+        border: 1px solid var(--color-bacic2);
     }
 
     .main-two-all .main-two-body .content-all .category {
@@ -1009,13 +1015,15 @@ input:focus {
 
     .main-two .swiper .swiper-slide .content .sidebar-body {
         padding: 10px 20px;
-        color: #000000;
+        background-color: var(--color-basic3);
+        color: var(--color-basic);
     }
 
     .main-two .swiper-slide .sidebar-footer-text {
         display: flex;
         align-items: center;
-        border-top: 1px solid #d3d1d1;
+        padding-top: 5px;
+        border-top: 1px solid var(--color-bacic2);
     }
 
     .main-two .swiper-slide .sidebar-footer-text p {
@@ -1050,11 +1058,11 @@ input:focus {
     .main-two-all .main-two-body .main-two-title h2 {
         font-size: 24px;
         margin: 3px 10px;
-        color: var(--color-basic);
+        color: white;
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
-        color: #444444;
+        color: var(--color-basic-fade);
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text i {
@@ -1067,7 +1075,7 @@ input:focus {
         font-size: 24px;
         margin-top: 5px;
         font-weight: bold;
-        color: #383838;
+        color: var(--color-basic);
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide h2:hover {
@@ -1096,6 +1104,7 @@ input:focus {
 
     .swiper-slide .content .sidebar-img {
         height: 300px;
+        border-radius: 8px;
     }
 
     .swiper-slide .content .sidebar-img .category {
@@ -1159,7 +1168,6 @@ input:focus {
 
     .main-three .main-three-all .main-three-headline .content {
         position: relative;
-        background-color: white;
         width: 96%;
         display: flex;
     }
@@ -1223,7 +1231,7 @@ input:focus {
     }
 
     .main-three .main-three-all .main-three-headline .content .content-body span p {
-        color: #070707;
+        color: var(--color-basic-fade);
     }
 
     .main-three .main-three-all .main-three-headline .content .content-img:hover {
@@ -1300,10 +1308,10 @@ input:focus {
     .main-three .main-three-all .content .sidebar-body {
         position: relative;
         height: 180px;
+        border: solid 1px var(--color-bacic2);
         border-radius: 0 8px 8px 0;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 10px;
-        background-color: white;
+        background-color: var(--color-basic3);
         margin: 0;
     }
 
@@ -1317,7 +1325,7 @@ input:focus {
         font-size: 18px;
         font-weight: bold;
         margin-top: 7px;
-        color: #202036;
+        color: var(--color-basic);
     }
 
     .main-three .main-three-all .content .sidebar-body .sidebar-footer-text {
@@ -1339,7 +1347,7 @@ input:focus {
     .main-three .main-three-all .content .sidebar-body p {
         font-size: 12px;
         margin: 0;
-        color: var(--color-basic);
+        color: var(--color-basic-fade);
     }
 
     .main-three .main-three-title h2 {
@@ -1411,16 +1419,21 @@ input:focus {
     }
 
     .ads .ads-container {
-        max-width: 1355px;
         margin: auto;
+        max-width: 1355px;
+       
     }
 
     .ads-container img {
         margin: auto;
-        object-fit: cover;
-        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-
+    .ads-footer .ads-container {
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+    }
     /* iklan ke 2 */
     .main-three-side .second-side {
         position: sticky;
@@ -1450,12 +1463,14 @@ input:focus {
     .main-three-side .body-slide-all .body-side span {
         font-weight: bold;
         width: 100px;
+        color: var(--color-basic);
         /* border: 1px solid black; */
     }
 
 
     .main-three-side .body-slide-all {
-        background-color: #ffffff;
+        background-color: var(--color-bacic2);
+        border: 1px solid var(--color-basic3);
         /* position: sticky; */
         margin: auto;
         padding: 10px 0 10px 0;
@@ -1508,8 +1523,8 @@ input:focus {
     /* body-slide-two */
     .main-three-side .body-slide-two {
         /* position: sticky; */
-        background-color: #ffffff;
-        color: white;
+        background-color: var(--color-bacic2);
+        color: var(--color-basic);
         padding: 0 0 20px 0;
         display: block;
         position: sticky;

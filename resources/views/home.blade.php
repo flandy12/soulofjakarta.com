@@ -124,7 +124,7 @@
         </div>
     </section>
 
-
+    <!-- width max 900px  -->
     <div class="ads">
         <div class="ads-container">
             <img src="{{asset('storage/ads/benner.jpg')}}" alt="" srcset="">
@@ -550,6 +550,14 @@
         </div>
     </section>
 
+    <!-- width max 400px  -->
+    <div class="ads-footer">
+        <div class="ads-container">
+            <img src="{{asset('storage/ads/benner4.png')}}" alt="" srcset="">
+            <img src="{{asset('storage/ads/benner5.png')}}" alt="" srcset="">
+            <img src="{{asset('storage/ads/benner6.png')}}" alt="" srcset="">
+        </div>
+    </div>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
