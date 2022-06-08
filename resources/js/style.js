@@ -41,7 +41,12 @@ $('#close').on('click', function () {
     $('#body-alert').hide();
 });
 
+
+
+
 // setTimeout(function () {
+
+
 //     $('body').removeClass('.preloader');
 //     console.log('jadi')
 // }, 1500);

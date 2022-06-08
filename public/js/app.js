@@ -43637,6 +43637,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/cropie.css":
+/*!**********************************!*\
+  !*** ./resources/css/cropie.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -48616,9 +48629,10 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"/js/app": 0,
 /******/ 			"css/front": 0,
 /******/ 			"css/main": 0,
-/******/ 			"css/backend": 0,
 /******/ 			"css/bootstrap": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/backend": 0,
+/******/ 			"css/app": 0,
+/******/ 			"css/cropie": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -48668,16 +48682,17 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/js/custom.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/backend.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/style.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/frontend.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/swiper.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/animate.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/front","css/main","css/backend","css/bootstrap","css/app"], () => (__webpack_require__("./resources/css/bootstrap.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/js/custom.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/backend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/frontend.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/swiper.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/font-awesome.min.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/animate.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/bootstrap.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/front","css/main","css/bootstrap","css/backend","css/app","css/cropie"], () => (__webpack_require__("./resources/css/cropie.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

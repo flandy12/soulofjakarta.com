@@ -25,7 +25,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontEndController::class,'index']);
-
+Route::get('/img',function(){
+    return view('img');
+})->name('iklan');
 Route::get('/data', [FrontEndController::class,'Data']);
 Route::get('/artikel',[FrontEndController::class,'all']);
 Route::get('/artikel/{id}',[FrontEndController::class,'HeadArtikel']);
@@ -34,10 +36,10 @@ Route::get('x', [FrontEndController::class,'dataS']);
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
    
     Route::get('/dashboard', function () {
-        $users = User::paginate(5);
+        $users = User::all();
         $article = Article::paginate(5);
         $ads = Article::paginate(5);
-        return view('dashboard', ['dbuser' => $users,'dbartikel'=>$article,'dbAds'=>$ads]);
+        return view('admin.dashboard', ['valueUser' => $users,'dbartikel'=>$article,'dbAds'=>$ads]);
     })->name('dashboard');
 
     Route::get('/user',[UserController::class,'index'])->name('user');

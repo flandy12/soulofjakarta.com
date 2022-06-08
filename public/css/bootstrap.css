@@ -5111,6 +5111,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
     color: rgba(255, 255, 255, .55)
 }
 

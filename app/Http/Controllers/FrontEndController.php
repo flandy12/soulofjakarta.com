@@ -14,16 +14,17 @@ use Illuminate\Support\Arr;
 class FrontEndController extends Controller
 {
     public function index(){
-        $FeatureArticle = Article::first();
-        $HeadArticle = Article::latest()->limit(5)->get();
-        $trending = Article::latest()->limit(3)->get();
-        $Chenel = Article::all();
-        $Sport = Article::limit(2)->get();
-        $Business = Article::latest()->limit(2)->get();
-        $LatesNews = Article::limit(4)->get();
+        // $FeatureArticle = Article::first();
+        // $HeadArticle = Article::latest()->limit(5)->get();
+        // $trending = Article::latest()->limit(3)->get();
+        // $Chenel = Article::all();
+        // $Sport = Article::limit(2)->get();
+        // $Business = Article::latest()->limit(2)->get();
+        // $LatesNews = Article::limit(4)->get();
  
-        return view('home',compact('FeatureArticle','HeadArticle','trending','Chenel','Sport','Business','LatesNews'));
+        return view('home');
     }   
+    
     public function Data(){
         $HeadArticle = Article::latest()->limit(3)->get();   
         return response()->json([$HeadArticle],200);

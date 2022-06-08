@@ -2,13 +2,14 @@
     "/js/app.js": "/js/app.js",
     "/js/tinymce.js": "/js/tinymce.js",
     "/js/style.js": "/js/style.js",
+    "/js/cropie.js": "/js/cropie.js",
     "/js/animations.js": "/js/animations.js",
     "/js/alert.js": "/js/alert.js",
     "/js/slide.js": "/js/slide.js",
     "/css/front.css": "/css/front.css",
     "/css/main.css": "/css/main.css",
-    "/css/backend.css": "/css/backend.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/backend.css": "/css/backend.css",
     "/css/app.css": "/css/app.css",
-    "/images/logo.svg": "/images/logo.svg"
+    "/css/cropie.css": "/css/cropie.css"
 }

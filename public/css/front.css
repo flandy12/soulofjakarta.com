@@ -63,6 +63,7 @@ a:focus {
     color: #a6a6a6;
     font-weight: 500;
     font-size: 14px;
+    font-weight: bold;
     font-family: "Roboto", sans-serif;
 }
 
@@ -453,7 +454,7 @@ input:focus {
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
-        color: var(--color-basic-fade);
+        color: var(--color-basic4);
         font: 14px bold;
     }
 
@@ -857,7 +858,7 @@ input:focus {
     }
 
     .main-detail-body .side-content .side-article .body-side h2:hover {
-        color: var(--color-master);
+        color: var(--color-basic-fade);
     }
     /*
     *** user-profile ***
@@ -1090,12 +1091,11 @@ input:focus {
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
-        color: var(--color-basic-fade);
+        color: var(--color-basic4);
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text i {
         margin: 0 0 50px 0;
-
         font-size: 12px;
     }
 
@@ -1198,14 +1198,17 @@ input:focus {
     .main-three .main-three-all .main-three-headline .content {
         position: relative;
         width: 96%;
+        /* border: 1px solid var(--color-bacic2); */
+        border-radius: 8px;
+        background-color: var(--color-basic5);
         display: flex;
     }
 
     .main-three .main-three-all .main-three-headline .content .content-body {
         width: 100%;
         margin: auto 10px;
-
     }
+   
 
     .main-three .main-three-all .main-three-headline .content .content-body p {
         width: 500px;
@@ -1423,6 +1426,7 @@ input:focus {
     }
 
     .main-three .main-three-all .main-three-body {
+        margin-top:30px;
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr));
     }
@@ -1493,7 +1497,7 @@ input:focus {
 
     .main-three-side .second-side img {
         width: 100%;
-        margin:30px 0;
+        margin:30px 0 0 0;
         -o-object-fit: cover;
            object-fit: cover;
     }
@@ -1523,7 +1527,7 @@ input:focus {
 
     .main-three-side .body-slide-all {
         background-color: var(--color-basic5);
-        border: 1px solid var(--color-bacic2);
+        border-radius: 0 0 8px 8px;
         /* position: sticky; */
         margin: auto;
         padding: 10px 0 20px 0;
@@ -1557,6 +1561,16 @@ input:focus {
 
     }
 
+    .main-three-side .body-slide-two .v-details{ 
+        text-align: center; 
+        margin: 10px auto;
+        padding: 5px 10px;
+        color: #839fcf;
+        background-color: #3d3d3d;
+        /* border: 1px solid #a0a09d; */
+        border-radius: 8px;
+        width: 200PX;
+    }
     .main-three-side .body-slide-all .body-side h2 {
         margin: 2px 0;
         color: var(--color-basic);
@@ -1568,19 +1582,19 @@ input:focus {
     }
 
     .main-three-side .body-slide-all .body-side h2:hover {
-        color: var(--color-master);
         cursor: pointer;
-        font-weight: bold;
+        color: var(--color-basic-fade);
+
     }
 
     /* body-slide-two */
     .main-three-side .body-slide-two {
-        /* position: sticky; */
+        margin-top: 30px;
         padding: 0 0 20px 0;
         background-color: var(--color-basic5);
         color: var(--color-basic);
-        border: 1PX solid var(--color-bacic2);
         display: block;
+        border-radius: 0 0 8px 8px;
         position: -webkit-sticky;
         position: sticky;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -1601,13 +1615,13 @@ input:focus {
     }
 
     .main-three-side .body-slide-two .body-side .content-body h2 {
-        color: var(--color-basic);
-        font-weight: bold;
+        color:#fffff1;
+        font-family: 400;
         font-size: 16px;
     }
     .main-three-side .body-slide-two .body-side .content-body h2:hover {
-        color: var(--color-master);
-        font-weight: bold;
+        color: var(--color-basic-fade);
+        cursor: pointer;
         font-size: 16px;
     }
     .main-three-side .body-side-all .body-side .content-body p {
@@ -1811,7 +1825,7 @@ input:focus {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #fd7d15;
+  --swiper-theme-color: #fec322;
 }
 .swiper {
   margin-left: auto;
@@ -2122,6 +2136,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  /* //baru */
 }
 .swiper-vertical > .swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {

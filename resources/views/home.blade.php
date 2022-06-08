@@ -76,7 +76,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" >Give Away</a>
+                        <a class="nav-link">Give Away</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">Schedule Event</a>
@@ -141,9 +141,9 @@
                 <div class="col">
                     <img src="{{asset('storage/ads/benner.jpg')}}" alt="">
                 </div>
-                <div class="col">
+                <!-- <div class="col">
                     <img src="{{asset('storage/ads/benner.jpg')}}" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -348,8 +348,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
+
                                 <span>
-                                    <p>Jumaat ,24 April 2002 </p>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
                                 </span>
                             </div>
                         </div>
@@ -417,7 +418,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                                </span>
                             </div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
@@ -433,7 +436,9 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                                </span>
                             </div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
@@ -449,10 +454,21 @@
                                 </a>
                                 <p>JakCloth Lebaran 2022 merupakan event clothing yang khusus digelar menjelang Hari
                                     Raya Lebaran. </p>
-                                <span><i>Jumaat ,24 April 2002 </i></span>
+                                <span>
+                                    <p>Rabu, 18/05/2022 - 16:49 WIB</p>
+                                </span>
                             </div>
                         </div>
 
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <!--End Article Headline -->
@@ -508,12 +524,18 @@
                             <h2>Siap Nabung, Justin Bieber Segera Menggelar Konser Di Jakarta</h2>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Start Iklan Image height: 280px;-->
                 <div class="second-side">
                     <img src="{{asset('storage/ads/benner2.jpg')}}" alt="">
                 </div>
+
+                <div class="second-side">
+                    <img src="{{asset('storage/ads/benner2.jpg')}}" alt="">
+                </div>
+
                 <!-- End Iklan -->
 
 
@@ -576,6 +598,56 @@
         </div>
     </div>
 
+    <div class="main-four">
+        <div class="container">
+            <div class="row m-5">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
@@ -619,7 +691,7 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-xl-6">
                     <div class="footer-widget mb-70">
-                        <h6 class="widget-title">OUR MEDIA PARTNER</h6>
+                        <h6 class="widget-title">OUR MEDIA PARTNER </h6>
                         <div class="widget"><a href="">
                                 <img src="{{asset('images/logo/logo.png')}}" alt="">
                                 <img src="{{asset('images/logo/01ckhgroup.png')}}" alt=""></a>
