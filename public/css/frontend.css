@@ -1034,7 +1034,6 @@ input:focus {
 
     .main-two .swiper .swiper-slide .content .sidebar-body {
         padding: 10px 20px;
-        background-color: var(--color-basic3);
         color: var(--color-basic);
     }
 
@@ -1505,7 +1504,7 @@ input:focus {
 
 
     .main-three-side .body-slide-all {
-        background-color: var(--color-basic5);
+        /* background-color: var(--color-basic5); */
         border-radius: 0 0 8px 8px;
         /* position: sticky; */
         margin: auto;

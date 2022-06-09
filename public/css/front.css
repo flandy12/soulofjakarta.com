@@ -16,11 +16,11 @@ body {
     --font-size-mobile-body: 12px;
     --font-size-mobile-footer: 11px;
     --font-size-web: 14px;
-    --color-basic: #eaeaea;
+    --color-basic: #111111;
     --color-bacic2: #2b2e37;
-    --color-basic3 : #141416;
-    --color-basic4: #cac3c3bb;
-    --color-basic5 : #141416;
+    --color-basic3 : #eeeeee ;
+    --color-basic4: #0a0a0abb;
+    --color-basic5 : #eeeeee;
     --color-basic-fade: #727171;
     --color-lifestyle: #8154ef;
     --color-music: #ff6363;
@@ -449,8 +449,6 @@ input:focus {
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
         border-radius: 10px;
-
-        border: 1px solid var(--color-bacic2);
     }
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
@@ -1020,8 +1018,7 @@ input:focus {
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
         border-radius: 8px;
-        
-        border: 1px solid var(--color-bacic2);
+        border-color: 1px solid var(--color-basic-fade);
     }
 
     .main-two-all .main-two-body .content-all .category {
@@ -1044,7 +1041,6 @@ input:focus {
 
     .main-two .swiper .swiper-slide .content .sidebar-body {
         padding: 10px 20px;
-        background-color: var(--color-basic3);
         color: var(--color-basic);
     }
 
@@ -1338,12 +1334,14 @@ input:focus {
 
     .main-three .main-three-all .content .sidebar-img {
         height: 150px;
+        border-color: 1px solid var(--color-basic);
     }
 
     .main-three .main-three-all .content .sidebar-img img {
         width: 300px;
         -o-object-fit: cover;
            object-fit: cover;
+        border-color: 1px solid var(--color-basic);
         height: 180px;
         border-radius: 8px 0 0 8px;
     }
@@ -1351,7 +1349,6 @@ input:focus {
     .main-three .main-three-all .content .sidebar-body {
         position: relative;
         height: 180px;
-        border: solid 1px var(--color-bacic2);
         border-radius: 0 8px 8px 0;
         padding: 10px;
         background-color: var(--color-basic3);
@@ -1433,6 +1430,7 @@ input:focus {
 
     .main-three .main-three-all .main-three-body .content {
         margin-right: 30px;
+        border-color:  1px solid var(--color-basic);
         border-radius: 8px 8px 0 0;
     }
 
@@ -1615,7 +1613,7 @@ input:focus {
     }
 
     .main-three-side .body-slide-two .body-side .content-body h2 {
-        color:#fffff1;
+        color:var(--color-basic);
         font-family: 400;
         font-size: 16px;
     }
@@ -1825,7 +1823,7 @@ input:focus {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #fec322;
+  --swiper-theme-color: #007aff;
 }
 .swiper {
   margin-left: auto;
@@ -1862,7 +1860,6 @@ input:focus {
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
-  background-color: #141416;
   height: 100%;
   position: relative;
   transition-property: transform;
@@ -2115,7 +2112,7 @@ input:focus {
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, rgb(255, 255, 255));
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 button.swiper-pagination-bullet {
@@ -2136,7 +2133,6 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
-  /* //baru */
 }
 .swiper-vertical > .swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {

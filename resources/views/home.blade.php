@@ -231,7 +231,7 @@
                             <div class="swiper-slide">
                                 <div class="content">
                                     <div class="sidebar-img">
-                                        <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="">
+                                        <img src="{{asset('images/img-dummy/gambar4.jpg')}}}" alt="">
                                         <span class="category Music">Music</span>
                                     </div>
                                     <div class="sidebar-body">
@@ -322,7 +322,7 @@
                     <!-- Image width : 96%; height: 350px; -->
                     <div class="headline" data-aos="fade-up" data-aos-duration="500">
                         <a href="/artikel/1/detail"><img
-                                src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt=""></a>
+                                src="{{asset('images/img-dummy/gambar4.jpg')}}" alt=""></a>
                         <div class="text">
                             <span class="Culinary">Culinary</span>
                             <a href="/artikel/1/detail">
@@ -338,7 +338,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar4.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -357,7 +357,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar1.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -375,7 +375,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar1.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -399,7 +399,7 @@
                                 <span>Rabu, 18/05/2022 - 16:49 WIB</span>
                             </div>
                             <div class="img-content">
-                                <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                <img src="{{asset('images/img-dummy/gambar5.jpg')}}"
                                     alt="">
                             </div>
                         </div>
