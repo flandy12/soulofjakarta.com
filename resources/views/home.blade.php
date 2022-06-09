@@ -41,7 +41,7 @@
     <!-- ukuran pop up 600 X 400 -->
     <div class="alert-ads">
         <div class="alert-body">
-            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+            <img src="{{asset('images/img-dummy/gambar1.jpg')}}" alt="">
             <span class="close" id="alert-ads">X</span>
         </div>
     </div>
@@ -153,7 +153,7 @@
             <div class="main-two-all">
                 <div class="main-two-body">
                     <div class="main-two-title" data-aos="fade-up" data-aos-duration="2000">
-                        <h2>Must Popular</h2>
+                        <h2 id="title">Must Popular</h2>
                     </div>
                     <div class="swiper" data-aos="fade-left" data-aos-duration="1000">
                         <div class="swiper-wrapper">
@@ -408,7 +408,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar2.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -426,7 +426,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar1.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -444,7 +444,7 @@
                         <div class="content" data-aos="fade-up" data-aos-duration="500">
                             <div class="content-img">
                                 <a href="/artikel/1/detail"><img
-                                        src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        src="{{asset('images/img-dummy/gambar5.jpg')}}"
                                         alt=""></a>
                             </div>
                             <div class="content-body">
@@ -461,7 +461,7 @@
                         </div>
 
                         <nav aria-label="Page navigation example">
-                            <ul class="pagination">
+                            <ul class="pagination"> 
                                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -488,7 +488,7 @@
                     </div>
                     <div class="body-side">
                         <div class="body-img">
-                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('images/img-dummy/gambar5.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
                             <span>Lifestyle</span>
@@ -498,7 +498,7 @@
                     </div>
                     <div class="body-side">
                         <div class="body-img">
-                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('images/img-dummy/gambar1.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
                             <span>Culinary</span>
@@ -507,7 +507,7 @@
                     </div>
                     <div class="body-side">
                         <div class="body-img">
-                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('images/img-dummy/gambar3.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
                             <span>Lifestyle</span>
@@ -517,7 +517,7 @@
                     </div>
                     <div class="body-side">
                         <div class="body-img">
-                            <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                            <img src="{{asset('images/img-dummy/gambar2.jpg')}}" alt="">
                         </div>
                         <div class="content-body">
                             <span>Music</span>
