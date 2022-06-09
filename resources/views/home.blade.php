@@ -57,22 +57,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-6">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-item" href="#">Event</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Lifestyle</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Category</a>
                     </li>
 
                     <li class="nav-item">
@@ -145,7 +135,6 @@
                     <img src="{{asset('storage/ads/benner.jpg')}}" alt="">
                 </div> -->
             </div>
-        </div>
     </div>
 
     <section class="main-two">
@@ -693,18 +682,18 @@
                     <div class="footer-widget mb-70">
                         <h6 class="widget-title">OUR MEDIA PARTNER </h6>
                         <div class="widget"><a href="">
-                                <img src="{{asset('images/logo/logo.png')}}" alt="">
-                                <img src="{{asset('images/logo/01ckhgroup.png')}}" alt=""></a>
+                            <img src="{{asset('images/logo/logo.png')}}" alt="">
+                            <img src="{{asset('images/logo/01ckhgroup.png')}}" alt=""></a>
                             <img src="{{asset('images/logo/03ckhent.png')}}" alt="">
-                            <img src="{{asset('images/logo/04citrakreasihutama.png')}}" alt="">
+                            <img src="{{asset('images/logo/04citrakreasihutama.png')}}"alt="">
                             <img src="{{asset('images/logo/08ckhologram.png')}}" alt="">
                             <img src="{{asset('images/logo/09nusantara.png')}}" alt="">
                         </div>
                     </div>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-xl-3">
+                                <!-- Footer Widget Area -->
+                                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-widget mb-70">
                         <!-- Footer Newsletter Area -->
                         <div class="footer-nl-area">
@@ -738,7 +727,7 @@
     <script src="{{ asset('js/style.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
-    <!-- <script src="{{ asset('js/app.js') }}"></script>
+     <!-- <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/active.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>  -->
 

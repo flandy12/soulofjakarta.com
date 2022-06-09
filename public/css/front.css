@@ -18,16 +18,12 @@ body {
     --font-size-web: 14px;
     --color-basic: #111111;
     --color-bacic2: #2b2e37;
-    --color-basic3 : #eeeeee ;
-    --color-basic4: #0a0a0abb;
-    --color-basic5 : #eeeeee;
     --color-basic-fade: #727171;
     --color-lifestyle: #8154ef;
     --color-music: #ff6363;
     --color-border: #f68e56;
     --color-culinary: #82ca9c;
     --color-master: #fec322;
-    --color-master2: #ffc013;
 }
 
 a {
@@ -235,8 +231,6 @@ input:focus {
     z-index: 100;
     position: relative;
 }
-
-
 
 @media (max-width: 575.98px) {
     section {
@@ -581,7 +575,7 @@ input:focus {
     .main-three .main-three-all .content .sidebar-body p {
         font-size: var(--font-size-mobile-body);
         margin: 0;
-        color: var(--color-basic4);
+        color: var(--color-basic);
     }
 
     .main-three .main-three-side .body-side .content-body {
@@ -776,8 +770,6 @@ input:focus {
 
     .detail-s .populer-post .swiper .content .sidebar-body .sidebar-body-text h2 {
         color: white;
-        border: none;
-        padding: 0;
     }
 
     .detail-s .populer-post .swiper .content .sidebar-img::before {
@@ -811,6 +803,7 @@ input:focus {
 
     .main-detail-body .article-body {
         padding: 10px 20px;
+
     }
 
     .main-detail-body {
@@ -818,45 +811,37 @@ input:focus {
         grid-template-columns: 70% 30%;
     }
 
-    .main-detail-body .article-body .title {
-        margin-top: 20px;
-    }
     .main-detail-body .side-content .side-article {
         position: -webkit-sticky;
         position: sticky;
-        background-color: var(--color-basic5);
+        background-color: var(--color-bacic2);
         margin: 30px 0;
-        border: 1px solid var(--color-bacic2);
-        padding-bottom: 20px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
 
     .main-detail-body .side-content .side-article .title h2 {
-        padding: 10px;
-        text-align: left;
-        background-color: var(--color-master);
-        font-size: 18px;
-        color: #333333;
         font-weight: bold;
+        text-align: left;
+        padding: 5px 10px 5px 10px;
+        background-color: #ff8818;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
     }
 
     .main-detail-body .side-content .side-article .body-side {
-        display: flex;
-        padding: 0 10px;
         margin-top: 20px;
+        padding: 0 10px;
+        justify-content: center;
+        display: flex;
     }
     .main-detail-body .side-content .side-article .body-side:last-child(){
         padding-bottom: 10px;
     }
     .main-detail-body .side-content .side-article .body-side h2 {
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 16px;
         color: var(--color-basic);
     }
 
-    .main-detail-body .side-content .side-article .body-side h2:hover {
-        color: var(--color-basic-fade);
-    }
     /*
     *** user-profile ***
     */
@@ -864,7 +849,6 @@ input:focus {
         color: #a4a4a4;
     }
 
-    /* detail article */
     .container .detail-article .main-article-detail .user-profile {
         display: flex;
         padding: 15px 0;
@@ -886,9 +870,9 @@ input:focus {
 
     .detail-article .title h2 {
         text-align: center;
-        font-weight: bold;
+        font: bold;
         font-size: 28px;
-
+        margin-top: 20px;
         color: var(--color-basic);
     }
 
@@ -905,13 +889,10 @@ input:focus {
         width: 20px;
         margin: auto;
     }
-    
+
     .detail-article .main-article-detail .article-body p {
         font-size: 16px;
-        color: var(--color-basic4);
-    }
-    .detail-article .main-article-detail .article-body .time p {
-        color: var(--color-basic);
+        color: var(--color-basic-fade);
     }
 
     .body-side .content-body {
@@ -1208,7 +1189,7 @@ input:focus {
         width: 500px;
         margin: 0 0 5px 0;
         font-size: 14px;
-        color: var(--color-basic4);
+        color: var(--color-basic-fade);
     }
 
 
@@ -1249,11 +1230,6 @@ input:focus {
 
     .main-three .main-three-all .main-three-headline .content .content-body h1 {
         color: var(--color-basic);
-        font-weight: 600;
-        font-size: 24px;
-    }
-    .main-three .main-three-all .main-three-headline .content .content-body h1:hover {
-        color: var(--color-basic4);
         font-weight: 600;
         font-size: 24px;
     }
@@ -1386,7 +1362,7 @@ input:focus {
     .main-three .main-three-all .content .sidebar-body p {
         font-size: 12px;
         margin: 0;
-        color: var(--color-basic4);
+        color: var(--color-basic-fade);
     }
 
     .main-three .main-three-title h2 {
@@ -1474,15 +1450,7 @@ input:focus {
         max-width: 1355px;
        
     }
-    .ads .container {
-        margin: auto;
-        max-width: 1355px;
-    }
-    .ads .container .row .col {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    }
+
     .ads-container img {
         margin: auto;
         display: flex;
@@ -1497,7 +1465,6 @@ input:focus {
     .main-three-side .second-side {
         position: -webkit-sticky;
         position: sticky;
-
     }
 
     .main-three-side .second-side img {
@@ -1531,11 +1498,10 @@ input:focus {
 
 
     .main-three-side .body-slide-all {
-        border-radius: 0 0 8px 8px;
         /* position: sticky; */
         border: 1px solid var(--color-basic-fade);
         margin: auto;
-        padding: 10px 0 20px 0;
+        padding: 10px 0 10px 0;
         display: block;
     }
 
@@ -1557,7 +1523,7 @@ input:focus {
 
     /* berita */
     .main-three-side .body-slide-two .title h2 {
-       
+        margin-top: 30px;
         padding: 10px;
         background-color: var(--color-master);
         font-size: 18px;
@@ -1594,10 +1560,10 @@ input:focus {
 
     /* body-slide-two */
     .main-three-side .body-slide-two {
-        margin-top: 30px;
-        padding: 0 0 20px 0;
-        border: 1px solid var(--color-basic-fade);
+        /* position: sticky; */
+        background-color: var(--color-bacic2);
         color: var(--color-basic);
+        padding: 0 0 20px 0;
         display: block;
         border-radius: 0 0 8px 8px;
         position: -webkit-sticky;
@@ -1624,11 +1590,13 @@ input:focus {
         font-family: 400;
         font-size: 16px;
     }
+    
     .main-three-side .body-slide-two .body-side .content-body h2:hover {
         color: var(--color-basic-fade);
         cursor: pointer;
         font-size: 16px;
     }
+
     .main-three-side .body-side-all .body-side .content-body p {
         margin: 0;
     }
