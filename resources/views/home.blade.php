@@ -96,7 +96,7 @@
             <div class="main-one-body">
                 <div class="main-headline">
                     <a href="/artikel/1/detail">
-                        <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt=""
+                        <img src="{{asset('images/img-dummy/gambar1.jpg')}}" alt=""
                             class="img-headline">
                         <div class="content-body">
                             <span class="category Lifestyle">Lifestyle</span>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="headline">
                     <div class="main-headline-second">
-                        <img src="{{asset('storage/artikel-photos/justin.jpg')}}" alt="" class="img-headline-second">
+                        <img src="{{asset('images/img-dummy/gambar2.jpg')}}" alt="" class="img-headline-second">
                         <div class="headline-second-body">
                             <span class="category Music">Music</span>
                             <p>Rabu, 18/05/2022 - 16:49 WIB</p>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="main-headline-second">
-                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}" alt=""
+                        <img src="{{asset('images/img-dummy/gambar3.jpg')}}" alt=""
                             class="img-headline-second">
                         <div class="headline-second-body">
                             <span class="category Culinary">Culinary</span>
@@ -161,7 +161,7 @@
                                 <div class="content">
                                     <div class="sidebar-img">
                                         <a href="/artikel/1/detail"> <img
-                                                src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}"
+                                                src="{{asset('images/img-dummy/gambar4.jpg')}}"
                                                 alt=""></a>
                                         <span class="category Music">Music</span>
                                     </div>
@@ -184,7 +184,7 @@
                                 <div class="content">
                                     <div class="sidebar-img">
                                         <a href="/artikel/1/detail">
-                                            <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                            <img src="{{asset('images/img-dummy/gambar1.jpg')}}"
                                                 alt="">
                                         </a>
                                         <span class="category Lifestyle">Lifestyle</span>
@@ -206,10 +206,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide">  
                                 <div class="content">
                                     <div class="sidebar-img">
-                                        <img src="{{asset('storage/artikel-photos/joshua-chun-y_gFnFzr0HY-unsplash.jpg')}}"
+                                        <img src="{{asset('images/img-dummy/gambar5.jpg')}}"
                                             alt="">
                                         <span class="category Culinary">Culinary</span>
                                     </div>
@@ -275,7 +275,7 @@
                     <div class="content lifestyle" data-aos="fade-left" data-aos-duration="2000">
                         <div class="sidebar-img">
                             <a href="/artikel/1/detail">
-                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                                <img src="{{asset('images/img-dummy/gambar1.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="sidebar-body">
@@ -296,7 +296,7 @@
                     <div class="content music" data-aos="fade-left" data-aos-duration="2000">
                         <div class="sidebar-img">
                             <a href="/artikel/1/detail">
-                                <img src="{{asset('storage/artikel-photos/oppo-xcYaxvcAv3E-unsplash.jpg')}}" alt="">
+                                <img src="{{asset('images/img-dummy/gambar4.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="sidebar-body">
