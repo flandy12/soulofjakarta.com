@@ -53,7 +53,6 @@ p {
     line-height: 2;
     font-weight: 400;
 }
-
 a,
 a:hover,
 a:focus {
@@ -1068,14 +1067,14 @@ input:focus {
         padding: 6px 0;
         margin: 0 0 20px 0;
         border-left: 6px solid var(--color-master);
+        color: var(--color-basic);
     }
 
     .main-two-all .main-two-body .main-two-title h2 {
         font-size: 24px;
         margin: 3px 10px;
-        color: white;
+        color: var(--color-basic);
     }
-
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide .content .sidebar-body-text p {
         color: var(--color-basic4);
     }
@@ -1614,9 +1613,6 @@ input:focus {
 
     /* end body-slide-two */
 
-    /* .main-three-side .body-side {
-        border: 0.5px solid #d4d4d4;
-    } */
     .main-three-side .body-side .body-img img {
         width: 90px;
         object-fit: cover;
