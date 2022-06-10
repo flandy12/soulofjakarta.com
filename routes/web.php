@@ -74,7 +74,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
      */
 
     //Add Artikel Page
-    Route::get('/add-artikel',[ArticleController::class,'create']);
+    Route::get('article/add',[ArticleController::class,'create'])->name('add');
     //Add User 
     Route::post('/add-artikel',[ArticleController::class,'store']);
     //Edit View Article

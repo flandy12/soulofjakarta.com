@@ -8766,6 +8766,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".post-thumbnail").on("click", fun
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#alert-ads').on('click', function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.alert-ads').hide();
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#exampleFormControlFile1').on('click', function () {
+  console.log('get');
 }); // Mengambil Data Dari DataBase 
 // function ArticelUpdate() {
 //     $.ajax({
