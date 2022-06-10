@@ -818,9 +818,9 @@ input:focus {
         position: sticky;
         margin: 30px 0;
         border-radius:0px 0px 8px 8px;
-        border: 1px solid var(--color-bacic2);
+        border: 1px solid var(--color-basic5);
         padding-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
     }
 
     .main-detail-body .side-content .side-article .title h2 {
@@ -906,8 +906,7 @@ input:focus {
     }
 
     .body-side .content-body {
-        margin: auto;
-        left: 15px;
+        padding: 0 5px 0 5px;
     }
 
     .content-body {
@@ -1007,7 +1006,8 @@ input:focus {
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
         border-radius: 8px;
-        border-color: 1px solid var(--color-basic-fade);
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+        border: 1px solid var(--color-basic5);    
     }
 
     .main-two-all .main-two-body .content-all .category {
@@ -1333,7 +1333,7 @@ input:focus {
         height: 180px;
         border-radius: 0 8px 8px 0;
         padding: 10px;
-        border: 1px , 0 8px 8px 0,solid var(--color-basic-fade);
+        border: 1px , 0 8px 8px 0,solid var(--color-basic5);
         margin: 0;
     }
 
@@ -1412,15 +1412,13 @@ input:focus {
 
     .main-three .main-three-all .main-three-body .content {
         margin-right: 30px;
-        border-color:  1px solid var(--color-basic);
+        border:  1px solid var(--color-basic5);
         border-radius: 8px 8px 0 0;
-        
-        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+        box-shadow: rgba(72, 69, 69, 0.172) 0px 4px 6px -1px, rgba(231, 231, 231, 0.345) 0px 2px 4px -1px;
     }
     /* //content-comment */
     .main-three .main-three-all .main-three-body .content:hover{
         margin-right: 30px;
-        border-color:  1px solid var(--color-basic);
         border-radius: 8px 8px 0 0;
      
     }
@@ -1488,8 +1486,8 @@ input:focus {
 
     .main-three-side .body-slide-all .body-side {
         display: flex;
+        margin: 10px 0;
         position: relative;
-        margin: 20px 0;
     }
 
     .main-three-side .body-slide-all .body-side:last-child() {
@@ -1511,8 +1509,9 @@ input:focus {
 
     .main-three-side .body-slide-all {
         border-radius: 0 0 8px 8px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+        border: 1px solid var(--color-basic5);
         /* position: sticky; */
-        border: 1px solid var(--color-basic-fade);
         margin: auto;
         padding: 10px 0 20px 0;
         display: block;
@@ -1558,7 +1557,6 @@ input:focus {
     .main-three-side .body-slide-all .body-side h2 {
         margin: 2px 0;
         color: var(--color-basic);
-        padding: 0;
         font-size: 13px;
         position: relative;
         padding-right: 10px;
@@ -1575,12 +1573,12 @@ input:focus {
     .main-three-side .body-slide-two {
         margin-top: 30px;
         padding: 0 0 20px 0;
-        border: 1px solid var(--color-basic-fade);
         color: var(--color-basic);
         display: block;
+        border: 1px solid var(--color-basic5);
         border-radius: 0 0 8px 8px;
         position: sticky;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
         top: 40px;
     }
 
@@ -1594,12 +1592,11 @@ input:focus {
         margin: 0;
         color: #a4a4a4;
         padding: 0;
-        padding-right: 10px;
     }
 
     .main-three-side .body-slide-two .body-side .content-body h2 {
         color:var(--color-basic);
-        font-family: 400;
+        font-weight: bold;
         font-size: 16px;
     }
     .main-three-side .body-slide-two .body-side .content-body h2:hover {
@@ -1614,6 +1611,7 @@ input:focus {
     /* end body-slide-two */
 
     .main-three-side .body-side .body-img img {
+        position: relative;
         width: 90px;
         object-fit: cover;
         height: 60px ;
