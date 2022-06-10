@@ -1827,7 +1827,7 @@ input:focus {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #fec322;
+  --swiper-theme-color: #007aff;
 }
 .swiper {
   margin-left: auto;
@@ -2116,7 +2116,7 @@ input:focus {
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, rgb(0, 0, 0));
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 button.swiper-pagination-bullet {
