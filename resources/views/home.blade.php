@@ -598,7 +598,7 @@
         </div>
     </div>
 
-    <div class="main-four">
+    <!-- <div class="main-four">
         <div class="container">
             <div class="row m-5">
                 <div class="col">
@@ -647,7 +647,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">

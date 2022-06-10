@@ -1862,7 +1862,6 @@ input:focus {
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
-  background-color: #141416;
   height: 100%;
   position: relative;
   transition-property: transform;
@@ -2115,7 +2114,7 @@ input:focus {
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, rgb(255, 255, 255));
+  background: var(--swiper-pagination-bullet-inactive-color, rgb(0, 0, 0));
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 button.swiper-pagination-bullet {
@@ -2136,7 +2135,6 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
-  /* //baru */
 }
 .swiper-vertical > .swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {

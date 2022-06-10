@@ -11,5 +11,6 @@
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/css/backend.css": "/css/backend.css",
     "/css/app.css": "/css/app.css",
-    "/css/cropie.css": "/css/cropie.css"
+    "/css/cropie.css": "/css/cropie.css",
+    "/images/logo.svg": "/images/logo.svg"
 }

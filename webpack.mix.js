@@ -29,7 +29,7 @@ mix .js('resources/js/app.js', 'public/js')
         require('tailwindcss'),
     ])
 
-    // .copy('resources/image/','public/images')
+    .copy('resources/image/','public/images')
 
     //BACKEND STYLE
     // .copy('resources/css/', 'public/css/')
