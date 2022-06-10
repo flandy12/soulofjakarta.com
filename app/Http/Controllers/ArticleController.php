@@ -19,7 +19,7 @@ class ArticleController extends Controller
     public function index()
     {
         $dbartikel = Article::all();
-        return view('admin.artikel-page',compact('dbartikel'));
+        return view('admin.article.artikel-page',compact('dbartikel'));
     }
 
     /**
@@ -39,9 +39,9 @@ class ArticleController extends Controller
         *
         */
 
-        $kategori = Category::all();
-        $subkategori = SubCategory::all();
-        return view('admin.add-artikel-page',compact('kategori','subkategori'));
+        // $kategori = Category::all();
+        // $subkategori = SubCategory::all();
+        return view('admin.article.add-artikel-page');
     }
 
     /**

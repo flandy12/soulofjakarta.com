@@ -41,6 +41,10 @@ $('#alert-ads').on('click', function () {
     $('.alert-ads').hide();
 });
 
+$('#exampleFormControlFile1').on('click',function(){
+    console.log('get')
+})
+
 // Mengambil Data Dari DataBase 
 // function ArticelUpdate() {
 //     $.ajax({

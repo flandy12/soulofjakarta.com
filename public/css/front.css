@@ -18,9 +18,9 @@ body {
     --font-size-web: 14px;
     --color-basic: #eaeaea;
     --color-bacic2: #2b2e37;
-    --color-basic3 : #141416;
+    --color-basic3: #141416;
     --color-basic4: #cac3c3bb;
-    --color-basic5 : #141416;
+    --color-basic5: #141416;
     --color-basic-fade: #727171;
     --color-lifestyle: #8154ef;
     --color-music: #ff6363;
@@ -692,7 +692,7 @@ input:focus {
         margin: auto;
         display: grid;
         position: relative;
-        z-index: 50;    
+        z-index: 50;
         grid-template-columns: 60% 40%;
 
     }
@@ -824,6 +824,7 @@ input:focus {
     .main-detail-body .article-body .title {
         margin-top: 20px;
     }
+
     .main-detail-body .side-content .side-article {
         position: -webkit-sticky;
         position: sticky;
@@ -848,9 +849,11 @@ input:focus {
         padding: 0 10px;
         margin-top: 20px;
     }
-    .main-detail-body .side-content .side-article .body-side:last-child(){
+
+    .main-detail-body .side-content .side-article .body-side:last-child() {
         padding-bottom: 10px;
     }
+
     .main-detail-body .side-content .side-article .body-side h2 {
         font-size: 15px;
         font-weight: bold;
@@ -860,6 +863,7 @@ input:focus {
     .main-detail-body .side-content .side-article .body-side h2:hover {
         color: var(--color-basic-fade);
     }
+
     /*
     *** user-profile ***
     */
@@ -908,11 +912,12 @@ input:focus {
         width: 20px;
         margin: auto;
     }
-    
+
     .detail-article .main-article-detail .article-body p {
         font-size: 16px;
         color: var(--color-basic4);
     }
+
     .detail-article .main-article-detail .article-body .time p {
         color: var(--color-basic);
     }
@@ -1020,7 +1025,7 @@ input:focus {
 
     .main-two-all .main-two-body .swiper .swiper-wrapper .swiper-slide {
         border-radius: 8px;
-        
+
         border: 1px solid var(--color-bacic2);
     }
 
@@ -1125,6 +1130,11 @@ input:focus {
         border-radius: 8px 8px 0 0;
     }
 
+    .detail-s .swiper .swiper-slide .content .sidebar-img {
+        border-radius: 8px;
+
+    }
+
     .swiper-slide .content .sidebar-img:hover {
         background-color: #141313;
         border-radius: 8px 8px 0 0;
@@ -1208,7 +1218,7 @@ input:focus {
         width: 100%;
         margin: auto 10px;
     }
-   
+
 
     .main-three .main-three-all .main-three-headline .content .content-body p {
         width: 500px;
@@ -1258,6 +1268,7 @@ input:focus {
         font-weight: 600;
         font-size: 24px;
     }
+
     .main-three .main-three-all .main-three-headline .content .content-body h1:hover {
         color: var(--color-basic4);
         font-weight: 600;
@@ -1426,7 +1437,7 @@ input:focus {
     }
 
     .main-three .main-three-all .main-three-body {
-        margin-top:30px;
+        margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr));
     }
@@ -1467,27 +1478,32 @@ input:focus {
     .ads .ads-container {
         margin: auto;
         max-width: 1355px;
-       
+
     }
+
     .ads .container {
         margin: auto;
         max-width: 1355px;
     }
+
     .ads .container .row .col {
         margin: auto;
         display: flex;
         justify-content: center;
     }
+
     .ads-container img {
         margin: auto;
         display: flex;
         justify-content: center;
     }
+
     .ads-footer .ads-container {
         max-width: 1200px;
         display: flex;
         margin: auto;
     }
+
     /* iklan ke 2 */
     .main-three-side .second-side {
         position: -webkit-sticky;
@@ -1497,7 +1513,7 @@ input:focus {
 
     .main-three-side .second-side img {
         width: 100%;
-        margin:30px 0 0 0;
+        margin: 30px 0 0 0;
         -o-object-fit: cover;
            object-fit: cover;
     }
@@ -1528,6 +1544,7 @@ input:focus {
     .main-three-side .body-slide-all {
         background-color: var(--color-basic5);
         border-radius: 0 0 8px 8px;
+        border: 1px solid var(--color-bacic2);
         /* position: sticky; */
         margin: auto;
         padding: 10px 0 20px 0;
@@ -1552,7 +1569,7 @@ input:focus {
 
     /* berita */
     .main-three-side .body-slide-two .title h2 {
-       
+
         padding: 10px;
         background-color: var(--color-master);
         font-size: 18px;
@@ -1561,8 +1578,8 @@ input:focus {
 
     }
 
-    .main-three-side .body-slide-two .v-details{ 
-        text-align: center; 
+    .main-three-side .body-slide-two .v-details {
+        text-align: center;
         margin: 10px auto;
         padding: 5px 10px;
         color: #839fcf;
@@ -1571,13 +1588,14 @@ input:focus {
         border-radius: 8px;
         width: 200PX;
     }
+
     .main-three-side .body-slide-all .body-side h2 {
-        margin: 2px 0;
+        margin: 2px 7px 2px 0 ;
         color: var(--color-basic);
         padding: 0;
         font-size: 13px;
-        position: relative;
-        padding-right: 10px;
+        position: static;
+        padding-right: 20px;
         font-weight: bold;
     }
 
@@ -1590,11 +1608,12 @@ input:focus {
     /* body-slide-two */
     .main-three-side .body-slide-two {
         margin-top: 30px;
+        border: 1px solid var(--color-bacic2);
         padding: 0 0 20px 0;
         background-color: var(--color-basic5);
         color: var(--color-basic);
         display: block;
-        border-radius: 0 0 8px 8px;
+        border-radius: 0 0px 8px 8px;
         position: -webkit-sticky;
         position: sticky;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -1615,15 +1634,17 @@ input:focus {
     }
 
     .main-three-side .body-slide-two .body-side .content-body h2 {
-        color:#fffff1;
+        color: #fffff1;
         font-family: 400;
         font-size: 16px;
     }
+
     .main-three-side .body-slide-two .body-side .content-body h2:hover {
         color: var(--color-basic-fade);
         cursor: pointer;
         font-size: 16px;
     }
+
     .main-three-side .body-side-all .body-side .content-body p {
         margin: 0;
     }
@@ -1637,9 +1658,9 @@ input:focus {
         width: 90px;
         -o-object-fit: cover;
            object-fit: cover;
-        height: 100%;
+        height: 60px;
         border-radius: 5px;
-        margin: 0 10px;
+        margin: 0 0 0 10px;
         /* border-radius: 2px; */
     }
 
