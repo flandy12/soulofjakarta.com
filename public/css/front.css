@@ -7,7 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #f3f3f3;
-    background: #101010;
+    background: #ffffff;
 
 }
 
@@ -824,8 +824,8 @@ input:focus {
     .main-detail-body .side-content .side-article {
         position: -webkit-sticky;
         position: sticky;
-        background-color: var(--color-basic5);
         margin: 30px 0;
+        border-radius:0px 0px 8px 8px;
         border: 1px solid var(--color-bacic2);
         padding-bottom: 20px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -2116,7 +2116,7 @@ input:focus {
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  background: var(--swiper-pagination-bullet-inactive-color, rgb(0, 0, 0));
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 button.swiper-pagination-bullet {

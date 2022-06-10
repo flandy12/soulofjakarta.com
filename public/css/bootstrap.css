@@ -80,7 +80,7 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    /* background-color: var(--bs-body-bg); */
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -262,11 +262,12 @@ sup {
 }
 
 a {
-    text-decoration: none
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #0a58ca
+    color: #ffffff
 }
 
 a:not([href]):not([class]),
@@ -631,7 +632,7 @@ progress {
 }
 
 .blockquote-footer::before {
-    content: "— "
+    content: "— "
 }
 
 .img-fluid {
@@ -5110,6 +5111,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
     color: rgba(255, 255, 255, .55)
 }
 
@@ -5189,6 +5191,7 @@ fieldset:disabled .btn {
     flex: 1 1 auto;
     padding: 1rem 1rem
 }
+
 
 .card-title {
     margin-bottom: .5rem
