@@ -65,7 +65,7 @@
                         <a class="nav-link">Schedule Event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Media Partner</a>
+                        <a class="nav-link">Ticketing</a>
                     </li>
 
                 </ul>
