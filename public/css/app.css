@@ -1063,13 +1063,13 @@ select {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -1920,14 +1920,8 @@ select {
 .pt-8 {
   padding-top: 2rem;
 }
-.pt-0 {
-  padding-top: 0px;
-}
 .pb-0 {
   padding-bottom: 0px;
-}
-.pr-3 {
-  padding-right: 0.75rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -1937,6 +1931,12 @@ select {
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pr-3 {
+  padding-right: 0.75rem;
 }
 .text-left {
   text-align: left;
